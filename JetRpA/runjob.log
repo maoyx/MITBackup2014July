@@ -1,0 +1,75 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.32/00   2 December 2011   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.32/00 (branches/v5-32-00-patches@42372, Nov 19 2012, 10:56:00 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+start working
+analysis trig = 
+1
+pthat = 280  pthatmax =9999
+Collision Mode: P+P
+HltTree: 194375 entries loaded.
+SkimTree: 194375 entries loaded.
+EvtTree: 194375 entries loaded.
+AkPu2jetTree: 194375 entries loaded.
+AkPu3jetTree: 194375 entries loaded.
+AkPu4jetTree: 194375 entries loaded.
+AkPu5jetTree: 194375 entries loaded.
+AkPu6jetTree: 194375 entries loaded.
+Ak2jetTree: 194375 entries loaded.
+Ak3jetTree: 194375 entries loaded.
+Ak4jetTree: 194375 entries loaded.
+Ak5jetTree: 194375 entries loaded.
+Ak6jetTree: 194375 entries loaded.
+AkPu2CaloJetTree: 194375 entries loaded.
+AkPu3CaloJetTree: 194375 entries loaded.
+AkPu4CaloJetTree: 194375 entries loaded.
+Ak5CaloJetTree: 194375 entries loaded.
+Ak6CaloJetTree: 194375 entries loaded.
+Ak2CaloJetTree: 194375 entries loaded.
+Ak3CaloJetTree: 194375 entries loaded.
+Ak4CaloJetTree: 194375 entries loaded.
+Ak5CaloJetTree: 194375 entries loaded.
+Ak6CaloJetTree: 194375 entries loaded.
+TrackTree: 194375 entries loaded.
+PhotonTree: 194375 entries loaded.
+PFTree: 194375 entries loaded.
+MetTree: 194375 entries loaded.
+TowerTree: 194375 entries loaded.
+HbheTree: 194375 entries loaded.
+EbTree: 194375 entries loaded.
+GenpTree: 194375 entries loaded.
+GenParticleTree: 194375 entries loaded.
+Input file/mnt/hadoop/cms/store/user/dgulhan/pPb/HP04/prod16/Signal_Pythia_pt280/HiForest_v77_v2_merged01/pt280_HP04_hiforest77_hiSignal.root
+Number of events =194375
+ coll = PP weight = 0.877011 evt = 10001
+ coll = PP weight = 0.856893 evt = 20001
+ coll = PP weight = 1.35716 evt = 30001
+ coll = PP weight = 0.655339 evt = 40001
+ coll = PP weight = 1.60026 evt = 50001
+ coll = PP weight = 1.37113 evt = 60001
+ coll = PP weight = 0.652078 evt = 70001
+ coll = PP weight = 1.05691 evt = 80001
+ coll = PP weight = 1.55355 evt = 90001
+ coll = PP weight = 1.07357 evt = 100001
+ coll = PP weight = 0.615288 evt = 110001
+ coll = PP weight = 1.55678 evt = 130001
+ coll = PP weight = 1.56422 evt = 140001
+ coll = PP weight = 1.48354 evt = 150001
+ coll = PP weight = 1.141 evt = 160001
+ coll = PP weight = 1.49063 evt = 170001
+ coll = PP weight = 0.404376 evt = 180001
+ coll = PP weight = 1.54473 evt = 190001
+Output file: MCPP_akPu3PFDiJetMassJetPt30GenChargeTrkEffHIN12017v5TrkCorr2DCut0EtaBin7_HFsumEta4Bin1_pt280_HP04_hiforest77_hiSignal.root
+working done

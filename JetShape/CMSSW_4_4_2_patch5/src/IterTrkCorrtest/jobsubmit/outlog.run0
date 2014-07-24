@@ -1,0 +1,106 @@
+
+ *** Break *** bus error
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x0000003010899325 in waitpid () from /lib64/libc.so.6
+#1  0x000000301083c2e1 in do_system () from /lib64/libc.so.6
+#2  0x00002ba57b3502a2 in TUnixSystem::StackTrace() ()
+   from /net/t2srv0008/d00/osg/app/cmssoft/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms25/lib/libCore.so
+#3  0x00002ba57b350d5c in TUnixSystem::DispatchSignals(ESignals) ()
+   from /net/t2srv0008/d00/osg/app/cmssoft/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms25/lib/libCore.so
+#4  <signal handler called>
+#5  0x00002ba57c609510 in hist_class::Write() ()
+   from /net/hidsk0001/d00/scratch/maoyx/JetShape/CMSSW_4_4_2_patch5/src/IterTrkCorrtest/./anaInclusiveJS_C.so
+#6  0x40515c817e2e0324 in ?? ()
+#7  0x40186f2dcce9c2c0 in ?? ()
+#8  0x403a98d06938fc00 in ?? ()
+#9  0x402b394948e13af0 in ?? ()
+#10 0x40186f2dcce9c2c0 in ?? ()
+#11 0x402b394948e13af0 in ?? ()
+#12 0x3feb1abaf8a22d75 in ?? ()
+#13 0x3fb312c520e406f3 in ?? ()
+#14 0x3fd4c2ef87d0192c in ?? ()
+#15 0x3fc540331ca72e84 in ?? ()
+#16 0x3fb312c520e406f3 in ?? ()
+#17 0x3fc540331ca72e84 in ?? ()
+#18 0x3fb8f7602993d7b3 in ?? ()
+#19 0x400bab0330000000 in ?? ()
+#20 0x401218c3a8000000 in ?? ()
+#21 0x40559557aa800000 in ?? ()
+#22 0x401837dfc8000000 in ?? ()
+#23 0x4032e83a92000000 in ?? ()
+#24 0x401d3ec028000000 in ?? ()
+#25 0x401837dfc8000000 in ?? ()
+#26 0x401d3ec028000000 in ?? ()
+#27 0x3ff0d90ff4dad299 in ?? ()
+#28 0x3fb2e7996e0e0f26 in ?? ()
+#29 0x3fcd8487b9afc9f6 in ?? ()
+#30 0x3fb6d421652a2e7f in ?? ()
+#31 0x3fb2e7996e0e0f26 in ?? ()
+#32 0x3fb6d421652a2e7f in ?? ()
+#33 0x000000000b48e910 in ?? ()
+#34 0x000000000b4a6120 in ?? ()
+#35 0x000000000b518f70 in ?? ()
+#36 0x00090e3700000001 in ?? ()
+#37 0x400aef4360000000 in ?? ()
+#38 0x3ffb060ba0000000 in ?? ()
+#39 0xbffb112920000000 in ?? ()
+#40 0xbfdf493320000000 in ?? ()
+#41 0x3fdf493320000000 in ?? ()
+#42 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+If they do not help you then please submit a bug report at
+http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#5  0x00002ba57c609510 in hist_class::Write() ()
+   from /net/hidsk0001/d00/scratch/maoyx/JetShape/CMSSW_4_4_2_patch5/src/IterTrkCorrtest/./anaInclusiveJS_C.so
+#6  0x40515c817e2e0324 in ?? ()
+#7  0x40186f2dcce9c2c0 in ?? ()
+#8  0x403a98d06938fc00 in ?? ()
+#9  0x402b394948e13af0 in ?? ()
+#10 0x40186f2dcce9c2c0 in ?? ()
+#11 0x402b394948e13af0 in ?? ()
+#12 0x3feb1abaf8a22d75 in ?? ()
+#13 0x3fb312c520e406f3 in ?? ()
+#14 0x3fd4c2ef87d0192c in ?? ()
+#15 0x3fc540331ca72e84 in ?? ()
+#16 0x3fb312c520e406f3 in ?? ()
+#17 0x3fc540331ca72e84 in ?? ()
+#18 0x3fb8f7602993d7b3 in ?? ()
+#19 0x400bab0330000000 in ?? ()
+#20 0x401218c3a8000000 in ?? ()
+#21 0x40559557aa800000 in ?? ()
+#22 0x401837dfc8000000 in ?? ()
+#23 0x4032e83a92000000 in ?? ()
+#24 0x401d3ec028000000 in ?? ()
+#25 0x401837dfc8000000 in ?? ()
+#26 0x401d3ec028000000 in ?? ()
+#27 0x3ff0d90ff4dad299 in ?? ()
+#28 0x3fb2e7996e0e0f26 in ?? ()
+#29 0x3fcd8487b9afc9f6 in ?? ()
+#30 0x3fb6d421652a2e7f in ?? ()
+#31 0x3fb2e7996e0e0f26 in ?? ()
+#32 0x3fb6d421652a2e7f in ?? ()
+#33 0x000000000b48e910 in ?? ()
+#34 0x000000000b4a6120 in ?? ()
+#35 0x000000000b518f70 in ?? ()
+#36 0x00090e3700000001 in ?? ()
+#37 0x400aef4360000000 in ?? ()
+#38 0x3ffb060ba0000000 in ?? ()
+#39 0xbffb112920000000 in ?? ()
+#40 0xbfdf493320000000 in ?? ()
+#41 0x3fdf493320000000 in ?? ()
+#42 0x0000000000000000 in ?? ()
+===========================================================
+
+

@@ -1,0 +1,475 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.32/00   2 December 2011   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.32/00 (branches/v5-32-00-patches@42372, Nov 19 2012, 10:56:00 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+PTHAT =370
+
+
+Input: /mnt/hadoop/cms/store/user/dgulhan/Pbp/HP05/prod24/Hijing_Pythia_pt370/HiForest_v84_merged02/pt370_HP05_prod24_v84_merged_forest_0.root
+Sample pthat = 370 ptHatMax = 9999
+Track pt min = 0.5
+skim: leading Jet > 100 subleading > -1 dphi > -1
+Genjet mode: 0
+Output: TrkCorr_5TeVPbPppTrackEff_dj370_ak3PF_100_-1_-1000_genJetMode0.root
+Collision Mode: P+Pb
+a
+a
+a
+a
+a
+a
+a
+x
+aaaa
+a
+a
+a
+aaaa
+aaaa
+aaaa
+aaaa
+1
+2
+3
+3
+s1
+s2
+s3
+s4
+s5
+s5
+s6
+s7
+xxxx
+x
+x
+a
+a
+HltTree: 338000 entries loaded.
+SkimTree: 338000 entries loaded.
+EvtTree: 338000 entries loaded.
+AkPu2jetTree: 338000 entries loaded.
+AkPu3jetTree: 338000 entries loaded.
+AkPu4jetTree: 338000 entries loaded.
+AkPu5jetTree: 338000 entries loaded.
+AkPu6jetTree: 338000 entries loaded.
+Ak2jetTree: 338000 entries loaded.
+Ak3jetTree: 338000 entries loaded.
+Ak4jetTree: 338000 entries loaded.
+Ak5jetTree: 338000 entries loaded.
+Ak6jetTree: 338000 entries loaded.
+AkPu2CaloJetTree: 338000 entries loaded.
+AkPu3CaloJetTree: 338000 entries loaded.
+AkPu4CaloJetTree: 338000 entries loaded.
+Ak5CaloJetTree: 338000 entries loaded.
+Ak6CaloJetTree: 338000 entries loaded.
+Ak2CaloJetTree: 338000 entries loaded.
+Ak3CaloJetTree: 338000 entries loaded.
+Ak4CaloJetTree: 338000 entries loaded.
+Ak5CaloJetTree: 338000 entries loaded.
+Ak6CaloJetTree: 338000 entries loaded.
+TrackTree: 338000 entries loaded.
+PhotonTree: 338000 entries loaded.
+PFTree: 338000 entries loaded.
+MetTree: 338000 entries loaded.
+TowerTree: 338000 entries loaded.
+HbheTree: 338000 entries loaded.
+EbTree: 338000 entries loaded.
+GenpTree: 338000 entries loaded.
+GenParticleTree: 338000 entries loaded.
+Output: TrkCorr_5TeVPbPppTrackEff_dj370_ak3PF_100_-1_-1000_genJetMode0.root
+===== Forest2_MergedGeneral =====
+
+Pt 49 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 120 150 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+zaxis: 10 bins:0 40 60 80 100 120 160 200 300 500 1000 
+===== Forest2_MergedGeneral_j1 =====
+
+Pt 49 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 120 150 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+zaxis: 10 bins:0 40 60 80 100 120 160 200 300 500 1000 
+===== Forest2_MergedGeneral_j2 =====
+
+Pt 49 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 120 150 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+zaxis: 10 bins:0 40 60 80 100 120 160 200 300 500 1000 
+===== Forest2_MergedGeneral_jetfine =====
+
+Pt 49 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 120 150 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+zaxis: 8 bins:0 40 60 80 100 120 160 200 300 
+0 / 338000 pthat: 404.208 cBin: 7 nT: 192
+1000 / 338000 pthat: 378.535 cBin: 65 nT: 348
+2000 / 338000 pthat: 486.385 cBin: 19 nT: 137
+3000 / 338000 pthat: 403.922 cBin: 33 nT: 110
+4000 / 338000 pthat: 437.846 cBin: 45 nT: 152
+5000 / 300 pthat: 129.47 cBin: 20 nT: 179
+6000 / 306400 pthat: 121.209 cBin: 29 nT: 149
+7000 / 306400 pthat: 121.538 cBin: 13 nT: 322
+8000 / 306400 pthat: 219.804 cBin: 17 nT: 260
+90009000 / 338000 pthat: 815.306 cBin: 24 nT: 236
+10000 / 338000 pthat: 403.329 cBin: 0 nT: 171
+11000 / 338000 pthat: 448.743 cBin: 23 nT: 205
+12000 / 338000 pthat: 422.186 cBin: 44 nT: 199
+13000 / 338000 pthat: 457.822 cBin: 56 nT: 118
+14000 / 338000 pthat: 388.835 cBin: 31 nT: 249
+15000 / 338000 pthat: 455.031 cBin: 45 nT: 150
+16000 / 338000 pthat: 419.869 cBin: 82 nT: 157
+17000 / 338000 pthat: 404.776 cBin: 18 nT: 246
+18000 / 338000 pthat: 375.121 cBin: 35 nT: 130
+19000 / 338000 pthat: 466.12 cBin: 60 nT: 114
+20000 / 338000 pthat: 583.08 cBin: 43 nT: 239
+21000 / 338000 pthat: 429.408 cBin: 53 nT: 190
+22000 / 338000 pthat: 375.865 cBin: 23 nT: 243
+23000 / 338000 pthat: 425.283 cBin: 27 nT: 234
+24000 / 338000 pthat: 425.655 cBin: 45 nT: 139
+25000 / 338000 pthat: 393.498 cBin: 10 nT: 230
+26000 / 338000 pthat: 374.361 cBin: 21 nT: 157
+27000 / 338000 pthat: 407.502 cBin: 81 nT: 102
+28000 / 338000 pthat: 460.739 cBin: 4 nT: 412
+29000 / 338000 pthat: 405.921 cBin: 47 nT: 101
+30000 / 338000 pthat: 401.147 cBin: 11 nT: 311
+31000 / 338000 pthat: 434.022 cBin: 75 nT: 107
+32000 / 338000 pthat: 372.158 cBin: 64 nT: 79
+33000 / 338000 pthat: 383.969 cBin: 21 nT: 196
+34000 / 338000 pthat: 379.849 cBin: 64 nT: 110
+35000 / 338000 pthat: 465.307 cBin: 21 nT: 211
+36000 / 338000 pthat: 374.247 cBin: 48 nT: 85
+37000 / 338000 pthat: 434.544 cBin: 47 nT: 197
+38000 / 338000 pthat: 437.339 cBin: 35 nT: 120
+39000 / 338000 pthat: 388.352 cBin: 62 nT: 109
+40000 / 338000 pthat: 453.356 cBin: 18 nT: 252
+41000 / 338000 pthat: 416.132 cBin: 3 nT: 359
+42000 / 338000 pthat: 373.35 cBin: 31 nT: 150
+43000 / 338000 pthat: 405.29 cBin: 5 nT: 217
+44000 / 338000 pthat: 427.421 cBin: 58 nT: 170
+45000 / 338000 pthat: 510.449 cBin: 56 nT: 141
+46000 / 338000 pthat: 480.985 cBin: 60 nT: 55
+47000 / 338000 pthat: 402.164 cBin: 20 nT: 116
+48000 / 338000 pthat: 412.006 cBin: 55 nT: 211
+49000 / 338000 pthat: 417.94 cBin: 27 nT: 213
+50000 / 338000 pthat: 616.377 cBin: 31 nT: 249
+51000 / 338000 pthat: 382.06 cBin: 19 nT: 168
+52000 / 338000 pthat: 387.914 cBin: 43 nT: 122
+53000 / 338000 pthat: 375.605 cBin: 34 nT: 280
+54000 / 338000 pthat: 395.041 cBin: 20 nT: 174
+55000 / 338000 pthat: 415.31 cBin: 45 nT: 209
+56000 / 338000 pthat: 372.434 cBin: 49 nT: 119
+57000 / 338000 pthat: 643.517 cBin: 37 nT: 123
+58000 / 338000 pthat: 374.862 cBin: 48 nT: 122
+59000 / 338000 pthat: 429.194 cBin: 52 nT: 134
+60000 / 338000 pthat: 407.894 cBin: 31 nT: 104
+61000 / 338000 pthat: 479.762 cBin: 29 nT: 305
+62000 / 338000 pthat: 377.672 cBin: 39 nT: 156
+63000 / 338000 pthat: 374.081 cBin: 42 nT: 128
+64000 / 338000 pthat: 401.288 cBin: 10 nT: 266
+65000 / 338000 pthat: 383.466 cBin: 29 nT: 306
+66000 / 338000 pthat: 446.086 cBin: 1 nT: 135
+67000 / 338000 pthat: 371.664 cBin: 17 nT: 259
+68000 / 338000 pthat: 406.25 cBin: 47 nT: 146
+69000 / 338000 pthat: 380.149 cBin: 3 nT: 141
+70000 / 338000 pthat: 387.387 cBin: 92 nT: 68
+71000 / 338000 pthat: 472.191 cBin: 41 nT: 199
+72000 / 338000 pthat: 485.7 cBin: 71 nT: 160
+73000 / 338000 pthat: 387.421 cBin: 71 nT: 193
+74000 / 338000 pthat: 427.842 cBin: 6 nT: 197
+75000 / 338000 pthat: 404.617 cBin: 21 nT: 163
+76000 / 338000 pthat: 379.409 cBin: 12 nT: 333
+77000 / 338000 pthat: 463.889 cBin: 7 nT: 296
+78000 / 338000 pthat: 371.13 cBin: 56 nT: 141
+79000 / 338000 pthat: 490.34 cBin: 58 nT: 146
+80000 / 338000 pthat: 381.336 cBin: 8 nT: 241
+81000 / 338000 pthat: 371.803 cBin: 23 nT: 144
+82000 / 338000 pthat: 404.681 cBin: 26 nT: 227
+83000 / 338000 pthat: 405.728 cBin: 6 nT: 381
+84000 / 338000 pthat: 530.408 cBin: 26 nT: 177
+85000 / 338000 pthat: 409.394 cBin: 28 nT: 201
+86000 / 338000 pthat: 408.355 cBin: 69 nT: 119
+87000 / 338000 pthat: 391.992 cBin: 59 nT: 163
+88000 / 338000 pthat: 371.22 cBin: 23 nT: 178
+89000 / 338000 pthat: 449.054 cBin: 39 nT: 188
+90000 / 338000 pthat: 373.045 cBin: 35 nT: 256
+91000 / 338000 pthat: 534.02 cBin: 53 nT: 138
+92000 / 338000 pthat: 501.729 cBin: 18 nT: 276
+93000 / 338000 pthat: 403.84 cBin: 24 nT: 185
+94000 / 338000 pthat: 429.509 cBin: 9 nT: 377
+95000 / 338000 pthat: 382.762 cBin: 77 nT: 98
+96000 / 338000 pthat: 375.185 cBin: 18 nT: 188
+97000 / 338000 pthat: 424.737 cBin: 8 nT: 238
+98000 / 338000 pthat: 444.363 cBin: 33 nT: 140
+99000 / 338000 pthat: 459.237 cBin: 52 nT: 100
+100000 / 338000 pthat: 438.539 cBin: 37 nT: 221
+101000 / 338000 pthat: 511.254 cBin: 49 nT: 91
+102000 / 338000 pthat: 370.586 cBin: 52 nT: 138
+103000 / 338000 pthat: 417.008 cBin: 0 nT: 230
+104000 / 338000 pthat: 376 cBin: 31 nT: 190
+105000 / 338000 pthat: 380.602 cBin: 67 nT: 118
+106000 / 338000 pthat: 407.007 cBin: 41 nT: 204
+107000 / 338000 pthat: 461.769 cBin: 9 nT: 258
+108000 / 338000 pthat: 386.15 cBin: 64 nT: 103
+109000 / 338000 pthat: 384.318 cBin: 2 nT: 409
+110000 / 338000 pthat: 378.356 cBin: 7 nT: 237
+111000 / 338000 pthat: 375.004 cBin: 26 nT: 252
+112000 / 338000 pthat: 385.527 cBin: 22 nT: 213
+113000 / 338000 pthat: 427.048 cBin: 18 nT: 181
+114000 / 338000 pthat: 598.577 cBin: 15 nT: 226
+115000 / 338000 pthat: 426.346 cBin: 32 nT: 139
+116000 / 338000 pthat: 473.194 cBin: 4 nT: 364
+117000 / 338000 pthat: 392.297 cBin: 40 nT: 119
+118000 / 338000 pthat: 414.836 cBin: 32 nT: 270
+119000 / 338000 pthat: 384.151 cBin: 37 nT: 104
+120000 / 338000 pthat: 415.843 cBin: 19 nT: 261
+121000 / 338000 pthat: 412.216 cBin: 63 nT: 203
+122000 / 338000 pthat: 682.035 cBin: 64 nT: 104
+123000 / 338000 pthat: 385.521 cBin: 78 nT: 229
+124000 / 338000 pthat: 375.6 cBin: 57 nT: 143
+125000 / 338000 pthat: 444.343 cBin: 37 nT: 282
+126000 / 338000 pthat: 668.711 cBin: 2 nT: 259
+127000 / 338000 pthat: 440.58 cBin: 29 nT: 218
+128000 / 338000 pthat: 370.561 cBin: 26 nT: 267
+129000 / 338000 pthat: 392.768 cBin: 23 nT: 369
+130000 / 338000 pthat: 423.453 cBin: 24 nT: 161
+131000 / 338000 pthat: 429.382 cBin: 28 nT: 145
+132000 / 338000 pthat: 429.334 cBin: 49 nT: 100
+133000 / 338000 pthat: 449.302 cBin: 17 nT: 195
+134000 / 338000 pthat: 517.485 cBin: 37 nT: 124
+135000 / 338000 pthat: 420.897 cBin: 27 nT: 155
+136000 / 338000 pthat: 381.481 cBin: 24 nT: 139
+137000 / 338000 pthat: 457.079 cBin: 10 nT: 414
+138000 / 338000 pthat: 451.445 cBin: 60 nT: 249
+139000 / 338000 pthat: 598.777 cBin: 38 nT: 247
+140000 / 338000 pthat: 714.861 cBin: 47 nT: 124
+141000 / 338000 pthat: 392.065 cBin: 8 nT: 353
+142000 / 338000 pthat: 387.186 cBin: 27 nT: 248
+143000 / 338000 pthat: 373.099 cBin: 86 nT: 69
+144000 / 338000 pthat: 517.812 cBin: 54 nT: 197
+145000 / 338000 pthat: 442.863 cBin: 11 nT: 211
+146000 / 338000 pthat: 379.217 cBin: 34 nT: 112
+147000 / 338000 pthat: 487.096 cBin: 49 nT: 178
+148000 / 338000 pthat: 374.906 cBin: 33 nT: 193
+149000 / 338000 pthat: 380.524 cBin: 47 nT: 214
+150000 / 338000 pthat: 377.324 cBin: 56 nT: 122
+151000 / 338000 pthat: 382.267 cBin: 52 nT: 95
+152000 / 338000 pthat: 411.202 cBin: 7 nT: 395
+153000 / 338000 pthat: 446.932 cBin: 22 nT: 299
+154000 / 338000 pthat: 562.699 cBin: 3 nT: 267
+155000 / 338000 pthat: 372.216 cBin: 20 nT: 135
+156000 / 338000 pthat: 411.971 cBin: 52 nT: 97
+157000 / 338000 pthat: 399.392 cBin: 67 nT: 153
+158000 / 338000 pthat: 377.314 cBin: 66 nT: 76
+159000 / 338000 pthat: 500.04 cBin: 6 nT: 297
+160000 / 338000 pthat: 418.858 cBin: 0 nT: 167
+161000 / 338000 pthat: 430.845 cBin: 29 nT: 389
+162000 / 338000 pthat: 370.654 cBin: 5 nT: 216
+163000 / 338000 pthat: 383.817 cBin: 44 nT: 282
+164000 / 338000 pthat: 377.989 cBin: 8 nT: 274
+165000 / 338000 pthat: 739.011 cBin: 5 nT: 254
+166000 / 338000 pthat: 382.99 cBin: 22 nT: 174
+167000 / 338000 pthat: 376.418 cBin: 3 nT: 269
+168000 / 338000 pthat: 398.408 cBin: 16 nT: 216
+169000 / 338000 pthat: 508.338 cBin: 71 nT: 118
+170000 / 338000 pthat: 385.747 cBin: 50 nT: 155
+171000 / 338000 pthat: 497.035 cBin: 21 nT: 274
+172000 / 338000 pthat: 528.189 cBin: 20 nT: 158
+173000 / 338000 pthat: 370.297 cBin: 59 nT: 117
+174000 / 338000 pthat: 380.355 cBin: 31 nT: 361
+175000 / 338000 pthat: 438.133 cBin: 23 nT: 298
+176000 / 338000 pthat: 381.546 cBin: 25 nT: 220
+177000 / 338000 pthat: 370.943 cBin: 66 nT: 265
+178000 / 338000 pthat: 420.042 cBin: 15 nT: 244
+179000 / 338000 pthat: 376.708 cBin: 48 nT: 136
+180000 / 338000 pthat: 531.315 cBin: 28 nT: 201
+181000 / 338000 pthat: 431.729 cBin: 0 nT: 308
+182000 / 338000 pthat: 386.732 cBin: 22 nT: 155
+183000 / 338000 pthat: 371.671 cBin: 30 nT: 286
+184000 / 338000 pthat: 439.349 cBin: 95 nT: 342
+185000 / 338000 pthat: 372.145 cBin: 45 nT: 107
+186000 / 338000 pthat: 386.064 cBin: 3 nT: 246
+187000 / 338000 pthat: 497.123 cBin: 32 nT: 127
+188000 / 338000 pthat: 417.104 cBin: 17 nT: 226
+189000 / 338000 pthat: 616.608 cBin: 11 nT: 259
+190000 / 338000 pthat: 385.214 cBin: 11 nT: 335
+191000 / 338000 pthat: 512.106 cBin: 18 nT: 270
+192000 / 338000 pthat: 381.069 cBin: 29 nT: 218
+193000 / 338000 pthat: 428.857 cBin: 18 nT: 283
+194000 / 338000 pthat: 411.111 cBin: 22 nT: 307
+195000 / 338000 pthat: 430.667 cBin: 16 nT: 86
+196000 / 338000 pthat: 396.242 cBin: 20 nT: 202
+197000 / 338000 pthat: 467.777 cBin: 82 nT: 144
+198000 / 338000 pthat: 395.164 cBin: 70 nT: 129
+199000 / 338000 pthat: 402.968 cBin: 41 nT: 202
+200000 / 338000 pthat: 387.344 cBin: 11 nT: 314
+201000 / 338000 pthat: 531.385 cBin: 1 nT: 374
+202000 / 338000 pthat: 390.269 cBin: 54 nT: 239
+203000 / 338000 pthat: 405.38 cBin: 17 nT: 141
+204000 / 338000 pthat: 389.546 cBin: 41 nT: 161
+205000 / 338000 pthat: 373.575 cBin: 24 nT: 219
+206000 / 338000 pthat: 447.278 cBin: 17 nT: 146
+207000 / 338000 pthat: 379.625 cBin: 61 nT: 212
+208000 / 338000 pthat: 380.196 cBin: 13 nT: 271
+209000 / 338000 pthat: 383.179 cBin: 37 nT: 409
+210000 / 338000 pthat: 418.254 cBin: 13 nT: 228
+211000 / 338000 pthat: 423.497 cBin: 90 nT: 108
+212000 / 338000 pthat: 378.334 cBin: 69 nT: 351
+213000 / 338000 pthat: 416.585 cBin: 77 nT: 75
+214000 / 338000 pthat: 372.06 cBin: 32 nT: 156
+215000 / 338000 pthat: 429.15 cBin: 68 nT: 110
+216000 / 338000 pthat: 382.339 cBin: 55 nT: 199
+217000 / 338000 pthat: 388.459 cBin: 45 nT: 206
+218000 / 338000 pthat: 377.16 cBin: 18 nT: 203
+219000 / 338000 pthat: 407.827 cBin: 66 nT: 79
+220000 / 338000 pthat: 383.317 cBin: 11 nT: 258
+221000 / 338000 pthat: 463.913 cBin: 58 nT: 119
+222000 / 338000 pthat: 407.937 cBin: 34 nT: 209
+223000 / 338000 pthat: 446.036 cBin: 58 nT: 169
+224000 / 338000 pthat: 425.178 cBin: 38 nT: 324
+225000 / 338000 pthat: 478.305 cBin: 57 nT: 78
+226000 / 338000 pthat: 421.317 cBin: 19 nT: 433
+227000 / 338000 pthat: 479.363 cBin: 62 nT: 201
+228000 / 338000 pthat: 409.095 cBin: 33 nT: 196
+229000 / 338000 pthat: 371.096 cBin: 36 nT: 182
+230000 / 338000 pthat: 698.844 cBin: 33 nT: 228
+231000 / 338000 pthat: 417.822 cBin: 18 nT: 286
+232000 / 338000 pthat: 382.737 cBin: 41 nT: 234
+233000 / 338000 pthat: 447.333 cBin: 5 nT: 452
+234000 / 338000 pthat: 455.449 cBin: 72 nT: 155
+235000 / 338000 pthat: 448.394 cBin: 8 nT: 176
+236000 / 338000 pthat: 428.306 cBin: 40 nT: 98
+237000 / 338000 pthat: 499.599 cBin: 37 nT: 166
+238000 / 338000 pthat: 387.934 cBin: 10 nT: 367
+239000 / 338000 pthat: 391.459 cBin: 19 nT: 244
+240000 / 338000 pthat: 380.882 cBin: 10 nT: 314
+241000 / 338000 pthat: 375.38 cBin: 79 nT: 91
+242000 / 338000 pthat: 509.958 cBin: 30 nT: 273
+243000 / 338000 pthat: 393.31 cBin: 35 nT: 123
+244000 / 338000 pthat: 374.513 cBin: 41 nT: 180
+245000 / 338000 pthat: 374.319 cBin: 40 nT: 105
+246000 / 338000 pthat: 503.968 cBin: 9 nT: 275
+247000 / 338000 pthat: 376.265 cBin: 51 nT: 117
+248000 / 338000 pthat: 432.695 cBin: 27 nT: 134
+249000 / 338000 pthat: 478.761 cBin: 23 nT: 224
+250000 / 338000 pthat: 418.209 cBin: 22 nT: 285
+251000 / 338000 pthat: 514.938 cBin: 60 nT: 218
+252000 / 338000 pthat: 385.576 cBin: 3 nT: 189
+253000 / 338000 pthat: 370.698 cBin: 48 nT: 163
+254000 / 338000 pthat: 370.749 cBin: 36 nT: 165
+255000 / 338000 pthat: 375.929 cBin: 35 nT: 252
+256000 / 338000 pthat: 480.324 cBin: 59 nT: 202
+257000 / 338000 pthat: 412.855 cBin: 74 nT: 161
+258000 / 338000 pthat: 378.241 cBin: 36 nT: 141
+259000 / 338000 pthat: 384.537 cBin: 68 nT: 124
+260000 / 338000 pthat: 370.626 cBin: 4 nT: 265
+261000 / 338000 pthat: 387.652 cBin: 43 nT: 170
+262000 / 338000 pthat: 376.255 cBin: 49 nT: 223
+263000 / 338000 pthat: 406.167 cBin: 50 nT: 165
+264000 / 338000 pthat: 446.92 cBin: 36 nT: 163
+265000 / 338000 pthat: 473.877 cBin: 35 nT: 161
+266000 / 338000 pthat: 375.426 cBin: 22 nT: 249
+267000 / 338000 pthat: 405.791 cBin: 8 nT: 224
+268000 / 338000 pthat: 493.025 cBin: 70 nT: 221
+269000 / 338000 pthat: 397.512 cBin: 33 nT: 188
+270000 / 338000 pthat: 388.084 cBin: 37 nT: 134
+271000 / 338000 pthat: 385.039 cBin: 35 nT: 249
+272000 / 338000 pthat: 552.83 cBin: 68 nT: 143
+273000 / 338000 pthat: 414.231 cBin: 17 nT: 141
+274000 / 338000 pthat: 427.351 cBin: 2 nT: 264
+275000 / 338000 pthat: 417.349 cBin: 62 nT: 143
+276000 / 338000 pthat: 421.546 cBin: 20 nT: 189
+277000 / 338000 pthat: 386.152 cBin: 36 nT: 144
+278000 / 338000 pthat: 402.827 cBin: 1 nT: 224
+279000 / 338000 pthat: 432.557 cBin: 55 nT: 149
+280000 / 338000 pthat: 477.262 cBin: 17 nT: 158
+281000 / 338000 pthat: 399.84 cBin: 4 nT: 189
+282000 / 338000 pthat: 565.318 cBin: 34 nT: 76
+283000 / 338000 pthat: 518.415 cBin: 81 nT: 192
+284000 / 338000 pthat: 487.749 cBin: 15 nT: 313
+285000 / 338000 pthat: 370.661 cBin: 41 nT: 192
+286000 / 338000 pthat: 470.203 cBin: 9 nT: 179
+287000 / 338000 pthat: 414.675 cBin: 63 nT: 143
+288000 / 338000 pthat: 445.244 cBin: 12 nT: 305
+289000 / 338000 pthat: 407.365 cBin: 25 nT: 209
+290000 / 338000 pthat: 495.474 cBin: 16 nT: 80
+291000 / 338000 pthat: 379.658 cBin: 64 nT: 196
+292000 / 338000 pthat: 505.246 cBin: 47 nT: 178
+293000 / 338000 pthat: 401.745 cBin: 60 nT: 260
+294000 / 338000 pthat: 387.764 cBin: 26 nT: 179
+295000 / 338000 pthat: 377.637 cBin: 25 nT: 201
+296000 / 338000 pthat: 385.275 cBin: 1 nT: 148
+297000 / 338000 pthat: 438.678 cBin: 38 nT: 196
+298000 / 338000 pthat: 497.732 cBin: 29 nT: 229
+299000 / 338000 pthat: 373.779 cBin: 23 nT: 305
+300000 / 338000 pthat: 490.599 cBin: 9 nT: 306
+301000 / 338000 pthat: 394.014 cBin: 58 nT: 137
+302000 / 338000 pthat: 398.892 cBin: 44 nT: 220
+303000 / 338000 pthat: 544.987 cBin: 34 nT: 159
+304000 / 338000 pthat: 385.95 cBin: 19 nT: 196
+305000 / 338000 pthat: 377.144 cBin: 26 nT: 242
+306000 / 338000 pthat: 422.177 cBin: 6 nT: 224
+307000 / 338000 pthat: 378.46 cBin: 18 nT: 215
+308000 / 338000 pthat: 412.568 cBin: 27 nT: 164
+309000 / 338000 pthat: 379.618 cBin: 33 nT: 214
+310000 / 338000 pthat: 489.683 cBin: 75 nT: 67
+311000 / 338000 pthat: 554.838 cBin: 2 nT: 165
+312000 / 338000 pthat: 442.703 cBin: 60 nT: 165
+313000 / 338000 pthat: 376.156 cBin: 19 nT: 122
+314000 / 338000 pthat: 396.999 cBin: 46 nT: 124
+315000 / 338000 pthat: 405.887 cBin: 42 nT: 194
+316000 / 338000 pthat: 391.448 cBin: 25 nT: 210
+317000 / 338000 pthat: 515.127 cBin: 7 nT: 168
+318000 / 338000 pthat: 466.264 cBin: 30 nT: 147
+319000 / 338000 pthat: 385.621 cBin: 42 nT: 165
+320000 / 338000 pthat: 380.77 cBin: 25 nT: 206
+321000 / 338000 pthat: 372.082 cBin: 59 nT: 113
+322000 / 338000 pthat: 402.261 cBin: 67 nT: 109
+323000 / 338000 pthat: 396.933 cBin: 30 nT: 279
+324000 / 338000 pthat: 467.151 cBin: 15 nT: 188
+325000 / 338000 pthat: 389.543 cBin: 31 nT: 284
+326000 / 338000 pthat: 404.07 cBin: 26 nT: 217
+327000 / 338000 pthat: 392.618 cBin: 19 nT: 170
+328000 / 338000 pthat: 415.844 cBin: 53 nT: 142
+329000 / 338000 pthat: 442.046 cBin: 78 nT: 71
+330000 / 338000 pthat: 450.845 cBin: 43 nT: 121
+331000 / 338000 pthat: 432.736 cBin: 65 nT: 289
+332000 / 338000 pthat: 395.394 cBin: 42 nT: 118
+333000 / 338000 pthat: 456.477 cBin: 26 nT: 157
+334000 / 338000 pthat: 413.387 cBin: 46 nT: 117
+335000 / 338000 pthat: 469.266 cBin: 20 nT: 145
+336000 / 338000 pthat: 493.988 cBin: 17 nT: 159
+337000 / 338000 pthat: 425.816 cBin: 12 nT: 170
+00 pthat: 350.782 cBin: 29 nT: 150
+339000 / 352000 pthat: 253.703 cBin: 12 nT: 289
+340000 / 352000 pthat: 267.789 cBin: 26 nT: 246
+341000 / 352000 pthat: 230.36 cBin: 54 nT: 140
+342000 / 352000 pthat: 286.708 cBin: 38 nT: 193
+343000 / 352000 pthat: 249.818 cBin: 73 nT: 162
+344000 / 352000 pthat: 236.252 cBin: 25 nT: 171
+345000 / 352000 pthat: 220.94 cBin: 41 nT: 160
+346000 / 352000 pthat: 233.519 cBin: 71 nT: 95
+347000 / 352000 pthat: 226.861 cBin: 58 nT: 166
+348000 / 352000 pthat: 221.151 cBin: 12 nT: 283
+349000 / 352000 pthat: 289.37 cBin: 19 nT: 147
+350000 / 352000 pthat: 311.671 cBin: 14 nT: 273
+351000 / 352000 pthat: 238.206 cBin: 51 nT: 116
+T: 35
+353000 / 358000 pthat: 81.5531 cBin: 23 nT: 339
+354000 / 358000 pthat: 82.5578 cBin: 51 nT: 68
+355000 / 358000 pthat: 98.5616 cBin: 11 nT: 184
+356000 / 358000 pthat: 93.0501 cBin: 24 nT: 208
+357000 / 358000 pthat: 114.484 cBin: 40 nT: 163
+00 pthat: 180.51 cBin: 45 nT: 235
+358000 / 360800 pthat: 191.963 cBin: 22 nT: 160
+359000 / 360800 pthat: 192.492 cBin: 8 nT: 171
+360000 / 360800 pthat: 194.478 cBin: 54 nT: 214
+2000 / 362400 pthat: 61.2456 cBin: 44 nT: 132

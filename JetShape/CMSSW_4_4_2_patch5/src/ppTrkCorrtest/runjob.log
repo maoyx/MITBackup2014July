@@ -1,0 +1,284 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version  5.27/06b   5 November 2010   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.27/06b (branches/v5-27-06-patches@36515, Nov 05 2010, 15:46:56 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+0
+start working
+HltTree: 1269719 entries loaded.
+SkimTree: 1269719 entries loaded.
+EvtTree: 1269719 entries loaded.
+AkPu3jetTree: 1269719 entries loaded.
+Ak3jetTree: 1269719 entries loaded.
+AkPu4jetTree: 1269719 entries loaded.
+AkPu3CaloJetTree: 1269719 entries loaded.
+AkPu4CaloJetTree: 1269719 entries loaded.
+TrackTree: 1269719 entries loaded.
+PhotonTree: 1269719 entries loaded.
+PFTree: 1269719 entries loaded.
+MetTree: 1269719 entries loaded.
+==============================================
+ correction set: Forest2STApp module: Forest2_MergedGeneral_jetfine
+ Setup - smoothLevel: 0 ppMode: 1 trkPhiMode: 0         weight samples: 1
+==============================================
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj50_ak3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj80_ak3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj120_ak3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj170_ak3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj220_ak3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec_pp/TrkCorrtest_pp_Sigdj280_ak3PF_100_-1_-1000_genJetMode0.root
+
+Pt 49 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 120 150 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+JEt 8 bins:0 40 80 100 120 160 200 250 500 
+Levels: 4 Samples: 6 cbins: 1
+Load Eff Histograms for ptHatMin 50
+ 80
+ 120
+ 170
+ 220
+ 280
+
+Load Fak Histograms for ptHatMin 50
+ 80
+ 120
+ 170
+ 220
+ 280
+
+Load Mul Histograms for ptHatMin 50
+ 80
+ 120
+ 170
+ 220
+ 280
+
+Load Sec Histograms for ptHatMin 50
+ 80
+ 120
+ 170
+ 220
+ 280
+
+ number of events in ptHat :50, centrality : 0to100  = 126877
+ number of events in ptHat :80, centrality : 0to100  = 114695
+ number of events in ptHat :120, centrality : 0to100  = 118048
+ number of events in ptHat :170, centrality : 0to100  = 124020
+ number of events in ptHat :220, centrality : 0to100  = 131147
+ number of events in ptHat :280, centrality : 0to100  = 128609
+sample pthat: 50, cross section: 926350
+sample pthat: 80, cross section: 87360
+sample pthat: 120, cross section: 9825
+sample pthat: 170, cross section: 1181.3
+
+
+ Error no such pt hat!!!!!
+
+
+sample pthat: 220, cross section: 230.47
+
+
+ Error no such pt hat!!!!!
+
+
+sample pthat: 280, cross section: 53.23
+Input file/mnt/hadoop/cms/store/user/maoyx/hiForest/PP2013_HiForest_PromptReco_JsonPP_Jet80_PPReco_forestv82.root
+Number of events =1269719
+ coll = PP weight = 1 evt = 1
+ coll = PP weight = 1 evt = 10001
+ warning eff=0 for pt eta jet cent: 45.0499 2.04021 93.1731 82
+ coll = PP weight = 1 evt = 20001
+ coll = PP weight = 1 evt = 30001
+ coll = PP weight = 1 evt = 40001
+ warning eff=0 for pt eta jet cent: 56.8963 2.02678 98.9325 51
+ warning eff=0 for pt eta jet cent: 56.8963 2.02678 98.9325 51
+ warning eff=0 for pt eta jet cent: 56.8963 2.02678 98.9325 51
+ coll = PP weight = 1 evt = 50001
+ coll = PP weight = 1 evt = 60001
+ coll = PP weight = 1 evt = 70001
+ coll = PP weight = 1 evt = 80001
+ coll = PP weight = 1 evt = 90001
+ coll = PP weight = 1 evt = 100001
+ coll = PP weight = 1 evt = 110001
+ warning eff=0 for pt eta jet cent: 45.605 2.03847 94.3997 73
+ warning eff=0 for pt eta jet cent: 45.605 2.03847 94.3997 73
+ warning eff=0 for pt eta jet cent: 45.605 2.03847 94.3997 73
+ warning eff=0 for pt eta jet cent: 45.605 2.03847 94.3997 73
+ warning eff=0 for pt eta jet cent: 57.749 2.01875 91.5963 63
+ warning eff=0 for pt eta jet cent: 57.749 2.01875 91.5963 63
+ coll = PP weight = 1 evt = 130001
+ coll = PP weight = 1 evt = 140001
+ coll = PP weight = 1 evt = 150001
+ coll = PP weight = 1 evt = 160001
+ coll = PP weight = 1 evt = 170001
+ warning eff=0 for pt eta jet cent: 50.0098 2.02678 95.3697 66
+ warning eff=0 for pt eta jet cent: 50.0098 2.02678 95.3697 66
+ warning eff=0 for pt eta jet cent: 50.0098 2.02678 95.3697 66
+ warning eff=0 for pt eta jet cent: 50.0098 2.02678 95.3697 66
+ warning eff=0 for pt eta jet cent: 50.0098 2.02678 95.3697 66
+ coll = PP weight = 1 evt = 180001
+ coll = PP weight = 1 evt = 190001
+ coll = PP weight = 1 evt = 200001
+ coll = PP weight = 1 evt = 220001
+ coll = PP weight = 1 evt = 230001
+ coll = PP weight = 1 evt = 240001
+ coll = PP weight = 1 evt = 250001
+ coll = PP weight = 1 evt = 260001
+ coll = PP weight = 1 evt = 270001
+ coll = PP weight = 1 evt = 280001
+ coll = PP weight = 1 evt = 290001
+ coll = PP weight = 1 evt = 300001
+ warning eff=0 for pt eta jet cent: 82.8252 -1.7555 94.8404 61
+ coll = PP weight = 1 evt = 310001
+ warning eff=0 for pt eta jet cent: 52.1162 2.02433 97.33 54
+ coll = PP weight = 1 evt = 320001
+ coll = PP weight = 1 evt = 330001
+ coll = PP weight = 1 evt = 340001
+ coll = PP weight = 1 evt = 350001
+ coll = PP weight = 1 evt = 360001
+ warning eff=0 for pt eta jet cent: 46.0653 2.02135 91.634 50
+ warning eff=0 for pt eta jet cent: 53.5197 2.03073 97.9826 69
+ warning eff=0 for pt eta jet cent: 53.5197 2.03073 97.9826 69
+ coll = PP weight = 1 evt = 370001
+ warning eff=0 for pt eta jet cent: 81.8694 -1.65849 96.4601 68
+ coll = PP weight = 1 evt = 380001
+ coll = PP weight = 1 evt = 390001
+ coll = PP weight = 1 evt = 400001
+ coll = PP weight = 1 evt = 410001
+ warning eff=0 for pt eta jet cent: 80.482 -1.90797 98.217 80
+ warning eff=0 for pt eta jet cent: 80.482 -1.90797 98.217 80
+ warning eff=0 for pt eta jet cent: 80.482 -1.90797 98.217 80
+ coll = PP weight = 1 evt = 430001
+ warning eff=0 for pt eta jet cent: 94.4624 -2.02505 113.999 72
+ warning eff=0 for pt eta jet cent: 94.4624 -2.02505 113.999 72
+ warning eff=0 for pt eta jet cent: 94.4624 -2.02505 113.999 72
+ coll = PP weight = 1 evt = 440001
+ coll = PP weight = 1 evt = 450001
+ coll = PP weight = 1 evt = 470001
+ coll = PP weight = 1 evt = 480001
+ coll = PP weight = 1 evt = 490001
+ warning eff=0 for pt eta jet cent: 67.9907 2.00849 72.0962 86
+ coll = PP weight = 1 evt = 500001
+ coll = PP weight = 1 evt = 510001
+ coll = PP weight = 1 evt = 530001
+ warning eff=0 for pt eta jet cent: 82.3353 -1.95638 87.1139 64
+ warning eff=0 for pt eta jet cent: 82.3353 -1.95638 87.1139 64
+ coll = PP weight = 1 evt = 540001
+ coll = PP weight = 1 evt = 550001
+ coll = PP weight = 1 evt = 560001
+ coll = PP weight = 1 evt = 570001
+ warning eff=0 for pt eta jet cent: 86.1148 -1.62402 94.7913 73
+ coll = PP weight = 1 evt = 580001
+ warning eff=0 for pt eta jet cent: 84.7016 -1.8338 98.0606 79
+ warning eff=0 for pt eta jet cent: 84.7016 -1.8338 98.0606 79
+ coll = PP weight = 1 evt = 590001
+ coll = PP weight = 1 evt = 600001
+ coll = PP weight = 1 evt = 610001
+ coll = PP weight = 1 evt = 620001
+ coll = PP weight = 1 evt = 630001
+ coll = PP weight = 1 evt = 640001
+ warning eff=0 for pt eta jet cent: 45.1515 2.01375 96.3676 69
+ coll = PP weight = 1 evt = 650001
+ coll = PP weight = 1 evt = 660001
+ coll = PP weight = 1 evt = 670001
+ coll = PP weight = 1 evt = 680001
+ coll = PP weight = 1 evt = 690001
+ coll = PP weight = 1 evt = 700001
+ coll = PP weight = 1 evt = 710001
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 82.7839 -2.02893 116.439 64
+ warning eff=0 for pt eta jet cent: 56.4131 2.01485 96.3791 52
+ warning eff=0 for pt eta jet cent: 56.4131 2.01485 96.3791 52
+ warning eff=0 for pt eta jet cent: 56.4131 2.01485 96.3791 52
+ coll = PP weight = 1 evt = 750001
+ warning eff=0 for pt eta jet cent: 81.6843 2.01001 95.8305 60
+ warning eff=0 for pt eta jet cent: 81.6843 2.01001 95.8305 60
+ coll = PP weight = 1 evt = 760001
+ coll = PP weight = 1 evt = 770001
+ coll = PP weight = 1 evt = 780001
+ warning eff=0 for pt eta jet cent: 81.1858 -1.86554 92.2207 71
+ warning eff=0 for pt eta jet cent: 81.1858 -1.86554 92.2207 71
+ warning eff=0 for pt eta jet cent: 80.2244 -1.8592 93.4418 92
+ warning eff=0 for pt eta jet cent: 80.2244 -1.8592 93.4418 92
+ coll = PP weight = 1 evt = 800001
+ coll = PP weight = 1 evt = 810001
+ coll = PP weight = 1 evt = 820001
+ coll = PP weight = 1 evt = 830001
+ coll = PP weight = 1 evt = 840001
+ coll = PP weight = 1 evt = 850001
+ coll = PP weight = 1 evt = 860001
+ coll = PP weight = 1 evt = 870001
+ coll = PP weight = 1 evt = 880001
+ warning eff=0 for pt eta jet cent: 82.1511 2.02782 92.7911 58
+ warning eff=0 for pt eta jet cent: 82.1511 2.02782 92.7911 58
+ warning eff=0 for pt eta jet cent: 82.1511 2.02782 92.7911 58
+ warning eff=0 for pt eta jet cent: 82.1511 2.02782 92.7911 58
+ warning eff=0 for pt eta jet cent: 82.1511 2.02782 92.7911 58
+ coll = PP weight = 1 evt = 900001
+ coll = PP weight = 1 evt = 910001
+ warning eff=0 for pt eta jet cent: 45.0254 2.00589 81.5923 60
+ coll = PP weight = 1 evt = 920001
+ warning eff=0 for pt eta jet cent: 81.0154 -1.87758 84.7672 79
+ coll = PP weight = 1 evt = 940001
+ warning eff=0 for pt eta jet cent: 80.86 -1.67472 99.5461 79
+ warning eff=0 for pt eta jet cent: 80.86 -1.67472 99.5461 79
+ warning eff=0 for pt eta jet cent: 80.86 -1.67472 99.5461 79
+ warning eff=0 for pt eta jet cent: 80.86 -1.67472 99.5461 79
+ warning eff=0 for pt eta jet cent: 80.86 -1.67472 99.5461 79
+ warning eff=0 for pt eta jet cent: 88.7448 -2.03702 111.036 83
+ warning eff=0 for pt eta jet cent: 88.7448 -2.03702 111.036 83
+ warning eff=0 for pt eta jet cent: 88.7448 -2.03702 111.036 83
+ warning eff=0 for pt eta jet cent: 88.7448 -2.03702 111.036 83
+ coll = PP weight = 1 evt = 970001
+ coll = PP weight = 1 evt = 980001
+ warning eff=0 for pt eta jet cent: 54.0406 2.00495 99.5622 66
+ coll = PP weight = 1 evt = 1010001
+ coll = PP weight = 1 evt = 1040001
+ coll = PP weight = 1 evt = 1050001
+ coll = PP weight = 1 evt = 1060001
+ coll = PP weight = 1 evt = 1070001
+ coll = PP weight = 1 evt = 1080001
+ warning eff=0 for pt eta jet cent: 46.1778 2.00372 99.2417 72
+ warning eff=0 for pt eta jet cent: 46.1778 2.00372 99.2417 72
+ coll = PP weight = 1 evt = 1090001
+ warning eff=0 for pt eta jet cent: 48.6593 2.01462 88.7379 60
+ warning eff=0 for pt eta jet cent: 48.6593 2.01462 88.7379 60
+ warning eff=0 for pt eta jet cent: 48.6593 2.01462 88.7379 60
+ warning eff=0 for pt eta jet cent: 48.6593 2.01462 88.7379 60
+ coll = PP weight = 1 evt = 1110001
+ warning eff=0 for pt eta jet cent: 48.1333 2.01573 93.9174 67
+ coll = PP weight = 1 evt = 1120001
+ coll = PP weight = 1 evt = 1130001
+ coll = PP weight = 1 evt = 1140001
+ coll = PP weight = 1 evt = 1150001
+ coll = PP weight = 1 evt = 1160001
+ coll = PP weight = 1 evt = 1170001
+ coll = PP weight = 1 evt = 1180001
+ coll = PP weight = 1 evt = 1190001
+ coll = PP weight = 1 evt = 1200001
+ coll = PP weight = 1 evt = 1210001
+ coll = PP weight = 1 evt = 1220001
+ coll = PP weight = 1 evt = 1230001
+ warning eff=0 for pt eta jet cent: 82.8182 -1.84174 95.2113 93
+ coll = PP weight = 1 evt = 1240001
+ coll = PP weight = 1 evt = 1250001
+ coll = PP weight = 1 evt = 1260001
+Output file: DATAPP_Ak3PFwtIncJetPt100_HistIterTrkCorrtest1EtaCut20Limit3_ERbkgJSNormJetCone3_CenBin4_Nrbin6_LJbin1trkbin3_PP2013_HiForest_PromptReco_JsonPP_Jet80_PPReco_forestv82.root
+working done

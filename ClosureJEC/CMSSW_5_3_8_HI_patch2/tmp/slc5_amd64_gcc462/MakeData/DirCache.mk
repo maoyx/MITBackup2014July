@@ -1,0 +1,10 @@
+ALL_SUBSYSTEMS+=$(patsubst src/%,%,src/HiForest_V3)
+subdirs_src_HiForest_V3 = src_HiForest_V3_generateSetupTree
+ALL_PACKAGES += $(patsubst src/%,%,src/HiForest_V3/generateSetupTree)
+subdirs_src_HiForest_V3_generateSetupTree := 
+ALL_SUBSYSTEMS+=$(patsubst src/%,%,src/JECPawan)
+subdirs_src_JECPawan = src_JECPawan_Output src_JECPawan_plotMacros
+ALL_PACKAGES += $(patsubst src/%,%,src/JECPawan/Output)
+subdirs_src_JECPawan_Output := 
+ALL_PACKAGES += $(patsubst src/%,%,src/JECPawan/plotMacros)
+subdirs_src_JECPawan_plotMacros := 

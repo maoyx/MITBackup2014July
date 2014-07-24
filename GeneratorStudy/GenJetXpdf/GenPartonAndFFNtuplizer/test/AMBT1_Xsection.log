@@ -1,0 +1,1063 @@
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=0', 'MSUB(11)=1', 'MSUB(12)=1', 'MSUB(13)=1', 'MSUB(28)=1', 'MSUB(53)=1', 'MSUB(68)=1', 'MSUB(92)=1', 'MSUB(93)=1', 'MSUB(94)=1', 'MSUB(95)=1', 'CKIN(3)=0', 'CKIN(4)=20']
+Min pT_hat cut enable
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   92   Single diffractive (XB)       I    6.6890D+00   I
+           I   93   Single diffractive (AX)       I    6.6890D+00   I
+           I   94   Double  diffractive           I    8.7778D+00   I
+           I   95   Low-pT scattering             I    4.5734D+01   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000        166846 I  6.786D+01 I
+ I  11 f + f' -> f + f' (QCD)       I          594             0 I  1.010D+01 I
+ I  12 f + fbar -> f' + fbar'       I            0             0 I  0.000D+00 I
+ I  13 f + fbar -> g + g            I            1             0 I  1.700D-02 I
+ I  28 f + g -> f + g               I          555             0 I  9.432D+00 I
+ I  53 g + g -> f + fbar            I           28             0 I  4.759D-01 I
+ I  68 g + g -> g + g               I         1513             0 I  2.571D+01 I
+ I  92 Single diffractive (XB)      I          379           379 I  6.689D+00 I
+ I  93 Single diffractive (AX)      I          420           420 I  6.689D+00 I
+ I  94 Double  diffractive          I          510           512 I  8.743D+00 I
+ I  95 Low-pT scattering            I            0          2691 I  0.000D+00 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           0 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=20', 'CKIN(4)=30']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    3.1374D-02   I
+           I   12   f + fbar -> f' + fbar'        I    4.2000D-04   I
+           I   13   f + fbar -> g + g             I    3.2396D-04   I
+           I   28   f + g -> f + g                I    2.5548D-01   I
+           I   53   g + g -> f + fbar             I    1.4068D-02   I
+           I   68   g + g -> g + g                I    4.0303D-01   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      390 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      647 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1681 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1908 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1909 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2955 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3654 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         15378 I  1.858D-01 I
+ I  11 f + f' -> f + f' (QCD)       I          179           715 I  7.222D-03 I
+ I  12 f + fbar -> f' + fbar'       I            3            10 I  1.042D-04 I
+ I  13 f + fbar -> g + g            I            1             5 I  4.587D-05 I
+ I  28 f + g -> f + g               I         1430          5627 I  6.569D-02 I
+ I  53 g + g -> f + fbar            I           84           324 I  3.487D-03 I
+ I  68 g + g -> g + g               I         2303          8697 I  1.092D-01 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           7 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=30', 'CKIN(4)=50']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    8.7321D-03   I
+           I   12   f + fbar -> f' + fbar'        I    1.0913D-04   I
+           I   13   f + fbar -> g + g             I    8.9981D-05   I
+           I   28   f + g -> f + g                I    6.2195D-02   I
+           I   53   g + g -> f + fbar             I    2.6266D-03   I
+           I   68   g + g -> g + g                I    8.4863D-02   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+ Advisory warning: maximum violated by  1.025D+00 in event     860
+ XSEC(28,1) increased to  6.377D-02
+
+     Advisory warning type 9 given after     1041 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1041 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+ Advisory warning: maximum violated by  1.009D+00 in event    1323
+ XSEC(28,1) increased to  6.437D-02
+
+ Advisory warning: maximum violated by  1.026D+00 in event    1465
+ XSEC(28,1) increased to  6.603D-02
+
+     Advisory warning type 9 given after     2028 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2649 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3355 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3606 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         15869 I  4.044D-02 I
+ I  11 f + f' -> f + f' (QCD)       I          195           875 I  2.021D-03 I
+ I  12 f + fbar -> f' + fbar'       I            4            11 I  3.148D-05 I
+ I  13 f + fbar -> g + g            I            0             3 I  2.099D-05 I
+ I  28 f + g -> f + g               I         1582          6431 I  1.577D-02 I
+ I  53 g + g -> f + fbar            I           83           280 I  7.937D-04 I
+ I  68 g + g -> g + g               I         2136          8269 I  2.181D-02 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           6 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=50', 'CKIN(4)=80']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    1.3714D-03   I
+           I   12   f + fbar -> f' + fbar'        I    1.8192D-05   I
+           I   13   f + fbar -> g + g             I    1.4754D-05   I
+           I   28   f + g -> f + g                I    8.8428D-03   I
+           I   53   g + g -> f + fbar             I    2.8009D-04   I
+           I   68   g + g -> g + g                I    8.3532D-03   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Error type 9 has occured after      530 PYEXEC calls:
+     (PYPTIS:) Weight   1.6716E+00 above unity
+
+     Error type 9 has occured after     3191 PYEXEC calls:
+     (PYPTIS:) Weight   1.1768E+00 above unity
+
+     Advisory warning type 9 given after     3743 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         16788 I  4.498D-03 I
+ I  11 f + f' -> f + f' (QCD)       I          242          1179 I  2.898D-04 I
+ I  12 f + fbar -> f' + fbar'       I            8            22 I  5.461D-06 I
+ I  13 f + fbar -> g + g            I            5             8 I  4.636D-06 I
+ I  28 f + g -> f + g               I         1739          7887 I  1.949D-03 I
+ I  53 g + g -> f + fbar            I           79           296 I  8.641D-05 I
+ I  68 g + g -> g + g               I         1927          7396 I  2.162D-03 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        2 *************
+ ********* Total number of warnings =                           1 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=80', 'CKIN(4)=120']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    1.7030D-04   I
+           I   12   f + fbar -> f' + fbar'        I    3.2354D-06   I
+           I   13   f + fbar -> g + g             I    2.4758D-06   I
+           I   28   f + g -> f + g                I    1.1240D-03   I
+           I   53   g + g -> f + fbar             I    3.2486D-05   I
+           I   68   g + g -> g + g                I    9.1744D-04   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Error type 9 has occured after     1529 PYEXEC calls:
+     (PYPTIS:) Weight   1.0623E+00 above unity
+
+ Advisory warning: maximum violated by  1.083D+00 in event    1795
+ XSEC(11,1) increased to  1.844D-04
+
+     Advisory warning type 9 given after     2107 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2460 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2803 PYEXEC calls:
+     (PYPTIS:) Weight   1.2259E+00 above unity
+
+     Advisory warning type 9 given after     3135 PYEXEC calls:
+     (PYPTIS:) Weight   1.3376E+00 above unity
+
+     Advisory warning type 9 given after     3558 PYEXEC calls:
+     (PYPTIS:) Weight   1.0939E+00 above unity
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         16915 I  5.211D-04 I
+ I  11 f + f' -> f + f' (QCD)       I          382          1325 I  4.874D-05 I
+ I  12 f + fbar -> f' + fbar'       I           12            24 I  1.167D-06 I
+ I  13 f + fbar -> g + g            I            6            23 I  7.101D-07 I
+ I  28 f + g -> f + g               I         1984          8477 I  2.537D-04 I
+ I  53 g + g -> f + fbar            I           66           270 I  7.594D-06 I
+ I  68 g + g -> g + g               I         1550          6796 I  2.092D-04 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        1 *************
+ ********* Total number of warnings =                           5 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=120', 'CKIN(4)=170']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    3.6532D-05   I
+           I   12   f + fbar -> f' + fbar'        I    6.6603D-07   I
+           I   13   f + fbar -> g + g             I    4.4290D-07   I
+           I   28   f + g -> f + g                I    1.6902D-04   I
+           I   53   g + g -> f + fbar             I    4.4881D-06   I
+           I   68   g + g -> g + g                I    1.1692D-04   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      100 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      234 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after      711 PYEXEC calls:
+     (PYPTIS:) Weight   1.1120E+00 above unity
+
+     Advisory warning type 9 given after      800 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1132 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2981 PYEXEC calls:
+     (PYPTIS:) Weight   1.1168E+00 above unity
+
+     Advisory warning type 9 given after     3141 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 4 has occured after     3482 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 2 has occured after     3482 PYEXEC calls:
+     (PYSTRF:) unphysical flavour combination
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         19012 I  6.874D-05 I
+ I  11 f + f' -> f + f' (QCD)       I          472          2068 I  8.551D-06 I
+ I  12 f + fbar -> f' + fbar'       I            8            48 I  1.656D-07 I
+ I  13 f + fbar -> g + g            I            9            25 I  1.583D-07 I
+ I  28 f + g -> f + g               I         2084          9822 I  3.612D-05 I
+ I  53 g + g -> f + fbar            I           58           251 I  9.345D-07 I
+ I  68 g + g -> g + g               I         1369          6798 I  2.281D-05 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        3 *************
+ ********* Total number of warnings =                           6 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=170', 'CKIN(4)=230']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    1.1163D-05   I
+           I   12   f + fbar -> f' + fbar'        I    1.4408D-07   I
+           I   13   f + fbar -> g + g             I    1.2926D-07   I
+           I   28   f + g -> f + g                I    3.0855D-05   I
+           I   53   g + g -> f + fbar             I    7.7766D-07   I
+           I   68   g + g -> g + g                I    1.7214D-05   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      148 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      161 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1235 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2204 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2927 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3383 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     3961 PYEXEC calls:
+     (PYPTIS:) Weight   1.6548E+00 above unity
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         22478 I  1.085D-05 I
+ I  11 f + f' -> f + f' (QCD)       I          661          4070 I  1.759D-06 I
+ I  12 f + fbar -> f' + fbar'       I            9            54 I  3.397D-08 I
+ I  13 f + fbar -> g + g            I           14            51 I  3.481D-08 I
+ I  28 f + g -> f + g               I         2156         11561 I  5.959D-06 I
+ I  53 g + g -> f + fbar            I           42           263 I  1.266D-07 I
+ I  68 g + g -> g + g               I         1118          6479 I  2.938D-06 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        1 *************
+ ********* Total number of warnings =                           6 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=230', 'CKIN(4)=300']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    2.8297D-06   I
+           I   12   f + fbar -> f' + fbar'        I    3.6799D-08   I
+           I   13   f + fbar -> g + g             I    3.1828D-08   I
+           I   28   f + g -> f + g                I    5.8960D-06   I
+           I   53   g + g -> f + fbar             I    1.2383D-07   I
+           I   68   g + g -> g + g                I    2.9008D-06   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Error type 9 has occured after      131 PYEXEC calls:
+     (PYPTIS:) Weight   1.6074E+00 above unity
+
+     Advisory warning type 9 given after      386 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1058 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     1965 PYEXEC calls:
+     (PYPTIS:) Weight   1.1359E+00 above unity
+
+     Error type 9 has occured after     2357 PYEXEC calls:
+     (PYPTIS:) Weight   1.6881E+00 above unity
+
+     Advisory warning type 9 given after     3028 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3074 PYEXEC calls:
+     (PYPTIS:) Weight   1.4639E+00 above unity
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         24277 I  1.939D-06 I
+ I  11 f + f' -> f + f' (QCD)       I          827          5752 I  4.193D-07 I
+ I  12 f + fbar -> f' + fbar'       I           22            81 I  8.762D-09 I
+ I  13 f + fbar -> g + g            I           16            65 I  7.743D-09 I
+ I  28 f + g -> f + g               I         2302         12092 I  1.083D-06 I
+ I  53 g + g -> f + fbar            I           32           226 I  1.708D-08 I
+ I  68 g + g -> g + g               I          801          6061 I  4.023D-07 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        3 *************
+ ********* Total number of warnings =                           4 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=300', 'CKIN(4)=380']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    7.5257D-07   I
+           I   12   f + fbar -> f' + fbar'        I    1.0445D-08   I
+           I   13   f + fbar -> g + g             I    6.3113D-09   I
+           I   28   f + g -> f + g                I    8.4820D-07   I
+           I   53   g + g -> f + fbar             I    2.0560D-08   I
+           I   68   g + g -> g + g                I    4.6063D-07   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+ Advisory warning: maximum violated by  1.067D+00 in event      29
+ XSEC(28,1) increased to  9.051D-07
+
+ Advisory warning: maximum violated by  1.017D+00 in event      50
+ XSEC(28,1) increased to  9.204D-07
+
+ Advisory warning: maximum violated by  1.005D+00 in event     189
+ XSEC(28,1) increased to  9.249D-07
+
+ Advisory warning: maximum violated by  1.151D+00 in event     190
+ XSEC(28,1) increased to  1.064D-06
+
+ Advisory warning: maximum violated by  1.057D+00 in event     312
+ XSEC(28,1) increased to  1.125D-06
+
+ Advisory warning: maximum violated by  1.000D+00 in event     593
+ XSEC(28,1) increased to  1.125D-06
+
+ Advisory warning: maximum violated by  1.032D+00 in event     951
+ XSEC(28,1) increased to  1.161D-06
+
+ Advisory warning: maximum violated by  1.020D+00 in event    1271
+ XSEC(28,1) increased to  1.184D-06
+
+ Advisory warning: maximum violated by  1.005D+00 in event    1581
+ XSEC(28,1) increased to  1.189D-06
+
+     Error type 9 has occured after     1659 PYEXEC calls:
+     (PYPTIS:) Weight   1.6746E+00 above unity
+
+     Error type 4 has occured after     1841 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 2 has occured after     1841 PYEXEC calls:
+     (PYSTRF:) unphysical flavour combination
+
+ Advisory warning: maximum violated by  1.193D+00 in event    3289
+ XSEC(13,1) increased to  7.526D-09
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         25405 I  3.896D-07 I
+ I  11 f + f' -> f + f' (QCD)       I         1066          7899 I  1.060D-07 I
+ I  12 f + fbar -> f' + fbar'       I           21           106 I  2.339D-09 I
+ I  13 f + fbar -> g + g            I           23            68 I  1.627D-09 I
+ I  28 f + g -> f + g               I         2228         12266 I  2.157D-07 I
+ I  53 g + g -> f + fbar            I           34           232 I  2.994D-09 I
+ I  68 g + g -> g + g               I          628          4834 I  6.090D-08 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        3 *************
+ ********* Total number of warnings =                           0 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=380']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ MRST fit: arXiv:0711.2473v2 - LOmod                             
+ Parton Distributions for LO Generators                          
+ A. Sherstnev and R. Thorne.                                     
+ This set has 1 member PDFs.                                     
+ >>>>>>                   <<<<<<
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12040
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    2.6724D-07   I
+           I   12   f + fbar -> f' + fbar'        I    3.0968D-09   I
+           I   13   f + fbar -> g + g             I    2.5291D-09   I
+           I   28   f + g -> f + g                I    3.3611D-07   I
+           I   53   g + g -> f + fbar             I    3.4282D-09   I
+           I   68   g + g -> g + g                I    7.2014D-08   I
+           I   96   Semihard QCD 2 -> 2           I    6.8212D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 3.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.96 GeV gives sigma(parton-parton) = 1.32D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      206 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 9 has occured after      599 PYEXEC calls:
+     (PYPTIS:) Weight   1.0204E+00 above unity
+
+     Advisory warning type 9 given after     1184 PYEXEC calls:
+     (PYPTIS:) Weight   1.3554E+00 above unity
+
+     Advisory warning type 9 given after     1298 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1497 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     1632 PYEXEC calls:
+     (PYPTIS:) Weight   1.0174E+00 above unity
+
+     Advisory warning type 9 given after     2735 PYEXEC calls:
+     (PYPTIS:) Weight   1.0731E+00 above unity
+
+     Advisory warning type 9 given after     3627 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         24270 I  1.101D-07 I
+ I  11 f + f' -> f + f' (QCD)       I         1441          9542 I  3.931D-08 I
+ I  12 f + fbar -> f' + fbar'       I           26           100 I  7.938D-10 I
+ I  13 f + fbar -> g + g            I           17            70 I  5.654D-10 I
+ I  28 f + g -> f + g               I         2114         11891 I  5.802D-08 I
+ I  53 g + g -> f + fbar            I           18           125 I  4.975D-10 I
+ I  68 g + g -> g + g               I          384          2542 I  1.092D-08 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        2 *************
+ ********* Total number of warnings =                           6 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+

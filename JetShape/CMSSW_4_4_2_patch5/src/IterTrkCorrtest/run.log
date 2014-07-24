@@ -1,0 +1,52 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version  5.27/06b   5 November 2010   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.27/06b (branches/v5-27-06-patches@36515, Nov 05 2010, 15:46:56 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+pthat = 300  pthatmax =999
+start working
+HltTree: 18189 entries loaded.
+SkimTree: 18189 entries loaded.
+EvtTree: 18189 entries loaded.
+IcPu5jetTree: 18189 entries loaded.
+AkPu2jetTree: 18189 entries loaded.
+AkPu3jetTree: 18189 entries loaded.
+Ak3jetTree: 18189 entries loaded.
+AkPu4jetTree: 18189 entries loaded.
+AkPu2CaloJetTree: 18189 entries loaded.
+AkPu3CaloJetTree: 18189 entries loaded.
+AkPu4CaloJetTree: 18189 entries loaded.
+TrackTree: 18189 entries loaded.
+PhotonTree: 18189 entries loaded.
+PFTree: 18189 entries loaded.
+MetTree: 18189 entries loaded.
+TowerTree: 18189 entries loaded.
+HbheTree: 18189 entries loaded.
+EbTree: 18189 entries loaded.
+GenpTree: 18189 entries loaded.
+GenParticleTree: 18189 entries loaded.
+Input file/net/hisrv0001/home/zhukova/scratch/HIHighPt/forest/pthat300/mergedFile.root
+GenPart0
+Number of events =18189
+ coll = PP evt = 1
+ coll = PP evt = 10001
+Output file: MCPP_RefJetPt100_GenTrk1EtaCut20LOutput file: MCPP_RefJetPt100_GenTrk1EtaCut20Limit3_ERbkgJSNormJetCone3_CenBin1_Nrbin6_LJbin1pthat200_mergedFile.root
+working done
+01
+ coll = PP evt = 90001
+ coll = PP evt = 100001
+ coll = PP evt = 110001
+ coll = PP evt = 120001
+Output file: MCPP_RefJetPt100_GenTrk1EtaCut20Limit3_ERbkgJSNormJetCone3_CenBin1_Nrbin6_LJbin1pthat80_mergedFile.root
+working done

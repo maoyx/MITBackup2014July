@@ -1,0 +1,204 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version  5.27/06b   5 November 2010   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.27/06b (branches/v5-27-06-patches@36515, Nov 05 2010, 15:46:56 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+0
+start working
+HltTree: 675076 entries loaded.
+SkimTree: 675076 entries loaded.
+EvtTree: 675076 entries loaded.
+IcPu5jetTree: 675076 entries loaded.
+AkPu2jetTree: 675076 entries loaded.
+AkPu3jetTree: 675076 entries loaded.
+Ak3jetTree: 675076 entries loaded.
+AkPu4jetTree: 675076 entries loaded.
+AkPu2CaloJetTree: 675076 entries loaded.
+AkPu3CaloJetTree: 675076 entries loaded.
+AkPu4CaloJetTree: 675076 entries loaded.
+TrackTree: 675076 entries loaded.
+PhotonTree: 675076 entries loaded.
+PFTree: 675076 entries loaded.
+==============================================
+ correction set: Forest2STAv14 module: Forest2_MergedGeneral_jetfine
+ Setup - smoothLevel: 0 ppMode: 0 trkPhiMode: 0         weight samples: 1
+==============================================
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj50_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj80_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj100_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj120_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj170_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj200_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj250_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_hy18dj300_akPu3PF_100_-1_-1000_genJetMode0.root
+
+Pt 46 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 7.5 10 12 15 20 25 30 45 60 90 120 180 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+JEt 8 bins:0 40 80 100 120 160 200 250 500 
+Levels: 4 Samples: 8 cbins: 4
+Load Eff Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Fak Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Mul Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Sec Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+ number of events in ptHat :50, centrality : 0to4  = 11574
+ number of events in ptHat :50, centrality : 4to12  = 22748
+ number of events in ptHat :50, centrality : 12to20  = 22527
+ number of events in ptHat :50, centrality : 20to40  = 54373
+ number of events in ptHat :80, centrality : 0to4  = 15726
+ number of events in ptHat :80, centrality : 4to12  = 30290
+ number of events in ptHat :80, centrality : 12to20  = 29090
+ number of events in ptHat :80, centrality : 20to40  = 70219
+ number of events in ptHat :100, centrality : 0to4  = 60345
+ number of events in ptHat :100, centrality : 4to12  = 120117
+ number of events in ptHat :100, centrality : 12to20  = 119618
+ number of events in ptHat :100, centrality : 20to40  = 290202
+ number of events in ptHat :120, centrality : 0to4  = 14755
+ number of events in ptHat :120, centrality : 4to12  = 29021
+ number of events in ptHat :120, centrality : 12to20  = 28406
+ number of events in ptHat :120, centrality : 20to40  = 68337
+ number of events in ptHat :170, centrality : 0to4  = 6442
+ number of events in ptHat :170, centrality : 4to12  = 12849
+ number of events in ptHat :170, centrality : 12to20  = 12655
+ number of events in ptHat :170, centrality : 20to40  = 30682
+ number of events in ptHat :200, centrality : 0to4  = 5475
+ number of events in ptHat :200, centrality : 4to12  = 11090
+ number of events in ptHat :200, centrality : 12to20  = 11145
+ number of events in ptHat :200, centrality : 20to40  = 26973
+ number of events in ptHat :250, centrality : 0to4  = 3826
+ number of events in ptHat :250, centrality : 4to12  = 7700
+ number of events in ptHat :250, centrality : 12to20  = 7571
+ number of events in ptHat :250, centrality : 20to40  = 18563
+ number of events in ptHat :300, centrality : 0to4  = 5529
+ number of events in ptHat :300, centrality : 4to12  = 10946
+ number of events in ptHat :300, centrality : 12to20  = 10554
+ number of events in ptHat :300, centrality : 20to40  = 25670
+sample pthat: 50, cross section: 921870
+sample pthat: 80, cross section: 68432
+sample pthat: 100, cross section: 29220
+sample pthat: 120, cross section: 9810
+sample pthat: 170, cross section: 939
+sample pthat: 200, cross section: 411.8
+sample pthat: 250, cross section: 87.44
+sample pthat: 300, cross section: 31.76
+Input file/net/hidsk0001/d00/scratch/yjlee/merge/pbpbDijet_v20/promptskim-hihighpt-hltjet80-pt90-v20.root
+Number of events =675076
+ coll = HI weight = 1 evt = 1
+ coll = HI weight = 1 evt = 10001
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+ coll = HI weight = 1 evt = 20001
+ coll = HI weight = 1 evt = 30001
+ coll = HI weight = 1 evt = 40001
+ coll = HI weight = 1 evt = 50001
+ coll = HI weight = 1 evt = 60001
+ coll = HI weight = 1 evt = 70001
+ coll = HI weight = 1 evt = 80001
+ coll = HI weight = 1 evt = 90001
+ coll = HI weight = 1 evt = 100001
+ coll = HI weight = 1 evt = 110001
+ coll = HI weight = 1 evt = 120001
+ warning eff=0 for pt eta jet cent: 144.909 1.40578 150.977 0
+ coll = HI weight = 1 evt = 140001
+ coll = HI weight = 1 evt = 160001
+ coll = HI weight = 1 evt = 170001
+ coll = HI weight = 1 evt = 180001
+ coll = HI weight = 1 evt = 190001
+ warning eff=0 for pt eta jet cent: 4.61863 2.00125 259.293 5
+ coll = HI weight = 1 evt = 200001
+ coll = HI weight = 1 evt = 210001
+ coll = HI weight = 1 evt = 220001
+ warning eff=0 for pt eta jet cent: 11.3552 -2.00701 204.62 6
+ coll = HI weight = 1 evt = 240001
+ coll = HI weight = 1 evt = 250001
+ warning eff=0 for pt eta jet cent: 17.9826 -2.00125 88.8527 0
+ coll = HI weight = 1 evt = 260001
+ coll = HI weight = 1 evt = 270001
+ coll = HI weight = 1 evt = 290001
+ coll = HI weight = 1 evt = 300001
+ coll = HI weight = 1 evt = 310001
+ coll = HI weight = 1 evt = 320001
+ coll = HI weight = 1 evt = 330001
+ coll = HI weight = 1 evt = 340001
+ coll = HI weight = 1 evt = 350001
+ coll = HI weight = 1 evt = 360001
+ coll = HI weight = 1 evt = 370001
+ coll = HI weight = 1 evt = 380001
+ coll = HI weight = 1 evt = 390001
+ coll = HI weight = 1 evt = 400001
+ coll = HI weight = 1 evt = 420001
+ coll = HI weight = 1 evt = 430001
+ coll = HI weight = 1 evt = 440001
+ warning eff=0 for pt eta jet cent: 62.4562 -1.51156 78.0245 2
+ coll = HI weight = 1 evt = 450001
+ coll = HI weight = 1 evt = 460001
+ coll = HI weight = 1 evt = 470001
+ coll = HI weight = 1 evt = 480001
+ coll = HI weight = 1 evt = 490001
+ coll = HI weight = 1 evt = 500001
+ coll = HI weight = 1 evt = 510001
+ warning eff=0 for pt eta jet cent: 152.823 -1.58058 156.749 14
+ warning eff=0 for pt eta jet cent: 1 0.323002 41.3985 8
+ coll = HI weight = 1 evt = 520001
+ warning eff=0 for pt eta jet cent: 123.91 0.868511 154.143 9
+ coll = HI weight = 1 evt = 530001
+ warning eff=0 for pt eta jet cent: 125.13 -1.37705 137.144 0
+ coll = HI weight = 1 evt = 540001
+ coll = HI weight = 1 evt = 550001
+ coll = HI weight = 1 evt = 560001
+ coll = HI weight = 1 evt = 570001
+ coll = HI weight = 1 evt = 580001
+ coll = HI weight = 1 evt = 590001
+ warning eff=0 for pt eta jet cent: 123.256 -1.32364 158.813 1
+ coll = HI weight = 1 evt = 610001
+ warning eff=0 for pt eta jet cent: 19.5472 -2.00238 86.843 0
+ coll = HI weight = 1 evt = 620001
+ warning eff=0 for pt eta jet cent: 122.766 -1.20923 126.83 2
+ coll = HI weight = 1 evt = 640001
+ coll = HI weight = 1 evt = 650001
+ coll = HI weight = 1 evt = 660001
+ coll = HI weight = 1 evt = 670001
+Output file: DATAHI_AkPu3PFLeadingJetPt100_HistIterTrkCorrtest1EtaCut20Limit3_ERbkgJSNormJetCone3_CenBin4_Nrbin6_LJbin1trkbin3_promptskim-hihighpt-hltjet80-pt90-v20.root
+working done

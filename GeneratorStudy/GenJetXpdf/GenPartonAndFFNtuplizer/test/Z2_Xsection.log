@@ -1,0 +1,1177 @@
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=0', 'MSUB(11)=1', 'MSUB(12)=1', 'MSUB(13)=1', 'MSUB(28)=1', 'MSUB(53)=1', 'MSUB(68)=1', 'MSUB(92)=1', 'MSUB(93)=1', 'MSUB(94)=1', 'MSUB(95)=1', 'CKIN(3)=0', 'CKIN(4)=20']
+Min pT_hat cut enable
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   92   Single diffractive (XB)       I    6.6890D+00   I
+           I   93   Single diffractive (AX)       I    6.6890D+00   I
+           I   94   Double  diffractive           I    8.7778D+00   I
+           I   95   Low-pT scattering             I    4.5734D+01   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      326 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     1388 PYEXEC calls:
+     (PYPTIS:) Weight   2.8040E+00 above unity
+
+     Advisory warning type 9 given after     1672 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3065 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000        144411 I  6.784D+01 I
+ I  11 f + f' -> f + f' (QCD)       I          589             0 I  9.896D+00 I
+ I  12 f + fbar -> f' + fbar'       I            0             0 I  0.000D+00 I
+ I  13 f + fbar -> g + g            I            1             0 I  1.680D-02 I
+ I  28 f + g -> f + g               I          618             0 I  1.038D+01 I
+ I  53 g + g -> f + fbar            I           41             0 I  6.889D-01 I
+ I  68 g + g -> g + g               I         1473             0 I  2.475D+01 I
+ I  92 Single diffractive (XB)      I          394           394 I  6.689D+00 I
+ I  93 Single diffractive (AX)      I          374           374 I  6.689D+00 I
+ I  94 Double  diffractive          I          510           513 I  8.726D+00 I
+ I  95 Low-pT scattering            I            0          2722 I  0.000D+00 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        1 *************
+ ********* Total number of warnings =                           3 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=20', 'CKIN(4)=30']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    2.8012D-02   I
+           I   12   f + fbar -> f' + fbar'        I    3.8334D-04   I
+           I   13   f + fbar -> g + g             I    2.9687D-04   I
+           I   28   f + g -> f + g                I    2.1121D-01   I
+           I   53   g + g -> f + fbar             I    9.7765D-03   I
+           I   68   g + g -> g + g                I    2.8041D-01   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after       55 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      330 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      608 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1341 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2285 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Advisory warning type 9 given after     2728 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2953 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2968 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3273 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3273 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         15586 I  1.392D-01 I
+ I  11 f + f' -> f + f' (QCD)       I          198           852 I  6.386D-03 I
+ I  12 f + fbar -> f' + fbar'       I            3            14 I  6.309D-05 I
+ I  13 f + fbar -> g + g            I            2             6 I  9.027D-05 I
+ I  28 f + g -> f + g               I         1566          6201 I  5.365D-02 I
+ I  53 g + g -> f + fbar            I           91           312 I  2.833D-03 I
+ I  68 g + g -> g + g               I         2140          8201 I  7.616D-02 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                          12 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=30', 'CKIN(4)=50']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    7.6751D-03   I
+           I   12   f + fbar -> f' + fbar'        I    9.8144D-05   I
+           I   13   f + fbar -> g + g             I    8.1246D-05   I
+           I   28   f + g -> f + g                I    5.1024D-02   I
+           I   53   g + g -> f + fbar             I    1.6833D-03   I
+           I   68   g + g -> g + g                I    5.7206D-02   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      380 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      466 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+ Advisory warning: maximum violated by  1.007D+00 in event    1422
+ XSEC(28,1) increased to  5.138D-02
+
+     Advisory warning type 9 given after     1992 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+ Advisory warning: maximum violated by  1.006D+00 in event    2268
+ XSEC(28,1) increased to  5.167D-02
+
+     Advisory warning type 9 given after     2316 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+ Advisory warning: maximum violated by  1.030D+00 in event    2503
+ XSEC(28,1) increased to  5.322D-02
+
+     Advisory warning type 9 given after     2529 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3114 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3285 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3853 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         16100 I  2.991D-02 I
+ I  11 f + f' -> f + f' (QCD)       I          189           992 I  1.690D-03 I
+ I  12 f + fbar -> f' + fbar'       I            5            16 I  3.584D-05 I
+ I  13 f + fbar -> g + g            I            4            12 I  2.256D-05 I
+ I  28 f + g -> f + g               I         1698          7092 I  1.246D-02 I
+ I  53 g + g -> f + fbar            I           74           232 I  5.999D-04 I
+ I  68 g + g -> g + g               I         2030          7756 I  1.511D-02 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           8 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=50', 'CKIN(4)=80']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    1.2144D-03   I
+           I   12   f + fbar -> f' + fbar'        I    1.6001D-05   I
+           I   13   f + fbar -> g + g             I    1.2974D-05   I
+           I   28   f + g -> f + g                I    7.2074D-03   I
+           I   53   g + g -> f + fbar             I    1.8527D-04   I
+           I   68   g + g -> g + g                I    5.4685D-03   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      327 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      363 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      417 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      442 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1361 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1693 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2092 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2259 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3078 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         17167 I  3.348D-03 I
+ I  11 f + f' -> f + f' (QCD)       I          304          1452 I  2.667D-04 I
+ I  12 f + fbar -> f' + fbar'       I            4            22 I  2.840D-06 I
+ I  13 f + fbar -> g + g            I            4            16 I  4.186D-06 I
+ I  28 f + g -> f + g               I         1883          8739 I  1.549D-03 I
+ I  53 g + g -> f + fbar            I           57           222 I  5.241D-05 I
+ I  68 g + g -> g + g               I         1748          6716 I  1.472D-03 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           9 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=80', 'CKIN(4)=120']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    1.7989D-04   I
+           I   12   f + fbar -> f' + fbar'        I    2.7763D-06   I
+           I   13   f + fbar -> g + g             I    2.1261D-06   I
+           I   28   f + g -> f + g                I    9.0581D-04   I
+           I   53   g + g -> f + fbar             I    2.0510D-05   I
+           I   68   g + g -> g + g                I    5.7049D-04   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      100 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      735 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1516 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1787 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1841 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2300 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2367 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2782 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3026 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     3072 PYEXEC calls:
+     (PYPTIS:) Weight   1.2871E+00 above unity
+
+     Advisory warning type 9 given after     3408 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         17936 I  3.810D-04 I
+ I  11 f + f' -> f + f' (QCD)       I          417          1940 I  3.908D-05 I
+ I  12 f + fbar -> f' + fbar'       I           10            42 I  7.764D-07 I
+ I  13 f + fbar -> g + g            I            6            18 I  6.786D-07 I
+ I  28 f + g -> f + g               I         2054          9664 I  1.934D-04 I
+ I  53 g + g -> f + fbar            I           57           201 I  5.674D-06 I
+ I  68 g + g -> g + g               I         1456          6071 I  1.413D-04 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        1 *************
+ ********* Total number of warnings =                          12 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=120', 'CKIN(4)=170']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    3.1326D-05   I
+           I   12   f + fbar -> f' + fbar'        I    5.5857D-07   I
+           I   13   f + fbar -> g + g             I    3.7245D-07   I
+           I   28   f + g -> f + g                I    1.3434D-04   I
+           I   53   g + g -> f + fbar             I    2.7691D-06   I
+           I   68   g + g -> g + g                I    7.1853D-05   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Error type 4 has occured after      135 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 2 has occured after      135 PYEXEC calls:
+     (PYSTRF:) unphysical flavour combination
+
+     Advisory warning type 9 given after      610 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1992 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2737 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3194 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3511 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         18464 I  5.205D-05 I
+ I  11 f + f' -> f + f' (QCD)       I          543          2414 I  7.189D-06 I
+ I  12 f + fbar -> f' + fbar'       I           10            39 I  1.418D-07 I
+ I  13 f + fbar -> g + g            I            8            28 I  9.770D-08 I
+ I  28 f + g -> f + g               I         2180         10305 I  2.817D-05 I
+ I  53 g + g -> f + fbar            I           46           203 I  6.406D-07 I
+ I  68 g + g -> g + g               I         1213          5475 I  1.580D-05 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        2 *************
+ ********* Total number of warnings =                           5 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=170', 'CKIN(4)=230']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    9.3599D-06   I
+           I   12   f + fbar -> f' + fbar'        I    1.1848D-07   I
+           I   13   f + fbar -> g + g             I    1.0632D-07   I
+           I   28   f + g -> f + g                I    2.4186D-05   I
+           I   53   g + g -> f + fbar             I    4.8210D-07   I
+           I   68   g + g -> g + g                I    1.1685D-05   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      240 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      266 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      389 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2153 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2485 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2660 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3488 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3634 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         22511 I  8.236D-06 I
+ I  11 f + f' -> f + f' (QCD)       I          698          4490 I  1.492D-06 I
+ I  12 f + fbar -> f' + fbar'       I           10            54 I  3.100D-08 I
+ I  13 f + fbar -> g + g            I           13            50 I  2.474D-08 I
+ I  28 f + g -> f + g               I         2257         11952 I  4.611D-06 I
+ I  53 g + g -> f + fbar            I           38           234 I  8.594D-08 I
+ I  68 g + g -> g + g               I          984          5731 I  1.992D-06 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           8 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=230', 'CKIN(4)=300']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    2.4346D-06   I
+           I   12   f + fbar -> f' + fbar'        I    2.9841D-08   I
+           I   13   f + fbar -> g + g             I    2.5832D-08   I
+           I   28   f + g -> f + g                I    4.5431D-06   I
+           I   53   g + g -> f + fbar             I    8.0272D-08   I
+           I   68   g + g -> g + g                I    1.8944D-06   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      429 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      749 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     1095 PYEXEC calls:
+     (PYPTIS:) Weight   1.2788E+00 above unity
+
+     Advisory warning type 9 given after     1297 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1956 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Advisory warning type 9 given after     2559 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3176 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3436 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3919 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         23513 I  1.501D-06 I
+ I  11 f + f' -> f + f' (QCD)       I          915          6399 I  3.444D-07 I
+ I  12 f + fbar -> f' + fbar'       I           30            92 I  8.611D-09 I
+ I  13 f + fbar -> g + g            I           18            72 I  5.442D-09 I
+ I  28 f + g -> f + g               I         2282         11860 I  8.503D-07 I
+ I  53 g + g -> f + fbar            I           24           191 I  1.177D-08 I
+ I  68 g + g -> g + g               I          731          4899 I  2.809D-07 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        1 *************
+ ********* Total number of warnings =                           8 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=300', 'CKIN(4)=380']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    7.0000D-07   I
+           I   12   f + fbar -> f' + fbar'        I    8.4043D-09   I
+           I   13   f + fbar -> g + g             I    5.0725D-09   I
+           I   28   f + g -> f + g                I    6.6365D-07   I
+           I   53   g + g -> f + fbar             I    1.4169D-08   I
+           I   68   g + g -> g + g                I    3.1814D-07   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+ Advisory warning: maximum violated by  1.080D+00 in event      58
+ XSEC(28,1) increased to  7.168D-07
+
+ Advisory warning: maximum violated by  1.174D+00 in event     119
+ XSEC(28,1) increased to  8.414D-07
+
+     Advisory warning type 9 given after      250 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+ Advisory warning: maximum violated by  1.026D+00 in event     470
+ XSEC(28,1) increased to  8.635D-07
+
+ Advisory warning: maximum violated by  1.004D+00 in event     773
+ XSEC(28,1) increased to  8.667D-07
+
+ Advisory warning: maximum violated by  1.012D+00 in event     808
+ XSEC(13,1) increased to  5.133D-09
+
+     Error type 9 has occured after      876 PYEXEC calls:
+     (PYPTIS:) Weight   2.3938E+02 above unity
+
+     Advisory warning type 9 given after      876 PYEXEC calls:
+     (PYPTIS:) Weight   5.1778E+00 above unity
+
+ Advisory warning: maximum violated by  1.029D+00 in event    1109
+ XSEC(28,1) increased to  8.921D-07
+
+     Error type 9 has occured after     1141 PYEXEC calls:
+     (PYPTIS:) Weight   1.1037E+00 above unity
+
+ Advisory warning: maximum violated by  1.008D+00 in event    1744
+ XSEC(28,1) increased to  8.992D-07
+
+     Advisory warning type 9 given after     1831 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2402 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+ Advisory warning: maximum violated by  1.010D+00 in event    2538
+ XSEC(28,1) increased to  9.081D-07
+
+     Advisory warning type 9 given after     2883 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     2960 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3934 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         24241 I  3.165D-07 I
+ I  11 f + f' -> f + f' (QCD)       I         1163          8731 I  9.312D-08 I
+ I  12 f + fbar -> f' + fbar'       I           28           114 I  2.123D-09 I
+ I  13 f + fbar -> g + g            I           23            71 I  1.254D-09 I
+ I  28 f + g -> f + g               I         2180         11091 I  1.719D-07 I
+ I  53 g + g -> f + fbar            I           34           178 I  2.192D-09 I
+ I  68 g + g -> g + g               I          572          4056 I  4.592D-08 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        2 *************
+ ********* Total number of warnings =                           7 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00025 *********
+
+Center-of-mass energy:  5020.0
+PYTHIA process parameters:  ['MSEL=1', 'CKIN(3)=380']
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.8.5        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.8.5-cms2/share/lhapdf/PDF
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I              PYTHIA will be initialized for a p on p collider              I
+ I                  at   5020.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   11   f + f' -> f + f' (QCD)        I    2.4359D-07   I
+           I   12   f + fbar -> f' + fbar'        I    2.4226D-09   I
+           I   13   f + fbar -> g + g             I    1.9385D-09   I
+           I   28   f + g -> f + g                I    2.7662D-07   I
+           I   53   g + g -> f + fbar             I    2.5341D-09   I
+           I   68   g + g -> g + g                I    5.4803D-08   I
+           I   96   Semihard QCD 2 -> 2           I    6.8250D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 3.87D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.43 GeV gives sigma(parton-parton) = 1.56D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 9 given after      363 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after      568 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after      594 PYEXEC calls:
+     (PYPTIS:) Weight   1.5449E+00 above unity
+
+     Advisory warning type 9 given after      933 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1448 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     1637 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Error type 9 has occured after     1721 PYEXEC calls:
+     (PYPTIS:) Weight   1.1684E+00 above unity
+
+     Error type 9 has occured after     1944 PYEXEC calls:
+     (PYPTIS:) Weight   1.7090E+01 above unity
+
+     Advisory warning type 9 given after     1944 PYEXEC calls:
+     (PYPTIS:) Weight   5.5828E+00 above unity
+
+     Advisory warning type 9 given after     2931 PYEXEC calls:
+     (PYPTIS:) Weight   1.2631E+00 above unity
+
+     Advisory warning type 9 given after     3593 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+
+     Advisory warning type 9 given after     3809 PYEXEC calls:
+     (PYPTIS:) Sorry, I got a heavy companion quark here. Not handled yet, giving up!
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I         4000         25618 I  9.051D-08 I
+ I  11 f + f' -> f + f' (QCD)       I         1561         10685 I  3.551D-08 I
+ I  12 f + fbar -> f' + fbar'       I           26           100 I  6.500D-10 I
+ I  13 f + fbar -> g + g            I           20           102 I  4.499D-10 I
+ I  28 f + g -> f + g               I         1987         12239 I  4.497D-08 I
+ I  53 g + g -> f + fbar            I           19           105 I  4.086D-10 I
+ I  68 g + g -> g + g               I          387          2387 I  8.519D-09 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        3 *************
+ ********* Total number of warnings =                           9 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+

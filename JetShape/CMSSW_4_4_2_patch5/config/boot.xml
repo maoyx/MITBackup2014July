@@ -1,0 +1,7 @@
+<project name="CMSSW" version="CMSSW_4_4_2_patch5">
+  <config dir="config"/>
+  <toolbox dir="file:/osg/app/cmssoft/cms/slc5_amd64_gcc434/cms/cmssw-patch-tool-conf/2.0-cms20"/>
+  <base url="file:/osg/app/cmssoft/cms/BUILD/slc5_amd64_gcc434/cms/cmssw-patch/CMSSW_4_4_2_patch5/">
+    <download url="file:config" name="config"/>
+  </base>
+</project>

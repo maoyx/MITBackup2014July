@@ -1,0 +1,12 @@
+<tool name="cmssw" version="CMSSW_4_4_2" type="scram">
+  <client>
+    <environment name="CMSSW_BASE" default="/osg/app/cmssoft/cms/slc5_amd64_gcc434/cms/cmssw/CMSSW_4_4_2"/>
+    <environment name="LIBDIR" default="$CMSSW_BASE/lib/$SCRAM_ARCH"/>
+    <environment name="CMSSW_BINDIR" default="$CMSSW_BASE/bin/$SCRAM_ARCH"/>
+    <environment name="INCLUDE" default="$CMSSW_BASE/src"/>
+  </client>
+  <runtime name="LD_LIBRARY_PATH" value="$CMSSW_BASE/lib/$SCRAM_ARCH" type="path"/>
+  <runtime name="PATH"       value="$CMSSW_BINDIR" type="path"/>
+  <runtime name="PYTHONPATH" value="$CMSSW_BINDIR" type="path"/>
+  <runtime name="PYTHONPATH" value="$LIBDIR" type="path"/>
+</tool>

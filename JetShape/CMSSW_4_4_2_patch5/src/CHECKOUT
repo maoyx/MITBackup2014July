@@ -1,0 +1,7 @@
+kinit -Af ymao@CERN.CH
+###old CVSROOT definitation
+export CVSROOT=:gserver:cmscvs.cern.ch:/cvs_server/repositories/CMSSW
+###working CVSROOT #############
+export CVSROOT=:gserver:cmscvs.cern.ch:/local/reps/CMSSW
+
+cvs co -r HiForest_V2_02_14 -d HiForest_V2_02_14 UserCode/CmsHi/HiForest/V2

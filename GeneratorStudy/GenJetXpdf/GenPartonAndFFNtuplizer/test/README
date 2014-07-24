@@ -1,0 +1,34 @@
+   TF1 * fpdf = new TF1("fpdf", func, 0.00001,0.98,6);
+
+1. first test using nPDF weight, Shengquan's parameter: 
+output: nPDFDiJetMass_AnaGENJetR3_Jan27_Z2_PYTHIACombined.root
+   Double_t paramset[] = {0.46, 0.02, 1.6, 0.3, 0.55, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+2. second test using nPDF weight, Yaxian parameter by descreasing the effect amplitude:
+ output: DiJetMass_AnaGENJetR3_nPDFJan27_Z2_PYTHIACombined.root
+  Double_t paramset[] = {0.7, 0.04, 1.4, 0.5, 0.6, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+3. test using nPDF weight, Yaxian parameter from npdf generator using Q=50 and Q=500
+output: DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFPYTHIACombined.root
+  Double_t paramset[] = {0.8, 0.01, 1.8, 0.3, 0.55, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+
+4. test using nPDF weight, Yaxian parameter with tuning x range for anti-shadowing
+output:DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFSet4PYTHIACombined.root 
+   Double_t paramset[] = {0.4, 0.01, 1.8, 0.2, 0.55, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+5. test using nPDF weight, Yaxian parameter with tuning x range for anti-shadowing
+output: DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFSet5PYTHIACombined.root
+   Double_t paramset[] = {0.45, 0.02, 1.8, 0.4, 0.7, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+6. test using nPDF weight, Yaxian parameter with tuning x range for anti-shadowing
+output: DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFSet6PYTHIACombined.root
+   Double_t paramset[] = {0.45, 0.01, 1.8, 0.5, 0.7, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+7. test using nPDF weight, Yaxian parameter with tuning x range for anti-shadowing
+output: DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFSet7PYTHIACombined.root
+   Double_t paramset[] = {0.9, 0.03, 5.8, 0.5, 0.5, 1.33}; // order (y0, xa, ya, xe, ye, b)
+
+8. test using nPDF weight, Yaxian parameter with tuning x range for anti-shadowing
+output: DiJetMass_AnaGENJetR3_Jan27_Z2_nPDFSet8PYTHIACombined.root
+   Double_t paramset[] = {0.5, 0.1, 1.4, 0.7, 0.5, 1.33}; // order (y0, xa, ya, xe, ye, b)

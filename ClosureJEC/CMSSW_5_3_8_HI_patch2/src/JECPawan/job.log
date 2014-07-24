@@ -1,0 +1,885 @@
+(int)0
+Collision Mode: P+Pb
+HltTree: 332075 entries loaded.
+SkimTree: 332075 entries loaded.
+EvtTree: 332075 entries loaded.
+Ak1PFJetTree: 332075 entries loaded.
+Ak2PFJetTree: 332075 entries loaded.
+Ak3PFJetTree: 332075 entries loaded.
+Ak4PFJetTree: 332075 entries loaded.
+Ak5PFJetTree: 332075 entries loaded.
+Ak6PFJetTree: 332075 entries loaded.
+AkPu1PFJetTree: 332075 entries loaded.
+AkPu2PFJetTree: 332075 entries loaded.
+AkPu3PFJetTree: 332075 entries loaded.
+AkPu4PFJetTree: 332075 entries loaded.
+AkPu5PFJetTree: 332075 entries loaded.
+AkPu6PFJetTree: 332075 entries loaded.
+Ak1CaloJetTree: 332075 entries loaded.
+Ak2CaloJetTree: 332075 entries loaded.
+Ak3CaloJetTree: 332075 entries loaded.
+Ak4CaloJetTree: 332075 entries loaded.
+Ak5CaloJetTree: 332075 entries loaded.
+Ak6CaloJetTree: 332075 entries loaded.
+AkPu1CaloJetTree: 332075 entries loaded.
+AkPu2CaloJetTree: 332075 entries loaded.
+AkPu3CaloJetTree: 332075 entries loaded.
+AkPu4CaloJetTree: 332075 entries loaded.
+AkPu5CaloJetTree: 332075 entries loaded.
+AkPu6CaloJetTree: 332075 entries loaded.
+TrackTree: 332075 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT15GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 332075
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 190000
+ ********** Event # 200000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 230000
+ ********** Event # 240000
+ ********** Event # 250000
+ ********** Event # 260000
+ ********** Event # 270000
+ ********** Event # 280000
+ ********** Event # 300000
+ ********** Event # 310000
+ ********** Event # 330000
+
+
+
+Events which passed the pT hat cut : 273296 out of  : 332075 efficiency of all the cuts : 0.822995
+
+# of Events for : ak2PF	41122.9	 # of Jets : 2420
+# of Events for : ak3PF	41122.9	 # of Jets : 5192
+# of Events for : ak4PF	41122.9	 # of Jets : 8784
+# of Events for : ak5PF	41122.9	 # of Jets : 13364
+# of Events for : akPu2PF	41122.9	 # of Jets : 2236
+# of Events for : akPu3PF	41122.9	 # of Jets : 4885
+# of Events for : akPu4PF	41122.9	 # of Jets : 8264
+# of Events for : akPu5PF	41122.9	 # of Jets : 12628
+# of Events for : ak2Calo	41122.9	 # of Jets : 1624
+# of Events for : ak3Calo	41122.9	 # of Jets : 3609
+# of Events for : ak4Calo	41122.9	 # of Jets : 6072
+# of Events for : ak5Calo	41122.9	 # of Jets : 9078
+# of Events for : akPu2Calo	41122.9	 # of Jets : 772
+# of Events for : akPu3Calo	41122.9	 # of Jets : 3230
+# of Events for : akPu4Calo	41122.9	 # of Jets : 2299
+# of Events for : akPu5Calo	41122.9	 # of Jets : 3230
+
+RealTime=406.197060 seconds, CpuTime=228.020000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 332075 entries loaded.
+SkimTree: 332075 entries loaded.
+EvtTree: 332075 entries loaded.
+Ak1PFJetTree: 332075 entries loaded.
+Ak2PFJetTree: 332075 entries loaded.
+Ak3PFJetTree: 332075 entries loaded.
+Ak4PFJetTree: 332075 entries loaded.
+Ak5PFJetTree: 332075 entries loaded.
+Ak6PFJetTree: 332075 entries loaded.
+AkPu1PFJetTree: 332075 entries loaded.
+AkPu2PFJetTree: 332075 entries loaded.
+AkPu3PFJetTree: 332075 entries loaded.
+AkPu4PFJetTree: 332075 entries loaded.
+AkPu5PFJetTree: 332075 entries loaded.
+AkPu6PFJetTree: 332075 entries loaded.
+Ak1CaloJetTree: 332075 entries loaded.
+Ak2CaloJetTree: 332075 entries loaded.
+Ak3CaloJetTree: 332075 entries loaded.
+Ak4CaloJetTree: 332075 entries loaded.
+Ak5CaloJetTree: 332075 entries loaded.
+Ak6CaloJetTree: 332075 entries loaded.
+AkPu1CaloJetTree: 332075 entries loaded.
+AkPu2CaloJetTree: 332075 entries loaded.
+AkPu3CaloJetTree: 332075 entries loaded.
+AkPu4CaloJetTree: 332075 entries loaded.
+AkPu5CaloJetTree: 332075 entries loaded.
+AkPu6CaloJetTree: 332075 entries loaded.
+TrackTree: 332075 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT30GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 332075
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 190000
+ ********** Event # 200000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 230000
+ ********** Event # 240000
+ ********** Event # 250000
+ ********** Event # 260000
+ ********** Event # 270000
+ ********** Event # 280000
+ ********** Event # 300000
+ ********** Event # 310000
+ ********** Event # 330000
+
+
+
+Events which passed the pT hat cut : 289803 out of  : 332075 efficiency of all the cuts : 0.872703
+
+# of Events for : ak2PF	2617.95	 # of Jets : 9400
+# of Events for : ak3PF	2617.95	 # of Jets : 16228
+# of Events for : ak4PF	2617.95	 # of Jets : 23064
+# of Events for : ak5PF	2617.95	 # of Jets : 30363
+# of Events for : akPu2PF	2617.95	 # of Jets : 8815
+# of Events for : akPu3PF	2617.95	 # of Jets : 15477
+# of Events for : akPu4PF	2617.95	 # of Jets : 22082
+# of Events for : akPu5PF	2617.95	 # of Jets : 29165
+# of Events for : ak2Calo	2617.95	 # of Jets : 6758
+# of Events for : ak3Calo	2617.95	 # of Jets : 12224
+# of Events for : ak4Calo	2617.95	 # of Jets : 17469
+# of Events for : ak5Calo	2617.95	 # of Jets : 22760
+# of Events for : akPu2Calo	2617.95	 # of Jets : 3754
+# of Events for : akPu3Calo	2617.95	 # of Jets : 11115
+# of Events for : akPu4Calo	2617.95	 # of Jets : 8388
+# of Events for : akPu5Calo	2617.95	 # of Jets : 10458
+
+RealTime=503.149853 seconds, CpuTime=237.050000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 323475 entries loaded.
+SkimTree: 323475 entries loaded.
+EvtTree: 323475 entries loaded.
+Ak1PFJetTree: 323475 entries loaded.
+Ak2PFJetTree: 323475 entries loaded.
+Ak3PFJetTree: 323475 entries loaded.
+Ak4PFJetTree: 323475 entries loaded.
+Ak5PFJetTree: 323475 entries loaded.
+Ak6PFJetTree: 323475 entries loaded.
+AkPu1PFJetTree: 323475 entries loaded.
+AkPu2PFJetTree: 323475 entries loaded.
+AkPu3PFJetTree: 323475 entries loaded.
+AkPu4PFJetTree: 323475 entries loaded.
+AkPu5PFJetTree: 323475 entries loaded.
+AkPu6PFJetTree: 323475 entries loaded.
+Ak1CaloJetTree: 323475 entries loaded.
+Ak2CaloJetTree: 323475 entries loaded.
+Ak3CaloJetTree: 323475 entries loaded.
+Ak4CaloJetTree: 323475 entries loaded.
+Ak5CaloJetTree: 323475 entries loaded.
+Ak6CaloJetTree: 323475 entries loaded.
+AkPu1CaloJetTree: 323475 entries loaded.
+AkPu2CaloJetTree: 323475 entries loaded.
+AkPu3CaloJetTree: 323475 entries loaded.
+AkPu4CaloJetTree: 323475 entries loaded.
+AkPu5CaloJetTree: 323475 entries loaded.
+AkPu6CaloJetTree: 323475 entries loaded.
+TrackTree: 323475 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT50GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 323475
+
+ ********** Event # 0
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 50000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 80000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 180000
+ ********** Event # 190000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 230000
+ ********** Event # 240000
+ ********** Event # 250000
+ ********** Event # 260000
+ ********** Event # 270000
+ ********** Event # 300000
+ ********** Event # 310000
+ ********** Event # 320000
+
+
+
+Events which passed the pT hat cut : 251245 out of  : 323475 efficiency of all the cuts : 0.776706
+
+# of Events for : ak2PF	259.21	 # of Jets : 376093
+# of Events for : ak3PF	259.21	 # of Jets : 436670
+# of Events for : ak4PF	259.21	 # of Jets : 469993
+# of Events for : ak5PF	259.21	 # of Jets : 491406
+# of Events for : akPu2PF	259.21	 # of Jets : 366936
+# of Events for : akPu3PF	259.21	 # of Jets : 430913
+# of Events for : akPu4PF	259.21	 # of Jets : 465423
+# of Events for : akPu5PF	259.21	 # of Jets : 487380
+# of Events for : ak2Calo	259.21	 # of Jets : 327036
+# of Events for : ak3Calo	259.21	 # of Jets : 397477
+# of Events for : ak4Calo	259.21	 # of Jets : 435961
+# of Events for : ak5Calo	259.21	 # of Jets : 460024
+# of Events for : akPu2Calo	259.21	 # of Jets : 245295
+# of Events for : akPu3Calo	259.21	 # of Jets : 380830
+# of Events for : akPu4Calo	259.21	 # of Jets : 349322
+# of Events for : akPu5Calo	259.21	 # of Jets : 376438
+
+RealTime=926.843406 seconds, CpuTime=493.740000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 308275 entries loaded.
+SkimTree: 308275 entries loaded.
+EvtTree: 308275 entries loaded.
+Ak1PFJetTree: 308275 entries loaded.
+Ak2PFJetTree: 308275 entries loaded.
+Ak3PFJetTree: 308275 entries loaded.
+Ak4PFJetTree: 308275 entries loaded.
+Ak5PFJetTree: 308275 entries loaded.
+Ak6PFJetTree: 308275 entries loaded.
+AkPu1PFJetTree: 308275 entries loaded.
+AkPu2PFJetTree: 308275 entries loaded.
+AkPu3PFJetTree: 308275 entries loaded.
+AkPu4PFJetTree: 308275 entries loaded.
+AkPu5PFJetTree: 308275 entries loaded.
+AkPu6PFJetTree: 308275 entries loaded.
+Ak1CaloJetTree: 308275 entries loaded.
+Ak2CaloJetTree: 308275 entries loaded.
+Ak3CaloJetTree: 308275 entries loaded.
+Ak4CaloJetTree: 308275 entries loaded.
+Ak5CaloJetTree: 308275 entries loaded.
+Ak6CaloJetTree: 308275 entries loaded.
+AkPu1CaloJetTree: 308275 entries loaded.
+AkPu2CaloJetTree: 308275 entries loaded.
+AkPu3CaloJetTree: 308275 entries loaded.
+AkPu4CaloJetTree: 308275 entries loaded.
+AkPu5CaloJetTree: 308275 entries loaded.
+AkPu6CaloJetTree: 308275 entries loaded.
+TrackTree: 308275 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT80GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 308275
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 50000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 180000
+ ********** Event # 190000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 230000
+ ********** Event # 240000
+ ********** Event # 250000
+ ********** Event # 260000
+ ********** Event # 270000
+ ********** Event # 280000
+ ********** Event # 290000
+ ********** Event # 300000
+
+
+
+Events which passed the pT hat cut : 232943 out of  : 308275 efficiency of all the cuts : 0.755634
+
+# of Events for : ak2PF	28.694	 # of Jets : 500118
+# of Events for : ak3PF	28.694	 # of Jets : 530308
+# of Events for : ak4PF	28.694	 # of Jets : 544358
+# of Events for : ak5PF	28.694	 # of Jets : 552056
+# of Events for : akPu2PF	28.694	 # of Jets : 495375
+# of Events for : akPu3PF	28.694	 # of Jets : 527014
+# of Events for : akPu4PF	28.694	 # of Jets : 541311
+# of Events for : akPu5PF	28.694	 # of Jets : 549238
+# of Events for : ak2Calo	28.694	 # of Jets : 471511
+# of Events for : ak3Calo	28.694	 # of Jets : 507475
+# of Events for : ak4Calo	28.694	 # of Jets : 523609
+# of Events for : ak5Calo	28.694	 # of Jets : 532192
+# of Events for : akPu2Calo	28.694	 # of Jets : 422247
+# of Events for : akPu3Calo	28.694	 # of Jets : 495988
+# of Events for : akPu4Calo	28.694	 # of Jets : 479605
+# of Events for : akPu5Calo	28.694	 # of Jets : 489760
+
+RealTime=1029.137874 seconds, CpuTime=532.140000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 212875 entries loaded.
+SkimTree: 212875 entries loaded.
+EvtTree: 212875 entries loaded.
+Ak1PFJetTree: 212875 entries loaded.
+Ak2PFJetTree: 212875 entries loaded.
+Ak3PFJetTree: 212875 entries loaded.
+Ak4PFJetTree: 212875 entries loaded.
+Ak5PFJetTree: 212875 entries loaded.
+Ak6PFJetTree: 212875 entries loaded.
+AkPu1PFJetTree: 212875 entries loaded.
+AkPu2PFJetTree: 212875 entries loaded.
+AkPu3PFJetTree: 212875 entries loaded.
+AkPu4PFJetTree: 212875 entries loaded.
+AkPu5PFJetTree: 212875 entries loaded.
+AkPu6PFJetTree: 212875 entries loaded.
+Ak1CaloJetTree: 212875 entries loaded.
+Ak2CaloJetTree: 212875 entries loaded.
+Ak3CaloJetTree: 212875 entries loaded.
+Ak4CaloJetTree: 212875 entries loaded.
+Ak5CaloJetTree: 212875 entries loaded.
+Ak6CaloJetTree: 212875 entries loaded.
+AkPu1CaloJetTree: 212875 entries loaded.
+AkPu2CaloJetTree: 212875 entries loaded.
+AkPu3CaloJetTree: 212875 entries loaded.
+AkPu4CaloJetTree: 212875 entries loaded.
+AkPu5CaloJetTree: 212875 entries loaded.
+AkPu6CaloJetTree: 212875 entries loaded.
+TrackTree: 212875 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT120GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 212875
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 50000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 180000
+ ********** Event # 190000
+ ********** Event # 200000
+ ********** Event # 210000
+
+
+
+Events which passed the pT hat cut : 156132 out of  : 212875 efficiency of all the cuts : 0.733445
+
+# of Events for : ak2PF	3.76167	 # of Jets : 397864
+# of Events for : ak3PF	3.76167	 # of Jets : 409513
+# of Events for : ak4PF	3.76167	 # of Jets : 411901
+# of Events for : ak5PF	3.76167	 # of Jets : 411637
+# of Events for : akPu2PF	3.76167	 # of Jets : 395288
+# of Events for : akPu3PF	3.76167	 # of Jets : 407470
+# of Events for : akPu4PF	3.76167	 # of Jets : 409970
+# of Events for : akPu5PF	3.76167	 # of Jets : 409902
+# of Events for : ak2Calo	3.76167	 # of Jets : 381154
+# of Events for : ak3Calo	3.76167	 # of Jets : 395083
+# of Events for : ak4Calo	3.76167	 # of Jets : 398481
+# of Events for : ak5Calo	3.76167	 # of Jets : 398740
+# of Events for : akPu2Calo	3.76167	 # of Jets : 358129
+# of Events for : akPu3Calo	3.76167	 # of Jets : 387286
+# of Events for : akPu4Calo	3.76167	 # of Jets : 372842
+# of Events for : akPu5Calo	3.76167	 # of Jets : 373205
+
+RealTime=630.737482 seconds, CpuTime=407.830000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 273275 entries loaded.
+SkimTree: 273275 entries loaded.
+EvtTree: 273275 entries loaded.
+Ak1PFJetTree: 273275 entries loaded.
+Ak2PFJetTree: 273275 entries loaded.
+Ak3PFJetTree: 273275 entries loaded.
+Ak4PFJetTree: 273275 entries loaded.
+Ak5PFJetTree: 273275 entries loaded.
+Ak6PFJetTree: 273275 entries loaded.
+AkPu1PFJetTree: 273275 entries loaded.
+AkPu2PFJetTree: 273275 entries loaded.
+AkPu3PFJetTree: 273275 entries loaded.
+AkPu4PFJetTree: 273275 entries loaded.
+AkPu5PFJetTree: 273275 entries loaded.
+AkPu6PFJetTree: 273275 entries loaded.
+Ak1CaloJetTree: 273275 entries loaded.
+Ak2CaloJetTree: 273275 entries loaded.
+Ak3CaloJetTree: 273275 entries loaded.
+Ak4CaloJetTree: 273275 entries loaded.
+Ak5CaloJetTree: 273275 entries loaded.
+Ak6CaloJetTree: 273275 entries loaded.
+AkPu1CaloJetTree: 273275 entries loaded.
+AkPu2CaloJetTree: 273275 entries loaded.
+AkPu3CaloJetTree: 273275 entries loaded.
+AkPu4CaloJetTree: 273275 entries loaded.
+AkPu5CaloJetTree: 273275 entries loaded.
+AkPu6CaloJetTree: 273275 entries loaded.
+TrackTree: 273275 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT170GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 273275
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 50000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 80000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 190000
+ ********** Event # 200000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 250000
+ ********** Event # 260000
+ ********** Event # 270000
+
+
+
+Events which passed the pT hat cut : 181428 out of  : 273275 efficiency of all the cuts : 0.663903
+
+# of Events for : ak2PF	0.511421	 # of Jets : 508763
+# of Events for : ak3PF	0.511421	 # of Jets : 515676
+# of Events for : ak4PF	0.511421	 # of Jets : 512346
+# of Events for : ak5PF	0.511421	 # of Jets : 507929
+# of Events for : akPu2PF	0.511421	 # of Jets : 505930
+# of Events for : akPu3PF	0.511421	 # of Jets : 513456
+# of Events for : akPu4PF	0.511421	 # of Jets : 510115
+# of Events for : akPu5PF	0.511421	 # of Jets : 505850
+# of Events for : ak2Calo	0.511421	 # of Jets : 490532
+# of Events for : ak3Calo	0.511421	 # of Jets : 499453
+# of Events for : ak4Calo	0.511421	 # of Jets : 497122
+# of Events for : ak5Calo	0.511421	 # of Jets : 493213
+# of Events for : akPu2Calo	0.511421	 # of Jets : 466729
+# of Events for : akPu3Calo	0.511421	 # of Jets : 489584
+# of Events for : akPu4Calo	0.511421	 # of Jets : 468338
+# of Events for : akPu5Calo	0.511421	 # of Jets : 464025
+
+RealTime=817.367213 seconds, CpuTime=493.460000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 315275 entries loaded.
+SkimTree: 315275 entries loaded.
+EvtTree: 315275 entries loaded.
+Ak1PFJetTree: 315275 entries loaded.
+Ak2PFJetTree: 315275 entries loaded.
+Ak3PFJetTree: 315275 entries loaded.
+Ak4PFJetTree: 315275 entries loaded.
+Ak5PFJetTree: 315275 entries loaded.
+Ak6PFJetTree: 315275 entries loaded.
+AkPu1PFJetTree: 315275 entries loaded.
+AkPu2PFJetTree: 315275 entries loaded.
+AkPu3PFJetTree: 315275 entries loaded.
+AkPu4PFJetTree: 315275 entries loaded.
+AkPu5PFJetTree: 315275 entries loaded.
+AkPu6PFJetTree: 315275 entries loaded.
+Ak1CaloJetTree: 315275 entries loaded.
+Ak2CaloJetTree: 315275 entries loaded.
+Ak3CaloJetTree: 315275 entries loaded.
+Ak4CaloJetTree: 315275 entries loaded.
+Ak5CaloJetTree: 315275 entries loaded.
+Ak6CaloJetTree: 315275 entries loaded.
+AkPu1CaloJetTree: 315275 entries loaded.
+AkPu2CaloJetTree: 315275 entries loaded.
+AkPu3CaloJetTree: 315275 entries loaded.
+AkPu4CaloJetTree: 315275 entries loaded.
+AkPu5CaloJetTree: 315275 entries loaded.
+AkPu6CaloJetTree: 315275 entries loaded.
+TrackTree: 315275 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT220GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 315275
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 60000
+ ********** Event # 70000
+ ********** Event # 80000
+ ********** Event # 90000
+ ********** Event # 110000
+ ********** Event # 120000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 150000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 180000
+ ********** Event # 200000
+ ********** Event # 210000
+ ********** Event # 220000
+ ********** Event # 230000
+ ********** Event # 240000
+ ********** Event # 250000
+ ********** Event # 270000
+ ********** Event # 300000
+ ********** Event # 310000
+
+
+
+Events which passed the pT hat cut : 208683 out of  : 315275 efficiency of all the cuts : 0.661908
+
+# of Events for : ak2PF	0.123197	 # of Jets : 619432
+# of Events for : ak3PF	0.123197	 # of Jets : 622713
+# of Events for : ak4PF	0.123197	 # of Jets : 614146
+# of Events for : ak5PF	0.123197	 # of Jets : 605765
+# of Events for : akPu2PF	0.123197	 # of Jets : 616318
+# of Events for : akPu3PF	0.123197	 # of Jets : 620091
+# of Events for : akPu4PF	0.123197	 # of Jets : 611628
+# of Events for : akPu5PF	0.123197	 # of Jets : 603338
+# of Events for : ak2Calo	0.123197	 # of Jets : 599190
+# of Events for : ak3Calo	0.123197	 # of Jets : 604233
+# of Events for : ak4Calo	0.123197	 # of Jets : 597165
+# of Events for : ak5Calo	0.123197	 # of Jets : 589137
+# of Events for : akPu2Calo	0.123197	 # of Jets : 572567
+# of Events for : akPu3Calo	0.123197	 # of Jets : 592681
+# of Events for : akPu4Calo	0.123197	 # of Jets : 564082
+# of Events for : akPu5Calo	0.123197	 # of Jets : 555523
+
+RealTime=1474.026089 seconds, CpuTime=663.110000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 208875 entries loaded.
+SkimTree: 208875 entries loaded.
+EvtTree: 208875 entries loaded.
+Ak1PFJetTree: 208875 entries loaded.
+Ak2PFJetTree: 208875 entries loaded.
+Ak3PFJetTree: 208875 entries loaded.
+Ak4PFJetTree: 208875 entries loaded.
+Ak5PFJetTree: 208875 entries loaded.
+Ak6PFJetTree: 208875 entries loaded.
+AkPu1PFJetTree: 208875 entries loaded.
+AkPu2PFJetTree: 208875 entries loaded.
+AkPu3PFJetTree: 208875 entries loaded.
+AkPu4PFJetTree: 208875 entries loaded.
+AkPu5PFJetTree: 208875 entries loaded.
+AkPu6PFJetTree: 208875 entries loaded.
+Ak1CaloJetTree: 208875 entries loaded.
+Ak2CaloJetTree: 208875 entries loaded.
+Ak3CaloJetTree: 208875 entries loaded.
+Ak4CaloJetTree: 208875 entries loaded.
+Ak5CaloJetTree: 208875 entries loaded.
+Ak6CaloJetTree: 208875 entries loaded.
+AkPu1CaloJetTree: 208875 entries loaded.
+AkPu2CaloJetTree: 208875 entries loaded.
+AkPu3CaloJetTree: 208875 entries loaded.
+AkPu4CaloJetTree: 208875 entries loaded.
+AkPu5CaloJetTree: 208875 entries loaded.
+AkPu6CaloJetTree: 208875 entries loaded.
+TrackTree: 208875 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT280GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 208875
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 50000
+ ********** Event # 60000
+ ********** Event # 90000
+ ********** Event # 110000
+ ********** Event # 130000
+ ********** Event # 140000
+ ********** Event # 160000
+ ********** Event # 170000
+ ********** Event # 180000
+ ********** Event # 190000
+ ********** Event # 200000
+
+
+
+Events which passed the pT hat cut : 150834 out of  : 208875 efficiency of all the cuts : 0.722126
+
+# of Events for : ak2PF	0.0366282	 # of Jets : 464675
+# of Events for : ak3PF	0.0366282	 # of Jets : 464200
+# of Events for : ak4PF	0.0366282	 # of Jets : 454884
+# of Events for : ak5PF	0.0366282	 # of Jets : 446731
+# of Events for : akPu2PF	0.0366282	 # of Jets : 462363
+# of Events for : akPu3PF	0.0366282	 # of Jets : 462256
+# of Events for : akPu4PF	0.0366282	 # of Jets : 453021
+# of Events for : akPu5PF	0.0366282	 # of Jets : 444998
+# of Events for : ak2Calo	0.0366282	 # of Jets : 450552
+# of Events for : ak3Calo	0.0366282	 # of Jets : 451087
+# of Events for : ak4Calo	0.0366282	 # of Jets : 442659
+# of Events for : ak5Calo	0.0366282	 # of Jets : 434802
+# of Events for : akPu2Calo	0.0366282	 # of Jets : 431905
+# of Events for : akPu3Calo	0.0366282	 # of Jets : 442850
+# of Events for : akPu4Calo	0.0366282	 # of Jets : 419377
+# of Events for : akPu5Calo	0.0366282	 # of Jets : 410955
+
+RealTime=831.087476 seconds, CpuTime=449.680000 seconds
+
+Good bye : 	
+(int)1
+(int)0
+Collision Mode: P+Pb
+HltTree: 135100 entries loaded.
+SkimTree: 135100 entries loaded.
+EvtTree: 135100 entries loaded.
+Ak1PFJetTree: 135100 entries loaded.
+Ak2PFJetTree: 135100 entries loaded.
+Ak3PFJetTree: 135100 entries loaded.
+Ak4PFJetTree: 135100 entries loaded.
+Ak5PFJetTree: 135100 entries loaded.
+Ak6PFJetTree: 135100 entries loaded.
+AkPu1PFJetTree: 135100 entries loaded.
+AkPu2PFJetTree: 135100 entries loaded.
+AkPu3PFJetTree: 135100 entries loaded.
+AkPu4PFJetTree: 135100 entries loaded.
+AkPu5PFJetTree: 135100 entries loaded.
+AkPu6PFJetTree: 135100 entries loaded.
+Ak1CaloJetTree: 135100 entries loaded.
+Ak2CaloJetTree: 135100 entries loaded.
+Ak3CaloJetTree: 135100 entries loaded.
+Ak4CaloJetTree: 135100 entries loaded.
+Ak5CaloJetTree: 135100 entries loaded.
+Ak6CaloJetTree: 135100 entries loaded.
+AkPu1CaloJetTree: 135100 entries loaded.
+AkPu2CaloJetTree: 135100 entries loaded.
+AkPu3CaloJetTree: 135100 entries loaded.
+AkPu4CaloJetTree: 135100 entries loaded.
+AkPu5CaloJetTree: 135100 entries loaded.
+AkPu6CaloJetTree: 135100 entries loaded.
+TrackTree: 135100 entries loaded.
+
+
+Loaded all tree variables and # of jet algorithms : 16
+	
+	
+	
+**************************************************** 
+Running for ppb 
+pT  cut for 10.000 
+eta cut for 3.000 
+My hiForest TTree : PythiaHijing
+Output file  Output/Response_ppb_pT370GeV_0.root
+**************************************************** 
+	
+	
+Initialized the histograms 
+# of entries in TTree for ppb : 135100
+
+ ********** Event # 0
+ ********** Event # 10000
+ ********** Event # 20000
+ ********** Event # 30000
+ ********** Event # 40000
+ ********** Event # 50000
+ ********** Event # 70000
+ ********** Event # 90000
+ ********** Event # 100000
+ ********** Event # 110000
+ ********** Event # 130000
+
+
+
+Events which passed the pT hat cut : 118781 out of  : 135100 efficiency of all the cuts : 0.879208
+
+# of Events for : ak2PF	0.00956649	 # of Jets : 371980
+# of Events for : ak3PF	0.00956649	 # of Jets : 368946
+# of Events for : ak4PF	0.00956649	 # of Jets : 358269
+# of Events for : ak5PF	0.00956649	 # of Jets : 350074
+# of Events for : akPu2PF	0.00956649	 # of Jets : 370311
+# of Events for : akPu3PF	0.00956649	 # of Jets : 367540
+# of Events for : akPu4PF	0.00956649	 # of Jets : 356896
+# of Events for : akPu5PF	0.00956649	 # of Jets : 348721
+# of Events for : ak2Calo	0.00956649	 # of Jets : 361259
+# of Events for : ak3Calo	0.00956649	 # of Jets : 359192
+# of Events for : ak4Calo	0.00956649	 # of Jets : 349442
+# of Events for : ak5Calo	0.00956649	 # of Jets : 341317
+# of Events for : akPu2Calo	0.00956649	 # of Jets : 347212
+# of Events for : akPu3Calo	0.00956649	 # of Jets : 352529
+# of Events for : akPu4Calo	0.00956649	 # of Jets : 331509
+# of Events for : akPu5Calo	0.00956649	 # of Jets : 323063
+
+RealTime=906.829687 seconds, CpuTime=364.900000 seconds
+
+Good bye : 	
+(int)1
+hadd Target file: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/pPbResponse_PYTHIAHIJING_merged.root
+hadd Source file 1: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT120GeV_0.root
+hadd Source file 2: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT15GeV_0.root
+hadd Source file 3: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT170GeV_0.root
+hadd Source file 4: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT220GeV_0.root
+hadd Source file 5: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT280GeV_0.root
+hadd Source file 6: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT30GeV_0.root
+hadd Source file 7: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT370GeV_0.root
+hadd Source file 8: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT50GeV_0.root
+hadd Source file 9: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/Response_ppb_pT80GeV_0.root
+hadd Target path: /net/hidsk0001/d00/scratch/maoyx/pPb/ClosureJEC/CMSSW_5_3_8_HI_patch2/src/JECPawan/Output/pPbResponse_PYTHIAHIJING_merged.root:/

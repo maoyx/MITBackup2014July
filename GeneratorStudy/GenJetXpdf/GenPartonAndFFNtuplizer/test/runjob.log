@@ -1,0 +1,50 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.32/00   2 December 2011   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.32/00 (branches/v5-32-00-patches@42372, Nov 19 2012, 10:56:00 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 460.523
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 527.446
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 506.856
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 450.626
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 541.236
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 423.195
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 459.252
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 382.788
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 394.938
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 381.49
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 497.861
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 380.744
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 497.194
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 420.547
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 492.34
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 449.92
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 390.242
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 395.573
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 479.72
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 527.552
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 419.23
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 457.365
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 470.197
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 386.918
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 381.158
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 389.987
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 419.204
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 384.632
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 418.978
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 448.946
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 428.997
+Cross-section of the sub-sample: 9.206e-08 pTHat of the collision: 404.561
+Number of events = 640000
+Output file = ./nPDFWeight_GenAna_AnaGENJetR3_Jan27_Z2_Pt380toinf_numEvent640000.root

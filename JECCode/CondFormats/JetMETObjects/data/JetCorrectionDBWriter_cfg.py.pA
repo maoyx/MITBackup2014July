@@ -1,0 +1,154 @@
+version="538"
+tracks="generalTracks"
+sample="PythiaZ2_5TeV"
+
+import FWCore.ParameterSet.Config as cms
+process = cms.Process('jecdb')
+process.load('CondCore.DBCommon.CondDBCommon_cfi')
+process.CondDBCommon.connect = 'sqlite_file:JEC_PA5TEV_CMSSW538_2013.db'
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(1))
+process.source = cms.Source('EmptySource')
+process.PoolDBOutputService = cms.Service('PoolDBOutputService',
+                                          process.CondDBCommon,
+                                          toPut = cms.VPSet(
+
+
+    cms.PSet(
+    record = cms.string('AK2PF'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+tracks+'_'+sample+'_'+version+'_AK2PF'),
+    label  = cms.string('AK2PF')
+    ),
+    cms.PSet(
+    record = cms.string('AK3PF'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+tracks+'_'+sample+'_'+version+'_AK3PF'),
+    label  = cms.string('AK3PF')
+    ),
+    cms.PSet(
+    record = cms.string('AK4PF'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+tracks+'_'+sample+'_'+version+'_AK4PF'),
+    label  = cms.string('AK4PF')
+    ),
+    cms.PSet(
+    record = cms.string('AK5PF'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+tracks+'_'+sample+'_'+version+'_AK5PF'),
+    label  = cms.string('AK5PF')
+    ),
+    cms.PSet(
+    record = cms.string('AK6PF'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+tracks+'_'+sample+'_'+version+'_AK6PF'),
+    label  = cms.string('AK6PF')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK1Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK1Calo'),
+    label  = cms.string('AK1Calo')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK2Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK2Calo'),
+    label  = cms.string('AK2Calo')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK3Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK3Calo'),
+    label  = cms.string('AK3Calo')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK4Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK4Calo'),
+    label  = cms.string('AK4Calo')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK5Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK5Calo'),
+    label  = cms.string('AK5Calo')
+    ),
+                                          cms.PSet(
+    record = cms.string('AK6Calo'),
+    tag    = cms.string('JetCorrectorParametersCollection_HI_PFTowers_'+sample+'_'+version+'_AK6Calo'),
+    label  = cms.string('AK6Calo')
+    ),
+
+
+                                          )
+)
+process.dbWriterAK2PFTowers = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK2PF')
+                                       )
+process.dbWriterAK3PFTowers = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK3PF')
+                                       )
+process.dbWriterAK4PFTowers = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK4PF')
+                                       )
+process.dbWriterAK5PFTowers = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK5PF')
+                                       )
+process.dbWriterAK6PFTowers = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK6PF')
+                                       )
+
+process.dbWriterAK1Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK1Calo')
+                                       )
+process.dbWriterAK2Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK2Calo')
+                                       )
+process.dbWriterAK3Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK3Calo')
+                                       )
+process.dbWriterAK4Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK4Calo')
+                                       )
+process.dbWriterAK5Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK5Calo')
+                                       )
+process.dbWriterAK6Calo = cms.EDAnalyzer('JetCorrectorDBWriter',
+                                       era    = cms.untracked.string('JEC_dijet'),
+                                       algo   = cms.untracked.string('AK6Calo')
+                                       )
+
+process.p = cms.Path(
+
+process.dbWriterAK2PFTowers +
+process.dbWriterAK3PFTowers +
+process.dbWriterAK4PFTowers +
+process.dbWriterAK5PFTowers +
+process.dbWriterAK6PFTowers +
+process.dbWriterAK1Calo +
+process.dbWriterAK2Calo +
+process.dbWriterAK3Calo +
+process.dbWriterAK4Calo +
+process.dbWriterAK5Calo +
+process.dbWriterAK6Calo 
+
+)
+'''
+process.p = cms.Path(
+
+process.dbWriterAK1PFTowers +
+process.dbWriterAK2PFTowers +
+process.dbWriterAK3PFTowers +
+process.dbWriterAK4PFTowers +
+process.dbWriterAK5PFTowers +
+process.dbWriterAK6PFTowers +
+process.dbWriterIC5Calo +
+process.dbWriterAK1Calo +
+process.dbWriterAK2Calo +
+process.dbWriterAK3Calo +
+process.dbWriterAK4Calo +
+process.dbWriterAK5Calo +
+process.dbWriterAK6Calo 
+
+) 
+'''

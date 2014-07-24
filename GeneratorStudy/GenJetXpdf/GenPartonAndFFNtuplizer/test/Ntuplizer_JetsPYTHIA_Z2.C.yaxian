@@ -1,0 +1,642 @@
+//We only need ~Ed3sigma/dp3, nothing else; we compute dsigma/dpT instead
+
+#include <iostream>
+
+#include "TFile.h"
+#include "TF1.h"
+#include "TH1.h"
+#include "TProfile.h"
+#include "TH2.h"
+#include "TH3.h"
+#include "TNtuple.h"
+#include "TMath.h"
+#include "TString.h"
+#include "TClonesArray.h"
+#include "TTree.h"
+#include "TSystem.h"
+#include "TRandom2.h"
+
+#include "GenParticleInfo.h"
+#include "SpectraStudyTreeClass.h"
+using namespace std;
+
+const int netabin = 7 ;
+const double deta[]={-1.8, -1.3, -0.8, -0.3, 0.3, 0.8,1.3,1.8} ;
+
+// Histograms 
+TH1F *dPtHat;
+TH1F *dNevtMinPtHat;
+TH1F *dNJetdPt;
+
+TH2F *hPartonX1X2;
+TH2F *hJetPtPartonX;
+TH2F *hJetPtM1P1PartonX;
+TH2F *hJetEtaPartonX;
+TH2F *hJetEtaPartonXPt30to50;
+TH2F *hJetEtaPartonXPt50to80;
+TH2F *hJetEtaPartonXPt80to100;
+TH2F *hJetEtaPartonXPtAbove100;
+TH2F *hTrkPtPartonX;
+TH2F *hTrkPtM1P1PartonX;
+TH2F *hJetPtEtaBinPartonX[netabin];
+TH2F *hTrkPtEtaBinPartonX[netabin];
+TProfile *hTrkPtEtaBinMeanX[netabin];
+TH2F *hTrkEtaPartonX;
+TH2F *hTrkEtaPartonXPt1to4;
+TH2F *hTrkEtaPartonXPt4to10;
+TH2F *hTrkEtaPartonXPt10to30;
+TH2F *hTrkEtaPartonXPtAbove30;
+TH1F *hJetPtEtaBin[netabin];
+TH1F *hTrkPtEtaBin[netabin];
+
+//dijet histograms
+TH2F *hLeadingJetPtPartonX;
+TH2F *hDijetPtRatio;
+TH2F *hDijetPtDphi;
+TH2F *hDijetPtDeta;
+TH2F *hDijetEta;
+TH2F *hDijetEtaSum;
+TH2F *hEtaDijetPartonX;
+
+TH1F *hAllJetdPt;
+TH1F *hJetPtM1P1;
+TH1F *hTrkPtM1P1;
+TH1F *hAllTrkdPt;
+TH1F *hPosTrkdPt;
+TH1F *hNegTrkdPt;
+
+TH2F *dNAllTrkdPtdPtHat;
+TH2F *dNAllTrkdPtdPtHat_ForCorrelation;
+TH2F *dNAllTrkdPtdPtHat_adjustedBinning;
+TH2F *dNAllTrkdPtdPhi;
+
+TH2F *dNAllTrkdPtdPtHat_eta0308;
+TH2F *dNAllTrkdPtdPtHat_eta0813;
+TH2F *dNAllTrkdPtdPtHat_eta1318;
+
+// Variables
+vector<double> ptBins, ptHatBins, ptHatBins_adjusted;
+vector<double> jptBins;
+vector<double> dphiBins;
+
+int ptmin ;
+int ptmax ;
+//------------------------------------
+void prepareHist();
+void saveHistRoot();
+TH1 * normalizeByBinWidth(TH1 *histo);
+//------------------------------------
+
+void Ntuplizer_JetsPYTHIA_Z2(bool save=true){
+//   TString infdir = "/net/hidsk0001/d00/scratch/krajczar/ppRef/RelativePlacement/5020GeV";
+//   TString infile = "spectAnaGEN_March20";
+   TString infdir = "/net/hidsk0001/d00/scratch/maoyx/GeneratorStudy/ppRef/Z2_5020GeV";
+   TString infile ;
+     ptmin=atoi(getenv("PTMIN")) ;
+     ptmax=atoi(getenv("PTMAX")) ;
+     std::cerr <<"ptmin =" <<ptmin << "  ptmax =" <<ptmax <<endl ;
+   if(ptmin==0) infile = Form("AnaGEN_Oct13_Z2_MB_Pt%dto%d_numEvent640000", ptmin, ptmax);
+   else if(ptmin==380) infile = Form("AnaGEN_Oct13_Z2_Pt%dtoinf_numEvent160000", ptmin);
+   else infile = Form("AnaGEN_Oct13_Z2_Pt%dto%d_numEvent160000", ptmin, ptmax);
+   TString outdir = "/net/hidsk0001/d00/scratch/maoyx/GeneratorStudy/CMSSW_5_3_8_HI_patch2/src/GenJetXpdf/GenPartonAndFFNtuplizer/test" ;
+   TString outfile;
+   outfile.Append(Form("nPDFW_HIST_%s",infile.Data()));
+
+   std::cerr<<"Check Parameters = "<<infile.Data()<<endl;
+
+   TFile *f1 = TFile::Open(Form("%s/%s.root",infdir.Data(),infile.Data()));
+
+   if(!f1) {
+      Error("<Input File Reading>","File is NULL");
+      return;
+   }
+
+//   f1->cd("genSpectAna");
+   TTree *nt = (TTree*) f1->Get("genSpectAna/SpectraStudyTree");
+   TTree *tJets = (TTree*) f1->Get("genJetPDF/hi");
+   nt->AddFriend(tJets);
+
+  if(!nt || !tJets) {
+      Error("<Input Tree Reading>","Tree is NULL");
+      return;
+   }
+
+   gSystem->Load("/net/hidsk0001/d00/scratch/maoyx/GeneratorStudy/CMSSW_5_3_8_HI_patch2/lib/slc5_amd64_gcc462/pluginGenJetXpdfGenPartonAndFFNtuplizer.so");
+
+   SpectraStudyTreeClass stree;
+
+   TClonesArray *alltrk = new TClonesArray("GenParticleInfo");
+   TClonesArray *AllParticles_test = new TClonesArray("GenParticleInfo");
+   TClonesArray *AssParticles_test = new TClonesArray("GenParticleInfo");
+
+   nt->SetBranchAddress("fPthat",&stree.fPthat);
+   nt->SetBranchAddress("fCrossx",&stree.fCrossx);
+   nt->SetBranchAddress("isMinPtHat",&stree.isMinPtHat);
+   nt->SetBranchAddress("nNumEvt",&stree.nNumEvt);
+
+   nt->SetBranchAddress("AllParticles",&alltrk);
+   nt->SetBranchAddress("AssParticles",&AssParticles_test);   
+
+   nt->SetBranchAddress("nJets",&stree.nJets);
+   nt->SetBranchAddress("fJPt",stree.fJPt);
+   nt->SetBranchAddress("fJEt",stree.fJEt);
+   nt->SetBranchAddress("fJEta",stree.fJEta);
+   nt->SetBranchAddress("fJPhi",stree.fJPhi);
+   tJets->SetBranchAddress("x1",&stree.fPdfx1);
+   tJets->SetBranchAddress("x2",&stree.fPdfx2);
+
+   prepareHist();
+
+   int totN = 0;
+   int totN_My = 0;
+
+   //gets the npdf according to this parameterization
+   TF1 * fpdf = new TF1("fpdf","pol9",0,1);
+   // Double_t paramset[9] = {0.905354, 27.0304, -491.564, 3771.39, -15606.1, 37242.3, -51143, 37432, -11268.1};
+    Double_t paramset[] = {0.685032, 37.5069, -683.28, 5562.78, -25081.5, 67539.4, -111213, 109795, -59706.7, 13759.6};
+    fpdf->SetParameters(paramset);
+
+//CHECK NUMBER OF EVENTS - STARTS - 
+   for (int i=0;i<nt->GetEntries();i++){
+
+      nt->GetEntry(i);
+      tJets->GetEntry(i);
+      if(stree.isMinPtHat==1)
+         totN_My++;
+   }
+   std::cerr<<" Number of events in the lowest pThat bin: " << totN_My << std::endl;
+//CHECK NUMBER OF EVENTS - ENDS -
+
+   std::cerr<<" Number of entries in the tree: " << nt->GetEntries() << std::endl;
+
+      float nevt = nt->GetEntries() ;
+     float cs = stree.fCrossx ;
+    float weight = 1. ;
+/*   if(ptmin==0) cs = 6.781e1;
+   else if(ptmin==20) cs = 1.421e-1;
+ //  else if(ptmin==30) cs = 3.015e-2;
+   else if(ptmin==30) cs = 3.378e-2;
+ //  else if(ptmin==50) cs = 3.397e-3 ;
+   else if(ptmin==50) cs = 3.778e-3 ;
+ //  else if(ptmin==80) cs = 3.791e-4 ;
+   else if(ptmin==80) cs = 4.412e-4 ;
+ //  else if(ptmin==120) cs = 5.257e-5 ;
+   else if(ptmin==120) cs = 6.147e-5 ;
+ //  else if(ptmin==170) cs = 8.164e-6 ;
+   else if(ptmin==170) cs = 1.018e-5 ;
+   else if(ptmin==230) cs = 1.513e-6 ;
+   else if(ptmin==300) cs = 3.208e-7;
+   else cs = 9.073e-8 ;
+  */   
+   std::cerr<<"pthat =" <<ptmin << " Cross-section of the sub-sample: "<<cs<<" Nevent = : "<<nevt << endl; 
+   for (int i=0;i<nt->GetEntries();i++){
+
+      nt->GetEntry(i);
+      tJets->GetEntry(i);
+////////////////test -start-      
+//ALWAYS ZERO ENTRIES
+//      std::cerr<<"==== STARTING THE CROSS CHECK ====" << std::endl;
+//      std::cerr<<"   entries, AssParticles_test: " << AssParticles_test->GetEntriesFast() << std::endl;
+//      std::cerr<<"   entries, alltrk           : " << alltrk->GetEntriesFast() << std::endl;
+//      for (int l=0; l<AssParticles_test->GetEntriesFast(); ++l) {
+//	 GenParticleInfo *particle = (GenParticleInfo*)AssParticles_test->At(l);
+//
+//	 float hoppa  = particle->fPt;
+//
+//         std::cerr<<"hoppa pt: " << hoppa << std::endl;
+//      }
+////////////////test -end-      
+
+      float x1 = (float) stree.fPdfx1;
+      float x2 = (float) stree.fPdfx2;
+      float pthat = (float) stree.fPthat ;
+      weight*=fpdf->Eval(x1) ;
+      //Put in the correct number of events for the first bin  //important, maybe ask Yue Shi
+      if(stree.isMinPtHat==1)
+         nevt = totN_My;
+      if (i%20000==0) {
+	 cout<<"Cross-section of the sub-sample: "<<stree.fCrossx<<" pTHat of the collision: "<<pthat << endl;
+//	     <<" number of events = "<<nevt
+//	     <<" number of jets = "<<stree.nJets<<" number of saved gen particle = "<<alltrk->GetEntriesFast()<<endl;
+      }
+
+ //  cout <<"x1 =" <<x1<<endl ;
+      dPtHat->Fill(pthat, stree.fCrossx/nevt);
+      hPartonX1X2->Fill(x1, x2, weight*stree.fCrossx/nevt);
+  //    dPtHat->Fill(pthat);
+  //    hPartonX1X2->Fill(x1, x2);
+      // Fill leading jets for |eta|<1.5 : ak5GenJets + |eta|<1 for charged particles
+      double leadingJetPt = -999.;
+      double leadingJetEta = -999.;
+      double leadingJetPhi = -999.;
+      int leadingIndex = -1;
+      double subleadingJetPt = -999.;
+      double subleadingJetEta = -999.;
+      double subleadingJetPhi = -999.;
+      int subleadingIndex = -1;
+      int jEtaBin = -1 ;
+    // std::cerr <<"number of jets =" <<stree.nJets<<endl ;
+      for (int j=0; j<stree.nJets; j++) {
+
+         float jpt  = stree.fJPt[j];
+         float jeta = stree.fJEta[j];
+         float jphi = stree.fJPhi[j];
+
+         if(fabs(jeta)>3.0) continue;
+         if(jpt<20.) continue ;
+          hJetPtPartonX->Fill(x1, jpt, weight*stree.fCrossx/nevt); 
+        //  hJetPtPartonX->Fill(x1, jpt); 
+          if(jpt>50.)hJetEtaPartonX->Fill(x1, jeta, weight*stree.fCrossx/nevt); 
+          if(jpt>30. && jpt<=50)hJetEtaPartonXPt30to50->Fill(x1, jeta, weight*stree.fCrossx/nevt); 
+          if(jpt>50. && jpt <=80.)hJetEtaPartonXPt50to80->Fill(x1, jeta, weight*stree.fCrossx/nevt); 
+          if(jpt>80. && jpt <= 100.)hJetEtaPartonXPt80to100->Fill(x1, jeta, weight*stree.fCrossx/nevt); 
+          if(jpt>100.)hJetEtaPartonXPtAbove100->Fill(x1, jeta, weight*stree.fCrossx/nevt); 
+        //  if(jpt>50.)hJetEtaPartonX->Fill(x1, jeta); 
+          if(fabs(jeta)<1.0)hJetPtM1P1PartonX->Fill(x1, jpt, weight*stree.fCrossx/nevt); 
+          if(fabs(jeta)<1.0)hJetPtM1P1->Fill(jpt, weight*stree.fCrossx/nevt); 
+         // if(fabs(jeta)<1.0)hJetPtM1P1PartonX->Fill(x1, jpt); 
+           hAllJetdPt->Fill(jpt, weight*stree.fCrossx/nevt);
+         //  hAllJetdPt->Fill(jpt);
+ 
+         for(int ieta = 0 ; ieta < netabin ; ieta++){
+          if(jeta >= deta[ieta] && jeta <deta[ieta+1]) jEtaBin = ieta ;
+         }
+         if(jEtaBin!=-1)  hJetPtEtaBinPartonX[jEtaBin]->Fill(x1, jpt, weight*stree.fCrossx/nevt);
+         if(jEtaBin!=-1)  hJetPtEtaBin[jEtaBin]->Fill(jpt, weight*stree.fCrossx/nevt);
+
+         if(jpt > leadingJetPt) {
+          leadingJetPt = jpt;
+          leadingJetPhi = jphi;
+          leadingJetEta = jeta;
+          leadingIndex = j ;
+         }
+      }
+      dNJetdPt->Fill(leadingJetPt,weight*stree.fCrossx/nevt);
+      if(fabs(leadingJetEta)<1.0) hLeadingJetPtPartonX->Fill(x1, leadingJetPt, weight*stree.fCrossx/nevt);
+    //    std::cerr <<"dijets :" << "pt =" <<leadingJetPt  << endl ; 
+           //search for subleading jets
+           for (int j=0; j<stree.nJets; j++) {
+            if(leadingIndex<0. || j == leadingIndex) continue ;
+              if(leadingJetPhi<-5.) continue ;
+          //   std:cerr <<"start to look for subleading!!!" <<endl ;  
+               float jpt  = stree.fJPt[j];
+               float jeta = stree.fJEta[j];
+               float jphi = stree.fJPhi[j];
+               if(fabs(jeta)>3.0) continue;
+               if(jpt>leadingJetPt) continue ;
+               float dphi = jphi-leadingJetPhi ;
+      // if(TMath::Abs(dphi)>TMath::Pi()) std::cerr <<"dijets :" << "pt =" <<leadingJetPt <<" dphi =" <<dphi << endl ; 
+               if(TMath::Abs(dphi)>TMath::Pi()) dphi-=2*TMath::Pi(); 
+               if(TMath::Abs(dphi)<0.5*TMath::Pi()) continue ;
+               if(jpt > subleadingJetPt) {
+                   subleadingJetPt = jpt;
+                   subleadingJetPhi = jphi;
+                   subleadingJetEta = jeta;
+                   subleadingIndex = j ;
+               }
+          } //! end of subleading search
+      if(subleadingIndex >=0 && leadingIndex >= 0. && leadingJetPt>0.){
+      //  std::cerr <<"find dijets :" << "pt =" <<leadingJetPt <<" subpt =" <<subleadingJetPt << endl ; 
+       hDijetPtRatio->Fill(leadingJetPt, subleadingJetPt/leadingJetPt, weight*stree.fCrossx/nevt);
+       hDijetPtDphi->Fill(leadingJetPt, TMath::Abs(subleadingJetPhi-leadingJetPhi), weight*stree.fCrossx/nevt);
+       if(leadingJetPt>120. && subleadingJetPt>30. && TMath::Abs(subleadingJetPhi-leadingJetPhi)>2*TMath::Pi()/3.)  hDijetPtDeta->Fill(leadingJetPt, subleadingJetEta-leadingJetEta, weight*stree.fCrossx/nevt);
+      if(leadingJetPt>120. && subleadingJetPt>30. && TMath::Abs(subleadingJetPhi-leadingJetPhi)>2*TMath::Pi()/3.) hDijetEta->Fill(leadingJetEta, subleadingJetEta, weight*stree.fCrossx/nevt);
+       hDijetEtaSum->Fill(leadingJetEta, (subleadingJetEta+leadingJetEta)/2., weight*stree.fCrossx/nevt);
+       if(leadingJetPt>120. && subleadingJetPt>30. && TMath::Abs(subleadingJetPhi-leadingJetPhi)>2*TMath::Pi()/3.)hEtaDijetPartonX->Fill(x1, (subleadingJetEta+leadingJetEta)/2., weight*stree.fCrossx/nevt);
+       
+     } 
+      // 1. All Charged Tracks ----------------------------------------
+     Int_t trkEtaBin = -1 ;
+      for (int l=0; l<alltrk->GetEntriesFast(); l++) {
+	 GenParticleInfo *AllParticles = (GenParticleInfo*)alltrk->At(l);
+
+	 float alltrkpt  = AllParticles->fPt;
+	 float alltrketa = AllParticles->fEta;
+	 float alltrkphi = AllParticles->fPhi;
+         int charge = AllParticles->iCharge;
+         if(fabs(alltrketa)>2.4) continue ;
+         if(alltrkpt<=0.) continue ;
+            hAllTrkdPt->Fill(alltrkpt, weight*stree.fCrossx/nevt);
+            if(charge>0)hPosTrkdPt->Fill(alltrkpt, weight*stree.fCrossx/nevt);
+            else hNegTrkdPt->Fill(alltrkpt, weight*stree.fCrossx/nevt);
+//         std::cerr<<"------------------" << std::endl;
+//         std::cerr<<" phi: " << alltrkphi << std::endl;
+//         std::cerr<<" eta: " << alltrketa << std::endl;
+//         std::cerr<<" pt : " << alltrkpt << std::endl;
+
+	 // HIST FILLING
+//	 if(fabs(alltrketa)>1.0) continue; // eta cut     
+          hTrkPtPartonX->Fill(x1, alltrkpt, weight*stree.fCrossx/nevt);
+          hTrkEtaPartonX->Fill(x1, alltrketa, weight*stree.fCrossx/nevt);
+          if(alltrkpt>1. && alltrkpt<=4.)hTrkEtaPartonXPt1to4->Fill(x1, alltrketa, weight*stree.fCrossx/nevt);
+          if(alltrkpt>4. && alltrkpt<=10.)hTrkEtaPartonXPt4to10->Fill(x1, alltrketa, weight*stree.fCrossx/nevt);
+          if(alltrkpt>10. && alltrkpt<=30.)hTrkEtaPartonXPt10to30->Fill(x1, alltrketa, weight*stree.fCrossx/nevt);
+          if(alltrkpt>30.)hTrkEtaPartonXPtAbove30->Fill(x1, alltrketa, weight*stree.fCrossx/nevt);
+          if(fabs(alltrketa)<1.0)hTrkPtM1P1PartonX->Fill(x1, alltrkpt, weight*stree.fCrossx/nevt);
+          if(fabs(alltrketa)<1.0)hTrkPtM1P1->Fill(alltrkpt, weight*stree.fCrossx/nevt);
+
+         for(int ieta = 0 ; ieta < netabin ; ieta++){
+          if(alltrketa >= deta[ieta] && alltrketa <deta[ieta+1]) trkEtaBin = ieta ;
+         }
+         if(trkEtaBin!=-1)  hTrkPtEtaBin[trkEtaBin]->Fill(alltrkpt, weight*stree.fCrossx/nevt);
+         if(trkEtaBin!=-1)  hTrkPtEtaBinPartonX[trkEtaBin]->Fill(x1, alltrkpt, weight*stree.fCrossx/nevt);
+         if(trkEtaBin!=-1)  hTrkPtEtaBinMeanX[trkEtaBin]->Fill(alltrkpt, x1, weight*stree.fCrossx/nevt);
+
+
+	 if(fabs(alltrketa)<=1.0) {
+            dNAllTrkdPtdPtHat->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+            dNAllTrkdPtdPtHat_ForCorrelation->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+	    dNAllTrkdPtdPtHat_adjustedBinning->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+            dNAllTrkdPtdPhi->Fill(alltrkpt,alltrkphi,stree.fCrossx/nevt);
+         }
+
+	 if(fabs(alltrketa)>0.3 && fabs(alltrketa)<=0.8)
+            dNAllTrkdPtdPtHat_eta0308->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+	 if(fabs(alltrketa)>0.8 && fabs(alltrketa)<=1.3)
+            dNAllTrkdPtdPtHat_eta0813->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+	 if(fabs(alltrketa)>1.3 && fabs(alltrketa)<=1.8)
+            dNAllTrkdPtdPtHat_eta1318->Fill(alltrkpt,stree.fPthat,stree.fCrossx/nevt);
+      }
+
+      if(stree.isMinPtHat==1) dNevtMinPtHat->Fill(1.1);
+      totN++;
+
+   } // end of all entries
+
+
+   cout<<"Number of events = "<<totN<<endl;
+
+   // Save histograms in a root file
+   if(save){
+/*//   normalizeByBinWidth(dPtHat);
+   dPtHat->Scale(cs/nevt);
+//   normalizeByBinWidth(dNevtMinPtHat);
+   dNevtMinPtHat->Scale(cs/nevt);
+//   normalizeByBinWidth(dNJetdPt);
+   dNJetdPt->Scale(cs/nevt);
+//   normalizeByBinWidth(hAllJetdPt);
+   hAllJetdPt->Scale(cs/nevt);
+//   normalizeByBinWidth(hPartonX1X2);
+   hPartonX1X2->Scale(cs/nevt);
+//   normalizeByBinWidth(hJetPtPartonX);
+   hJetPtPartonX->Scale(cs/nevt);
+//   normalizeByBinWidth(hJetPtM1P1PartonX);
+   hJetPtM1P1PartonX->Scale(cs/nevt);
+//   normalizeByBinWidth(hJetEtaPartonX);
+   hJetEtaPartonX->Scale(cs/nevt);
+//   normalizeByBinWidth(hTrkPtPartonX);
+   hTrkPtPartonX->Scale(cs/nevt);
+//   normalizeByBinWidth(hTrkPtM1P1PartonX);
+   hTrkPtM1P1PartonX->Scale(cs/nevt);
+//   normalizeByBinWidth(hTrkEtaPartonX);
+   hTrkEtaPartonX->Scale(cs/nevt);
+   for(int ieta = 0 ; ieta <netabin ; ieta++){
+//   normalizeByBinWidth(hJetPtEtaBin[ieta]);
+   hJetPtEtaBin[ieta]->Scale(cs/nevt);
+//   normalizeByBinWidth(hTrkPtEtaBin[ieta]);
+   hTrkPtEtaBin[ieta]->Scale(cs/nevt);
+//   normalizeByBinWidth(hJetPtEtaBinPartonX[ieta]);
+   hJetPtEtaBinPartonX[ieta]->Scale(cs/nevt);
+//   normalizeByBinWidth(hTrkPtEtaBinPartonX[ieta]);
+   hTrkPtEtaBinPartonX[ieta]->Scale(cs/nevt);
+  }
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat);
+   dNAllTrkdPtdPtHat->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat_eta0308);
+   dNAllTrkdPtdPtHat_eta0308->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat_eta0813);
+   dNAllTrkdPtdPtHat_eta0813->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat_eta1318);
+   dNAllTrkdPtdPtHat_eta1318->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat_ForCorrelation);
+   dNAllTrkdPtdPtHat_ForCorrelation->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPtHat_adjustedBinning);
+   dNAllTrkdPtdPtHat_adjustedBinning->Scale(cs/nevt);
+//   normalizeByBinWidth(dNAllTrkdPtdPhi);
+   dNAllTrkdPtdPhi->Scale(cs/nevt);
+*/
+      cout<<"Output file = "<<Form("%s/%s.root",outdir.Data(),outfile.Data())<<endl;
+      TFile *outputFile = new TFile(Form("%s/%s.root",outdir.Data(),outfile.Data()),"recreate");
+      saveHistRoot();
+   }
+
+}
+
+
+void prepareHist(){
+
+   TH1::SetDefaultSumw2();
+   TH2::SetDefaultSumw2();
+   TH3::SetDefaultSumw2();
+
+   const double small = 1e-3;
+
+   // ptHat bins
+   double pthb;
+   for(pthb = 0; pthb < 3600-small; pthb += 5) ptHatBins.push_back(pthb);
+   ptHatBins.push_back(3600);
+
+   double pthb_adjusted;
+   for(pthb_adjusted = 0; pthb_adjusted < 100-small; pthb_adjusted += 5) ptHatBins_adjusted.push_back(pthb_adjusted);
+   for(pthb_adjusted = 100; pthb_adjusted < 400-small; pthb_adjusted += 10) ptHatBins_adjusted.push_back(pthb_adjusted);
+   for(pthb_adjusted = 400; pthb_adjusted < 800-small; pthb_adjusted += 20) ptHatBins_adjusted.push_back(pthb_adjusted);
+   for(pthb_adjusted = 800; pthb_adjusted < 1600-small; pthb_adjusted += 40) ptHatBins_adjusted.push_back(pthb_adjusted);
+   for(pthb_adjusted = 1600; pthb_adjusted < 3200-small; pthb_adjusted += 80) ptHatBins_adjusted.push_back(pthb_adjusted);
+   ptHatBins_adjusted.push_back(3200);
+
+   // pt bins
+   double ptb;
+   for(ptb =   0  ; ptb <  200 -small; ptb +=  0.5 ) ptBins.push_back(ptb);
+/*   for(ptb =   0  ; ptb <   1.2-small; ptb +=  0.2 ) ptBins.push_back(ptb);
+   for(ptb =   1.2; ptb <   2.4-small; ptb +=  0.4 ) ptBins.push_back(ptb);
+   for(ptb =   2.4; ptb <   26.4-small; ptb +=  0.8 ) ptBins.push_back(ptb);
+   for(ptb =   26.4; ptb <   119.2-small; ptb +=  1.6 ) ptBins.push_back(ptb);
+   ptBins.push_back(119.2);
+*/   ptBins.push_back(200);
+//   for(ptb =   7.2; ptb <  13.2-small; ptb +=  2. ) ptBins.push_back(ptb);
+//   for(ptb =  13.2; ptb <  25.2-small; ptb +=  4. ) ptBins.push_back(ptb); 
+//   for(ptb =  25.2; ptb <  61.2-small; ptb +=  12. ) ptBins.push_back(ptb);
+//   for(ptb =  61.2; ptb <  121.2-small; ptb +=  20. ) ptBins.push_back(ptb);
+//   for(ptb = 121.2; ptb < 361.2-small; ptb +=  40. ) ptBins.push_back(ptb);
+//   for(ptb = 361.2; ptb < 396.0-small; ptb +=  34.8) ptBins.push_back(ptb);  
+//   for(ptb = 396.0; ptb <1221.6-small; ptb +=  34.4) ptBins.push_back(ptb);
+//   for(ptb = 1221.6; ptb <2882.8-small; ptb +=  68.8) ptBins.push_back(ptb);
+//   for(ptb = 2882.8; ptb <3708.4-small; ptb +=  137.6) ptBins.push_back(ptb);
+//   ptBins.push_back(3708.4);
+
+
+   Int_t NumOfPtBins_part = 40;
+
+   double ptBins_adjusted[] = {0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 3.2, 4.0, 4.8, 5.6, 6.4, 7.2, 9.6, 12.0, 14.4, 19.2, 24.0, 28.8, 35.2, 41.6, 48.0, 60.8, 73.6, 86.4, 103.6, 120.8, 138., 155.2, 172.4, 189.6, 206.8};
+
+   // phi bins
+   double dphib;
+
+   for(dphib = -3.2; dphib < 3.2-small; dphib += 0.05) dphiBins.push_back(dphib);
+   dphiBins.push_back(3.2);
+
+   // jpt bins
+   double djpt;
+   for(djpt = 0.; djpt < 500-small; djpt += 10.) jptBins.push_back(djpt);
+    jptBins.push_back(500.);
+ /*  for(djpt = 0.; djpt < 100-small; djpt += 2.) jptBins.push_back(djpt);
+   for(djpt = 100.; djpt < 200-small; djpt += 4.) jptBins.push_back(djpt);
+   for(djpt = 200.; djpt < 400-small; djpt += 8.) jptBins.push_back(djpt);
+   for(djpt = 400.; djpt < 800-small; djpt += 16.) jptBins.push_back(djpt);
+   for(djpt = 800.; djpt < 1600-small; djpt += 32.) jptBins.push_back(djpt);
+   jptBins.push_back(1600.);
+*/
+
+   // 1D      
+   dPtHat = new TH1F("dPtHat","#hat{q} with no weight", ptHatBins.size()-1, &ptHatBins[0]);   
+   dNevtMinPtHat = new TH1F("dNevtMinPtHat","Number of processed events in the min pt_hat sample",10,0.0,10.0); 
+   dNJetdPt = new TH1F("dNJetdPt","Jet pt",jptBins.size()-1, &jptBins[0]);
+    hAllJetdPt = new TH1F("hAllJetdPt","Inclusive Jet pt",jptBins.size()-1, &jptBins[0]);
+    hAllTrkdPt = new TH1F("hAllTrkdPt","Inclusive Track pt",ptBins.size()-1, &ptBins[0]);
+    hPosTrkdPt = new TH1F("hPosTrkdPt","Postive charge Track pt",ptBins.size()-1, &ptBins[0]);
+    hNegTrkdPt = new TH1F("hNegTrkdPt","Negative charge Track pt",ptBins.size()-1, &ptBins[0]);
+    hJetPtM1P1 = new TH1F("hJetPtEtaM1P1","Jet pt in |#eta|<1",jptBins.size()-1, &jptBins[0]);
+    hTrkPtM1P1 = new TH1F("hTrkPtEtaM1P1","Track pt in |#eta|<1",ptBins.size()-1, &ptBins[0]);
+   // 2D
+   hPartonX1X2 = new TH2F("hPartonX1X2","PartonX1X2",200, 1.e-5, 1.1, 200, 1.e-5, 1.1);
+   hJetPtPartonX = new TH2F("hJetPtPartonX","Jet pt vs Partonx",5000, 1.e-5, 1.1, jptBins.size()-1, &jptBins[0]);
+   hJetPtM1P1PartonX = new TH2F("hJetPtPartonXEtaM1P1","Jet pt vs Partonx in |#eta|<1",5000, 1.e-5, 1.1, jptBins.size()-1, &jptBins[0]);
+   hJetEtaPartonX = new TH2F("hJetEtaPartonX","Jet eta vs Partonx",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hJetEtaPartonXPt30to50 = new TH2F("hJetEtaPartonXPt30to50","Jet eta vs Partonx with 30<p_{T}<50",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hJetEtaPartonXPt50to80 = new TH2F("hJetEtaPartonXPt50to80","Jet eta vs Partonx with 50<p_{T}<80",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hJetEtaPartonXPt80to100 = new TH2F("hJetEtaPartonXPt80to100","Jet eta vs Partonx with 80<p_{T}<100",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hJetEtaPartonXPtAbove100 = new TH2F("hJetEtaPartonXPtAbove100","Jet eta vs Partonx with p_{T}>100",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hTrkPtPartonX = new TH2F("hTrkPtPartonX","Track pt vs Partonx",5000, 1.e-5, 1.1,  ptBins.size()-1, &ptBins[0]);
+   hTrkPtM1P1PartonX = new TH2F("hTrkPtPartonXEtaM1P1","Track pt vs Partonx in |#eta|<1",5000, 1.e-5, 1.1, ptBins.size()-1, &ptBins[0]);
+   hTrkEtaPartonX = new TH2F("hTrkEtaPartonX","Track eta vs Partonx",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hTrkEtaPartonXPt1to4 = new TH2F("hTrkEtaPartonXPt1to4","Track eta vs Partonx with 1<p_{T}<4 ",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hTrkEtaPartonXPt4to10 = new TH2F("hTrkEtaPartonXPt4to10","Track eta vs Partonx with 4<p_{T}<10 ",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hTrkEtaPartonXPt10to30 = new TH2F("hTrkEtaPartonXPt10to30","Track eta vs Partonx with 10<p_{T}<30 ",5000, 1.e-5, 1.1, 100, -5., 5.);
+   hTrkEtaPartonXPtAbove30 = new TH2F("hTrkEtaPartonXPtAbove30","Track eta vs Partonx with p_{T}>30",5000, 1.e-5, 1.1, 100, -5., 5.);
+
+ //dijet histograms
+   hLeadingJetPtPartonX = new TH2F("hLeadingJetPtPartonX","Leading Jet pt vs Partonx",5000, 1.e-5, 1.1, jptBins.size()-1, &jptBins[0]);
+   hDijetPtRatio = new TH2F("hDijetPtRatio","dijet pt ratio vs leading jet pt",jptBins.size()-1, &jptBins[0], 100, 0., 1.);
+   hDijetPtDphi = new TH2F("hDijetPtDphi","dijet dphi vs leading jet pt",jptBins.size()-1, &jptBins[0], dphiBins.size()-1, &dphiBins[0]);
+   hDijetPtDeta = new TH2F("hDijetPtDeta","dijet deta vs leading jet pt",jptBins.size()-1, &jptBins[0], 500, -5., 5.);
+   hDijetEta = new TH2F("hDijetEta","subleading jet eta vs leading jet eta",500, -5., 5., 500, -5., 5.);
+   hDijetEtaSum = new TH2F("hDijetEtaSum","dijet eta vs leading jet eta",500, -5., 5., 500, -5., 5.);
+   hEtaDijetPartonX = new TH2F("hEtaDijetPartonx","dijet #eta vs parton x",5000, 1.e-5, 1.1, 100, -5., 5.);
+
+  for(int ieta = 0 ; ieta <netabin ; ieta++){
+      hJetPtEtaBinPartonX[ieta] = new TH2F(Form("hJetPtPartonXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),Form("hJetPtPartonXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),5000, 1.e-5, 1.1, jptBins.size()-1, &jptBins[0]);
+      hTrkPtEtaBinPartonX[ieta] = new TH2F(Form("hTrkPtPartonXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),Form("hTrkPtPartonXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),5000, 1.e-5, 1.1, ptBins.size()-1, &ptBins[0]);
+      hJetPtEtaBin[ieta] = new TH1F(Form("hJetPtEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),Form("hJetPtEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),jptBins.size()-1, &jptBins[0]);
+      hTrkPtEtaBin[ieta] = new TH1F(Form("hTrkPtEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),Form("hTrkPtEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),ptBins.size()-1, &ptBins[0]);
+      hTrkPtEtaBinMeanX[ieta] = new TProfile(Form("hTrkPtMeanXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),Form("hTrkPtMeanXEtaBin%.f_%.f", deta[ieta]*10, deta[ieta+1]*10),ptBins.size()-1, &ptBins[0], 1.e-5, 1.1);
+  }
+
+   dNAllTrkdPtdPtHat = new TH2F("dNAllTrkdPtdPtHat","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				ptBins.size()-1, &ptBins[0], ptHatBins.size()-1, &ptHatBins[0]);
+
+   dNAllTrkdPtdPtHat_ForCorrelation = new TH2F("dNAllTrkdPtdPtHat_ForCorrelation","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				ptBins.size()-1, &ptBins[0], ptHatBins_adjusted.size()-1, &ptHatBins_adjusted[0]);
+
+   dNAllTrkdPtdPtHat_adjustedBinning = new TH2F("dNAllTrkdPtdPtHat_adjustedBinning","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				NumOfPtBins_part-1, &ptBins_adjusted[0], ptHatBins.size()-1, &ptHatBins[0]);
+
+   dNAllTrkdPtdPtHat_eta0308 = new TH2F("dNAllTrkdPtdPtHat_eta0308","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				ptBins.size()-1, &ptBins[0], ptHatBins.size()-1, &ptHatBins[0]);
+   dNAllTrkdPtdPtHat_eta0813 = new TH2F("dNAllTrkdPtdPtHat_eta0813","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				ptBins.size()-1, &ptBins[0], ptHatBins.size()-1, &ptHatBins[0]);
+   dNAllTrkdPtdPtHat_eta1318 = new TH2F("dNAllTrkdPtdPtHat_eta1318","Charged particle p_{T} vs #hat{q}; p_{T} (GeV/c); #hat{q} (GeV)",
+				ptBins.size()-1, &ptBins[0], ptHatBins.size()-1, &ptHatBins[0]);
+   
+   dNAllTrkdPtdPhi = new TH2F("dNAllTrkdPtdPhi","p_{T} vs #Delta#phi; p_{T} (GeV/c); #Delta#phi (rad)",
+			      ptBins.size()-1, &ptBins[0], dphiBins.size()-1, &dphiBins[0]);
+}
+
+
+void saveHistRoot(){
+/*
+   dPtHat->Scale(cs/nevt);
+   dNevtMinPtHat->Scale(cs/nevt);
+   dNJetdPt->Scale(cs/nevt);
+   hAllJetdPt->Scale(cs/nevt);
+   hPartonX1X2->Scale(cs/nevt);
+   hJetPtPartonX->Scale(cs/nevt);
+   hJetPtM1P1PartonX->Scale(cs/nevt);
+   hJetEtaPartonX->Scale(cs/nevt);
+   hTrkPtPartonX->Scale(cs/nevt);
+   hTrkPtM1P1PartonX->Scale(cs/nevt);
+   hTrkEtaPartonX->Scale(cs/nevt);
+   for(int ieta = 0 ; ieta <netabin ; ieta++){
+   hJetPtEtaBin[ieta]->Scale(cs/nevt);
+   hTrkPtEtaBin[ieta]->Scale(cs/nevt);
+   hJetPtEtaBinPartonX[ieta]->Scale(cs/nevt);
+   hTrkPtEtaBinPartonX[ieta]->Scale(cs/nevt);
+  }
+   dNAllTrkdPtdPtHat->Scale(cs/nevt);
+   dNAllTrkdPtdPtHat_eta0308->Scale(cs/nevt);
+   dNAllTrkdPtdPtHat_eta0813->Scale(cs/nevt);
+   dNAllTrkdPtdPtHat_eta1318->Scale(cs/nevt);
+   dNAllTrkdPtdPtHat_ForCorrelation->Scale(cs/nevt);
+   dNAllTrkdPtdPtHat_adjustedBinning->Scale(cs/nevt);
+   dNAllTrkdPtdPhi->Scale(cs/nevt);
+*/
+   dPtHat->Write();
+   dNevtMinPtHat->Write();
+   dNJetdPt->Write();
+   hAllJetdPt->Write();
+   hAllTrkdPt->Write();
+   hPosTrkdPt->Write();
+   hNegTrkdPt->Write();
+   hJetPtM1P1->Write();
+   hTrkPtM1P1->Write();
+ 
+   hPartonX1X2->Write();
+   hJetPtPartonX->Write();
+   hJetPtM1P1PartonX->Write();
+   hJetEtaPartonX->Write();
+   hJetEtaPartonXPt30to50->Write();
+   hJetEtaPartonXPt50to80->Write();
+   hJetEtaPartonXPt80to100->Write();
+   hJetEtaPartonXPtAbove100->Write();
+   hTrkPtPartonX->Write();
+   hTrkPtM1P1PartonX->Write();
+   hTrkEtaPartonX->Write();
+   hTrkEtaPartonXPt1to4->Write();
+   hTrkEtaPartonXPt4to10->Write();
+   hTrkEtaPartonXPt10to30->Write();
+   hTrkEtaPartonXPtAbove30->Write();
+   for(int ieta = 0 ; ieta <netabin ; ieta++){
+   hJetPtEtaBin[ieta]->Write();
+   hTrkPtEtaBin[ieta]->Write();
+   hJetPtEtaBinPartonX[ieta]->Write();
+   hTrkPtEtaBinPartonX[ieta]->Write();
+   hTrkPtEtaBinMeanX[ieta]->Write();
+  }
+   dNAllTrkdPtdPtHat->Write();
+   dNAllTrkdPtdPtHat_eta0308->Write();
+   dNAllTrkdPtdPtHat_eta0813->Write();
+   dNAllTrkdPtdPtHat_eta1318->Write();
+   dNAllTrkdPtdPtHat_ForCorrelation->Write();
+   dNAllTrkdPtdPtHat_adjustedBinning->Write();
+   dNAllTrkdPtdPhi->Write();
+
+  //dijets histograms
+   hLeadingJetPtPartonX->Write();
+   hDijetPtRatio->Write();
+   hDijetPtDphi->Write();
+   hDijetPtDeta->Write();
+   hDijetEta->Write();
+   hDijetEtaSum->Write(); 
+   hEtaDijetPartonX->Write();
+   
+}
+
+TH1 * normalizeByBinWidth(TH1 *histo) {
+    for(int i = 1; i <= histo->GetNbinsX(); i++) {
+        float content = histo->GetBinContent(i);
+        float error = histo->GetBinError(i);
+        histo->SetBinContent(i,content/histo->GetBinWidth(i));
+        histo->SetBinError(i,error/histo->GetBinWidth(i));
+    }
+    return histo ;
+}
+

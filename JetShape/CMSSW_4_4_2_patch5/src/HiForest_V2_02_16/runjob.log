@@ -1,0 +1,1217 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version  5.27/06b   5 November 2010   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.27/06b (branches/v5-27-06-patches@36515, Nov 05 2010, 15:46:56 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+0
+start working
+HltTree: 675076 entries loaded.
+SkimTree: 675076 entries loaded.
+EvtTree: 675076 entries loaded.
+IcPu5jetTree: 675076 entries loaded.
+AkPu2jetTree: 675076 entries loaded.
+AkPu3jetTree: 675076 entries loaded.
+Ak3jetTree: 675076 entries loaded.
+AkPu4jetTree: 675076 entries loaded.
+AkPu2CaloJetTree: 675076 entries loaded.
+AkPu3CaloJetTree: 675076 entries loaded.
+AkPu4CaloJetTree: 675076 entries loaded.
+TrackTree: 675076 entries loaded.
+PhotonTree: 675076 entries loaded.
+PFTree: 675076 entries loaded.
+==============================================
+ correction set: Forest2STAv14 module: Forest2_MergedGeneral_jetfine
+ Setup - smoothLevel: 0 ppMode: 0 trkPhiMode: 0         weight samples: 1
+==============================================
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj50_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj80_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj100_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj120_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj170_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj200_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj250_akPu3PF_100_-1_-1000_genJetMode0.root
+trkcorr/IterTrkCorrv14XSec/TrkCorrtest_PbPb5Cent_HydjetSigdj300_akPu3PF_100_-1_-1000_genJetMode0.root
+
+Pt 48 bins:0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.5 3 4 5 6 8 10 12 15 20 25 30 45 60 80 100 140 200 300 500 
+Eta 12 bins:-2.4 -2 -1.6 -1.2 -0.8 -0.4 -1.11022e-16 0.4 0.8 1.2 1.6 2 2.4 
+JEt 8 bins:0 40 80 100 120 160 200 250 500 
+Levels: 4 Samples: 8 cbins: 5
+Load Eff Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Fak Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Mul Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+Load Sec Histograms for ptHatMin 50
+ 80
+ 100
+ 120
+ 170
+ 200
+ 250
+ 300
+
+ number of events in ptHat :50, centrality : 0to4  = 10475
+ number of events in ptHat :50, centrality : 4to12  = 20561
+ number of events in ptHat :50, centrality : 12to20  = 20340
+ number of events in ptHat :50, centrality : 20to28  = 21150
+ number of events in ptHat :50, centrality : 28to40  = 27937
+ number of events in ptHat :80, centrality : 0to4  = 10859
+ number of events in ptHat :80, centrality : 4to12  = 20933
+ number of events in ptHat :80, centrality : 12to20  = 20073
+ number of events in ptHat :80, centrality : 20to28  = 20817
+ number of events in ptHat :80, centrality : 28to40  = 27847
+ number of events in ptHat :100, centrality : 0to4  = 38152
+ number of events in ptHat :100, centrality : 4to12  = 76138
+ number of events in ptHat :100, centrality : 12to20  = 75433
+ number of events in ptHat :100, centrality : 20to28  = 77918
+ number of events in ptHat :100, centrality : 28to40  = 105724
+ number of events in ptHat :120, centrality : 0to4  = 12813
+ number of events in ptHat :120, centrality : 4to12  = 25280
+ number of events in ptHat :120, centrality : 12to20  = 24809
+ number of events in ptHat :120, centrality : 20to28  = 25378
+ number of events in ptHat :120, centrality : 28to40  = 34030
+ number of events in ptHat :170, centrality : 0to4  = 4058
+ number of events in ptHat :170, centrality : 4to12  = 8317
+ number of events in ptHat :170, centrality : 12to20  = 8030
+ number of events in ptHat :170, centrality : 20to28  = 8296
+ number of events in ptHat :170, centrality : 28to40  = 11195
+ number of events in ptHat :200, centrality : 0to4  = 4286
+ number of events in ptHat :200, centrality : 4to12  = 8552
+ number of events in ptHat :200, centrality : 12to20  = 8724
+ number of events in ptHat :200, centrality : 20to28  = 8916
+ number of events in ptHat :200, centrality : 28to40  = 11894
+ number of events in ptHat :250, centrality : 0to4  = 2813
+ number of events in ptHat :250, centrality : 4to12  = 5676
+ number of events in ptHat :250, centrality : 12to20  = 5612
+ number of events in ptHat :250, centrality : 20to28  = 5769
+ number of events in ptHat :250, centrality : 28to40  = 7910
+ number of events in ptHat :300, centrality : 0to4  = 5529
+ number of events in ptHat :300, centrality : 4to12  = 10946
+ number of events in ptHat :300, centrality : 12to20  = 10554
+ number of events in ptHat :300, centrality : 20to28  = 10822
+ number of events in ptHat :300, centrality : 28to40  = 14848
+sample pthat: 50, cross section: 926350
+sample pthat: 80, cross section: 67960
+sample pthat: 100, cross section: 19400
+sample pthat: 120, cross section: 9825
+sample pthat: 170, cross section: 934
+sample pthat: 200, cross section: 411.8
+sample pthat: 250, cross section: 87.44
+sample pthat: 300, cross section: 31.76
+Input file/net/hidsk0001/d00/scratch/yjlee/merge/pbpbDijet_v20/promptskim-hihighpt-hltjet80-pt90-v20.root
+Number of events =675076
+ coll = HI weight = 1 evt = 1
+ coll = HI weight = 1 evt = 10001
+ warning eff=0 for pt eta jet cent: 64.5073 0.605148 78.5697 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 99.4329 -2.03294 146.639 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.221829
+ warning eff=0 for pt eta jet cent: 55.1752 -2.00275 98.603 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 55.1752 -2.00275 98.603 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 61.8787 -1.87812 78.0651 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.8787 -1.87812 78.0651 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 55.1752 -2.00275 98.603 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 55.1752 -2.00275 98.603 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ coll = HI weight = 1 evt = 20001
+ warning eff=0 for pt eta jet cent: 60.1381 0.391032 73.2736 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.4876 -0.252309 76.7348 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 30001
+ warning eff=0 for pt eta jet cent: 80.9198 1.64121 95.5509 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.9198 1.64121 95.5509 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.9198 1.64121 95.5509 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.110239
+taking the neighbour bin efficiency since original eff too small, neighbour =0.110239
+taking the neighbour bin efficiency since original eff too small, neighbour =0.110239
+ coll = HI weight = 1 evt = 40001
+ warning eff=0 for pt eta jet cent: 62.2911 -0.985607 75.036 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0754 1.41859 76.3501 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0754 1.41859 76.3501 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.7792 0.356485 99.2641 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.7792 0.356485 99.2641 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.2981 0.655211 79.1786 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 50001
+ warning eff=0 for pt eta jet cent: 69.5885 -0.683213 75.3016 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 69.5885 -0.683213 75.3016 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.8136 -0.0970163 78.7604 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.8136 -0.0970163 78.7604 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5724 -0.277508 98.7325 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5724 -0.277508 98.7325 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5724 -0.277508 98.7325 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 113.511 1.50538 154.707 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 113.511 1.50538 154.707 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ coll = HI weight = 1 evt = 60001
+ warning eff=0 for pt eta jet cent: 85.9228 -0.847246 93.9351 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+ warning eff=0 for pt eta jet cent: 85.9228 -0.847246 93.9351 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+ warning eff=0 for pt eta jet cent: 85.9228 -0.847246 93.9351 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 70001
+ warning eff=0 for pt eta jet cent: 16.8673 -2.02648 95.9459 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.8673 -2.02648 95.9459 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0.716336
+taking the neighbour bin efficiency since original eff too small, neighbour =0.716336
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.7697 0.696822 78.3233 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 106.123 1.37196 137.239 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 106.123 1.37196 137.239 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 61.8396 1.20765 68.3162 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.8396 1.20765 68.3162 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 80001
+ warning eff=0 for pt eta jet cent: 28.0166 -2.02539 93.2492 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+ warning eff=0 for pt eta jet cent: 28.0166 -2.02539 93.2492 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+ warning eff=0 for pt eta jet cent: 81.1713 0.473713 83.5009 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+ warning eff=0 for pt eta jet cent: 81.1713 0.473713 83.5009 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+ warning eff=0 for pt eta jet cent: 60.0919 -0.734202 74.722 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 90001
+ warning eff=0 for pt eta jet cent: 46.8452 -2.02216 86.873 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 46.8452 -2.02216 86.873 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 15.1307 -2.02077 92.1072 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.1307 -2.02077 92.1072 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 142.346 1.38105 161.297 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.358393
+ warning eff=0 for pt eta jet cent: 142.346 1.38105 161.297 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.358393
+ warning eff=0 for pt eta jet cent: 61.4769 0.374498 73.3021 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 100001
+ warning eff=0 for pt eta jet cent: 141.257 -0.925852 152.289 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 141.257 -0.925852 152.289 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 141.257 -0.925852 152.289 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.6333 1.50126 76.809 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.6333 1.50126 76.809 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 110001
+ warning eff=0 for pt eta jet cent: 54.4479 -2.01962 89.494 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 54.4479 -2.01962 89.494 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 96.7571 -0.463358 98.6374 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 96.7571 -0.463358 98.6374 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.3357 1.54525 67.761 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.2036 -0.414116 74.4604 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.4936 1.11203 71.1697 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 120001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 144.909 1.40578 150.977 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.398726
+ warning eff=0 for pt eta jet cent: 144.909 1.40578 150.977 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.398726
+ warning eff=0 for pt eta jet cent: 82.1834 -0.708808 96.4484 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 82.1834 -0.708808 96.4484 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.607901
+taking the neighbour bin efficiency since original eff too small, neighbour =0.661926
+taking the neighbour bin efficiency since original eff too small, neighbour =0.508356
+taking the neighbour bin efficiency since original eff too small, neighbour =0.663206
+taking the neighbour bin efficiency since original eff too small, neighbour =0.565353
+taking the neighbour bin efficiency since original eff too small, neighbour =0.661569
+taking the neighbour bin efficiency since original eff too small, neighbour =0.661569
+taking the neighbour bin efficiency since original eff too small, neighbour =0.556115
+taking the neighbour bin efficiency since original eff too small, neighbour =0.701821
+taking the neighbour bin efficiency since original eff too small, neighbour =0.516795
+taking the neighbour bin efficiency since original eff too small, neighbour =0.64698
+taking the neighbour bin efficiency since original eff too small, neighbour =0.64698
+taking the neighbour bin efficiency since original eff too small, neighbour =0.604551
+taking the neighbour bin efficiency since original eff too small, neighbour =0.617677
+taking the neighbour bin efficiency since original eff too small, neighbour =0.700283
+taking the neighbour bin efficiency since original eff too small, neighbour =0.64698
+taking the neighbour bin efficiency since original eff too small, neighbour =0.565353
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572873
+taking the neighbour bin efficiency since original eff too small, neighbour =0.617677
+taking the neighbour bin efficiency since original eff too small, neighbour =0.719608
+taking the neighbour bin efficiency since original eff too small, neighbour =0.657166
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.652125
+taking the neighbour bin efficiency since original eff too small, neighbour =0.715003
+taking the neighbour bin efficiency since original eff too small, neighbour =0.655277
+taking the neighbour bin efficiency since original eff too small, neighbour =0.637579
+taking the neighbour bin efficiency since original eff too small, neighbour =0.509936
+ warning eff=0 for pt eta jet cent: 62.7624 0.281685 70.9484 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 57.1197 -2.02806 79.5658 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.8046 0.124539 73.9417 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 52.939 -2.00001 93.851 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 52.939 -2.00001 93.851 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 140001
+ warning eff=0 for pt eta jet cent: 111.358 0.710941 118.706 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 111.358 0.710941 118.706 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 111.358 0.710941 118.706 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 47.952 -2.02951 84.298 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 47.952 -2.02951 84.298 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 47.7053 -2.0083 84.7902 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 47.7053 -2.0083 84.7902 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 68.0683 0.949541 73.487 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 89.1532 2.03765 116.176 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 89.1532 2.03765 116.176 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.5306 1.56354 77.9208 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 160001
+ warning eff=0 for pt eta jet cent: 62.3461 0.0269831 73.0427 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 51.6825 -2.02159 69.9239 21
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 51.6825 -2.02159 69.9239 21
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.2596 0.401304 79.1402 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.6929 -0.453492 89.6705 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.6929 -0.453492 89.6705 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.2703 -0.490966 76.1345 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.7955 -1.3499 72.826 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.7955 -1.3499 72.826 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.0186 -0.660669 77.8749 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 170001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 102.112 0.777056 118.867 0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ warning eff=0 for pt eta jet cent: 102.112 0.777056 118.867 0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.49911
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.632071
+taking the neighbour bin efficiency since original eff too small, neighbour =0.556115
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.50645
+taking the neighbour bin efficiency since original eff too small, neighbour =0.478708
+taking the neighbour bin efficiency since original eff too small, neighbour =0.614438
+taking the neighbour bin efficiency since original eff too small, neighbour =0.699253
+taking the neighbour bin efficiency since original eff too small, neighbour =0.49911
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.632071
+taking the neighbour bin efficiency since original eff too small, neighbour =0.556115
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.50645
+taking the neighbour bin efficiency since original eff too small, neighbour =0.478708
+taking the neighbour bin efficiency since original eff too small, neighbour =0.614438
+taking the neighbour bin efficiency since original eff too small, neighbour =0.699253
+taking the neighbour bin efficiency since original eff too small, neighbour =0.49911
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.632071
+taking the neighbour bin efficiency since original eff too small, neighbour =0.556115
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.50645
+taking the neighbour bin efficiency since original eff too small, neighbour =0.478708
+taking the neighbour bin efficiency since original eff too small, neighbour =0.614438
+taking the neighbour bin efficiency since original eff too small, neighbour =0.699253
+ warning eff=0 for pt eta jet cent: 60.4547 -0.482774 70.5578 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 58.2265 -2.01024 93.2036 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 58.2265 -2.01024 93.2036 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 58.2265 -2.01024 93.2036 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+taking the neighbour bin efficiency since original eff too small, neighbour =0.678792
+taking the neighbour bin efficiency since original eff too small, neighbour =0.426013
+taking the neighbour bin efficiency since original eff too small, neighbour =0.507286
+taking the neighbour bin efficiency since original eff too small, neighbour =0.430421
+taking the neighbour bin efficiency since original eff too small, neighbour =0.614438
+taking the neighbour bin efficiency since original eff too small, neighbour =0.541859
+taking the neighbour bin efficiency since original eff too small, neighbour =0.556115
+taking the neighbour bin efficiency since original eff too small, neighbour =0.536538
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575583
+ warning eff=0 for pt eta jet cent: 60.9426 0.610471 79.7178 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 50.1281 -2.01569 87.3749 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 50.1281 -2.01569 87.3749 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ coll = HI weight = 1 evt = 180001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 45.8213 -2.00835 94.5806 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ warning eff=0 for pt eta jet cent: 45.8213 -2.00835 94.5806 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ warning eff=0 for pt eta jet cent: 45.8213 -2.00835 94.5806 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ warning eff=0 for pt eta jet cent: 40.5675 2.0257 79.8551 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 40.5675 2.0257 79.8551 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 54.3857 -2.01376 96.3166 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ warning eff=0 for pt eta jet cent: 54.3857 -2.01376 96.3166 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ coll = HI weight = 1 evt = 190001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.1357 -0.337264 78.8547 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.1357 -0.337264 78.8547 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ warning eff=0 for pt eta jet cent: 4.61863 2.00125 259.293 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.615252
+ warning eff=0 for pt eta jet cent: 4.61863 2.00125 259.293 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.615252
+ warning eff=0 for pt eta jet cent: 4.61863 2.00125 259.293 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.615252
+ warning eff=0 for pt eta jet cent: 62.8075 0.368757 78.0308 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 200001
+ warning eff=0 for pt eta jet cent: 65.4397 -0.466437 79.9325 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 51.958 -2.03843 66.2986 19
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.8193 0.432009 74.18 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.3295 -0.154628 75.427 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 210001
+ warning eff=0 for pt eta jet cent: 60.0067 -2.02989 80.5252 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0067 -2.02989 80.5252 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0067 -2.02989 80.5252 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 220001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.7644 -1.35832 78.477 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 11.3552 -2.00701 204.62 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.889381
+ warning eff=0 for pt eta jet cent: 11.3552 -2.00701 204.62 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.889381
+ warning eff=0 for pt eta jet cent: 11.3552 -2.00701 204.62 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.889381
+ warning eff=0 for pt eta jet cent: 47.0942 2.12844 52.8444 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.8666 -0.212344 76.4285 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.1492 0.639325 79.259 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 240001
+ warning eff=0 for pt eta jet cent: 19.588 -2.0021 94.2215 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 19.588 -2.0021 94.2215 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.749 -0.44412 75.2737 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.8423 -0.999398 74.5821 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 250001
+ warning eff=0 for pt eta jet cent: 17.9826 -2.00125 88.8527 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 17.9826 -2.00125 88.8527 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 17.9826 -2.00125 88.8527 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 60.0431 0.0258641 71.1679 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0431 0.0258641 71.1679 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.3018 0.193212 77.965 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 18.8108 -2.02599 91.0438 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 18.8108 -2.02599 91.0438 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 87.0071 -0.704991 93.0275 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 87.0071 -0.704991 93.0275 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.2845 0.743867 75.174 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ warning eff=0 for pt eta jet cent: 50.8433 -2.01626 93.3774 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 50.8433 -2.01626 93.3774 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ coll = HI weight = 1 evt = 260001
+ warning eff=0 for pt eta jet cent: 83.2119 1.39829 99.0508 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.330039
+ warning eff=0 for pt eta jet cent: 83.2119 1.39829 99.0508 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.330039
+ warning eff=0 for pt eta jet cent: 83.2119 1.39829 99.0508 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.330039
+ warning eff=0 for pt eta jet cent: 26.2198 -2.01566 86.6013 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+ warning eff=0 for pt eta jet cent: 16.3623 -2.00686 86.6013 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 26.2198 -2.01566 86.6013 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+ warning eff=0 for pt eta jet cent: 16.3623 -2.00686 86.6013 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ coll = HI weight = 1 evt = 270001
+ warning eff=0 for pt eta jet cent: 16.2865 -2.03657 89.5914 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.2865 -2.03657 89.5914 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 62.4937 0.141867 75.1521 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.6599 -0.406239 77.1091 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.8391 0.0220395 77.4321 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 14.4992 2.02765 214.468 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0.455779
+ warning eff=0 for pt eta jet cent: 14.8496 2.02181 214.468 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0.455779
+ warning eff=0 for pt eta jet cent: 14.4992 2.02765 214.468 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0.455779
+ warning eff=0 for pt eta jet cent: 14.8496 2.02181 214.468 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0.455779
+ warning eff=0 for pt eta jet cent: 67.5687 -2.01137 90.2006 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.5687 -2.01137 90.2006 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 290001
+ warning eff=0 for pt eta jet cent: 96.9767 -0.0598928 97.4855 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.829 0.135422 72.0791 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.1098 -0.669485 97.3071 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.1098 -0.669485 97.3071 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 86.3638 -0.304472 92.8469 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 86.3638 -0.304472 92.8469 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 300001
+ warning eff=0 for pt eta jet cent: 84.0135 1.68691 113.83 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 84.0135 1.68691 113.83 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 53.5918 2.00896 71.2084 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 46.8929 -2.008 97.8257 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 46.8929 -2.008 97.8257 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 61.2826 -1.2192 78.7536 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 51.6363 2.0334 94.974 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.592276
+ warning eff=0 for pt eta jet cent: 51.6363 2.0334 94.974 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.592276
+ coll = HI weight = 1 evt = 310001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 15.3084 -2.01311 88.1523 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.3084 -2.01311 88.1523 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 80.9983 -1.29279 87.524 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.9983 -1.29279 87.524 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.857 0.348238 77.1421 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.2004 -0.628925 79.6641 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 320001
+ warning eff=0 for pt eta jet cent: 85.8201 -0.825601 98.7787 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+ warning eff=0 for pt eta jet cent: 85.8201 -0.825601 98.7787 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+ warning eff=0 for pt eta jet cent: 85.8201 -0.825601 98.7787 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.938525
+ coll = HI weight = 1 evt = 330001
+ warning eff=0 for pt eta jet cent: 84.2897 1.796 96.5204 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.12295
+ warning eff=0 for pt eta jet cent: 84.2897 1.796 96.5204 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0.12295
+taking the neighbour bin efficiency since original eff too small, neighbour =0.435044
+taking the neighbour bin efficiency since original eff too small, neighbour =0.533813
+taking the neighbour bin efficiency since original eff too small, neighbour =0.410914
+taking the neighbour bin efficiency since original eff too small, neighbour =0.654686
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572696
+taking the neighbour bin efficiency since original eff too small, neighbour =0.679553
+taking the neighbour bin efficiency since original eff too small, neighbour =0.646677
+taking the neighbour bin efficiency since original eff too small, neighbour =0.438129
+taking the neighbour bin efficiency since original eff too small, neighbour =0.594973
+taking the neighbour bin efficiency since original eff too small, neighbour =0.410914
+taking the neighbour bin efficiency since original eff too small, neighbour =0.476016
+taking the neighbour bin efficiency since original eff too small, neighbour =0.603084
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ coll = HI weight = 1 evt = 340001
+ warning eff=0 for pt eta jet cent: 80.2286 0.632665 91.028 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+ warning eff=0 for pt eta jet cent: 80.2286 0.632665 91.028 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.141832
+ warning eff=0 for pt eta jet cent: 55.1628 -2.00745 91.8478 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 55.1628 -2.00745 91.8478 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 350001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 82.2889 -0.694267 97.8743 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 82.2889 -0.694267 97.8743 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.5511 0.82057 67.8741 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.5511 0.82057 67.8741 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 86.7515 -0.531203 91.9818 20
+taking the neighbour bin efficiency since original eff too small, neighbour =0.8043
+ warning eff=0 for pt eta jet cent: 86.7515 -0.531203 91.9818 20
+taking the neighbour bin efficiency since original eff too small, neighbour =0.8043
+ coll = HI weight = 1 evt = 360001
+ warning eff=0 for pt eta jet cent: 66.7354 -2.00626 90.9479 22
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 66.7354 -2.00626 90.9479 22
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 370001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.5245 1.5881 75.4173 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.1751 1.35417 73.2236 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 380001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.9248 -1.23937 75.1986 8
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.9248 -1.23937 75.1986 8
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 16.7974 -2.02956 95.1657 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 17.461 -2.01912 95.1657 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.7974 -2.02956 95.1657 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 17.461 -2.01912 95.1657 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 80.2771 -0.457096 92.7102 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.2771 -0.457096 92.7102 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.2771 -0.457096 92.7102 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 15.1322 -2.00634 99.5459 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.1322 -2.00634 99.5459 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 32.3329 2.03089 72.752 19
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 32.3329 2.03089 72.752 19
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 390001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.0954 -0.497097 76.6175 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 63.0954 -0.497097 76.6175 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.3155 0.273965 77.3022 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.398726
+taking the neighbour bin efficiency since original eff too small, neighbour =0.398726
+ coll = HI weight = 1 evt = 400001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.545 -1.51274 76.2543 26
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.0159 -0.874016 78.6046 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.7331 0.198914 77.864 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.8684 0.333722 76.2727 18
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 82.1815 0.375668 88.8761 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 82.1815 0.375668 88.8761 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 66.0256 1.21185 77.5664 8
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 420001
+ warning eff=0 for pt eta jet cent: 63.0564 -0.419956 75.7371 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 16.2341 -2.02422 98.1648 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.2341 -2.02422 98.1648 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.8271 -2.00117 99.6913 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 16.8271 -2.00117 99.6913 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.392 -2.01658 90.6474 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.392 -2.01658 90.6474 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 430001
+ warning eff=0 for pt eta jet cent: 18.9398 -2.0362 91.7356 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 18.9398 -2.0362 91.7356 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 61.1758 -0.470707 77.2915 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 440001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.4562 -1.51156 78.0245 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.4562 -1.51156 78.0245 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.8861 -0.528144 78.1657 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.5392 -0.764636 71.9996 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 47.1071 -2.00865 88.3024 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ warning eff=0 for pt eta jet cent: 47.1071 -2.00865 88.3024 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.776217
+ coll = HI weight = 1 evt = 450001
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.5077 -2.00962 95.2671 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.888652
+ warning eff=0 for pt eta jet cent: 67.5077 -2.00962 95.2671 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.888652
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 460001
+ warning eff=0 for pt eta jet cent: 64.0759 -1.32248 77.4234 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.0759 -1.32248 77.4234 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.0759 -1.32248 77.4234 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.0759 -1.32248 77.4234 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 470001
+ coll = HI weight = 1 evt = 480001
+ warning eff=0 for pt eta jet cent: 62.2004 -0.628925 79.6641 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ warning eff=0 for pt eta jet cent: 61.3501 0.116374 78.3467 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 490001
+ warning eff=0 for pt eta jet cent: 84.0135 1.68691 113.83 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 84.0135 1.68691 113.83 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 60.6607 -0.634899 73.4714 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.8827 -0.485368 74.6427 8
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 500001
+ warning eff=0 for pt eta jet cent: 17.0016 -2.00644 94.0259 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 17.0016 -2.00644 94.0259 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0.425198
+taking the neighbour bin efficiency since original eff too small, neighbour =0.449866
+taking the neighbour bin efficiency since original eff too small, neighbour =0.449866
+taking the neighbour bin efficiency since original eff too small, neighbour =0.603084
+taking the neighbour bin efficiency since original eff too small, neighbour =0.581781
+taking the neighbour bin efficiency since original eff too small, neighbour =0.468425
+ coll = HI weight = 1 evt = 510001
+ warning eff=0 for pt eta jet cent: 152.823 -1.58058 156.749 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0.333333
+ warning eff=0 for pt eta jet cent: 152.823 -1.58058 156.749 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0.333333
+ warning eff=0 for pt eta jet cent: 152.823 -1.58058 156.749 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0.333333
+ warning eff=0 for pt eta jet cent: 69.2729 -2.02332 89.8728 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 69.2729 -2.02332 89.8728 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 69.768 -0.273759 79.716 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.2981 2.00119 93.121 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.2981 2.00119 93.121 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 520001
+ warning eff=0 for pt eta jet cent: 67.2981 2.00119 93.121 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.2981 2.00119 93.121 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.0704 -0.685183 99.8652 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.0704 -0.685183 99.8652 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 530001
+ warning eff=0 for pt eta jet cent: 64.6884 0.395995 76.6546 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.9858 -0.605086 86.4972 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 83.9858 -0.605086 86.4972 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 15.5508 -2.01051 95.5133 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 15.5508 -2.01051 95.5133 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 540001
+ warning eff=0 for pt eta jet cent: 64.0419 1.49167 74.828 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.0419 1.49167 74.828 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 76.2489 0.345211 79.1384 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.4496 0.370526 75.2245 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 550001
+ warning eff=0 for pt eta jet cent: 81.3465 0.135856 85.7106 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.3465 0.135856 85.7106 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.829 -0.36771 94.6436 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 80.829 -0.36771 94.6436 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 70.4288 0.805336 75.618 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 70.4288 0.805336 75.618 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 67.4106 -1.5213 74.6639 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 560001
+ warning eff=0 for pt eta jet cent: 51.5592 -2.00457 97.3419 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 51.5592 -2.00457 97.3419 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 51.5592 -2.00457 97.3419 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 61.3254 1.79915 78.123 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.669428
+taking the neighbour bin efficiency since original eff too small, neighbour =0.679553
+taking the neighbour bin efficiency since original eff too small, neighbour =0.733777
+taking the neighbour bin efficiency since original eff too small, neighbour =0.599337
+taking the neighbour bin efficiency since original eff too small, neighbour =0.64698
+taking the neighbour bin efficiency since original eff too small, neighbour =0.626305
+taking the neighbour bin efficiency since original eff too small, neighbour =0.701821
+taking the neighbour bin efficiency since original eff too small, neighbour =0.604551
+ warning eff=0 for pt eta jet cent: 61.5229 -0.489277 79.4776 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.5229 -0.489277 79.4776 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 570001
+ warning eff=0 for pt eta jet cent: 61.5229 -0.489277 79.4776 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.5229 -0.489277 79.4776 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+taking the neighbour bin efficiency since original eff too small, neighbour =1
+ warning eff=0 for pt eta jet cent: 103.105 -1.77466 117.266 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 103.105 -1.77466 117.266 14
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 26.0394 -2.00923 93.6366 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+ warning eff=0 for pt eta jet cent: 26.0394 -2.00923 93.6366 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.799962
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.1024 1.5874 79.7663 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 58.7781 -2.01811 99.8571 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 58.7781 -2.01811 99.8571 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.3206 0.105857 75.3616 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 580001
+ warning eff=0 for pt eta jet cent: 63.0843 -0.39199 73.0203 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.7359 -0.631857 78.1072 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 46.3861 2.00125 71.143 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 46.3861 2.00125 71.143 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 102.48 1.4454 152.755 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 102.48 1.4454 152.755 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 102.48 1.4454 152.755 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ coll = HI weight = 1 evt = 590001
+ warning eff=0 for pt eta jet cent: 83.3817 1.86527 92.0988 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.12295
+ warning eff=0 for pt eta jet cent: 83.3817 1.86527 92.0988 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0.12295
+ warning eff=0 for pt eta jet cent: 61.3813 0.31298 68.0894 7
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5597 1.89294 108.785 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 81.5597 1.89294 108.785 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 81.5597 1.89294 108.785 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.166667
+ warning eff=0 for pt eta jet cent: 59.0526 -2.00728 96.1845 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 59.0526 -2.00728 96.1845 16
+taking the neighbour bin efficiency since original eff too small, neighbour =0.113289
+ warning eff=0 for pt eta jet cent: 91.6523 1.69596 98.7277 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 91.6523 1.69596 98.7277 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.0292 1.50596 96.2967 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.330039
+ warning eff=0 for pt eta jet cent: 81.0292 1.50596 96.2967 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.330039
+ warning eff=0 for pt eta jet cent: 67.0766 0.194598 78.3957 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.1436 -0.417846 76.8103 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 18.115 -2.01065 91.5069 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 18.115 -2.01065 91.5069 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 88.8964 1.95781 99.3148 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 88.8964 1.95781 99.3148 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.202 -0.654758 78.5016 11
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 610001
+ warning eff=0 for pt eta jet cent: 62.0124 1.47552 74.3753 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 54.8253 -2.0191 90.4835 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 54.8253 -2.0191 90.4835 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 54.8253 -2.0191 90.4835 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0.233524
+ warning eff=0 for pt eta jet cent: 60.5593 0.171623 76.349 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.016 0.156053 77.8947 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.016 0.156053 77.8947 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 19.5472 -2.00238 86.843 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 19.5472 -2.00238 86.843 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 19.5472 -2.00238 86.843 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 620001
+ warning eff=0 for pt eta jet cent: 64.1413 1.70732 76.5717 2
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 72.7394 2.02523 93.9582 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 72.7394 2.02523 93.9582 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.3692 1.4118 78.6642 10
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 71.0968 -2.00368 85.7599 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.888652
+ warning eff=0 for pt eta jet cent: 71.0968 -2.00368 85.7599 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.888652
+ warning eff=0 for pt eta jet cent: 71.0968 -2.00368 85.7599 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0.888652
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 640001
+ warning eff=0 for pt eta jet cent: 60.0321 0.132906 71.8497 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 101.142 1.22732 153.939 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+ warning eff=0 for pt eta jet cent: 101.142 1.22732 153.939 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.318119
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 650001
+ warning eff=0 for pt eta jet cent: 61.3469 -0.428816 76.9676 13
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5357 -0.484896 85.8951 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 81.5357 -0.484896 85.8951 9
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 58.6499 2.01804 89.6217 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.592276
+ warning eff=0 for pt eta jet cent: 58.6499 2.01804 89.6217 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.592276
+ warning eff=0 for pt eta jet cent: 60.3689 -1.50064 78.9316 15
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 62.615 1.35052 76.7277 17
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.8682 2.03272 96.1367 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 64.8682 2.03272 96.1367 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 660001
+ warning eff=0 for pt eta jet cent: 60.1188 -1.04372 75.7697 0
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 60.1811 0.0364803 78.9798 4
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 61.4 0.464919 79.3969 1
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 18.5175 -2.02377 85.7073 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 18.5175 -2.02377 85.7073 3
+taking the neighbour bin efficiency since original eff too small, neighbour =0.676765
+ warning eff=0 for pt eta jet cent: 67.3987 0.0278484 77.8051 6
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 65.2234 0.978933 68.6841 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 65.2234 0.978933 68.6841 5
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572152
+taking the neighbour bin efficiency since original eff too small, neighbour =0.558647
+taking the neighbour bin efficiency since original eff too small, neighbour =0.616793
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.632275
+taking the neighbour bin efficiency since original eff too small, neighbour =0.601314
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.672783
+taking the neighbour bin efficiency since original eff too small, neighbour =0.6068
+taking the neighbour bin efficiency since original eff too small, neighbour =0.582732
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.466133
+taking the neighbour bin efficiency since original eff too small, neighbour =0.601314
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.586608
+taking the neighbour bin efficiency since original eff too small, neighbour =0.604401
+taking the neighbour bin efficiency since original eff too small, neighbour =0.541715
+taking the neighbour bin efficiency since original eff too small, neighbour =0.505079
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.558647
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572152
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.643427
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572152
+taking the neighbour bin efficiency since original eff too small, neighbour =0.558647
+taking the neighbour bin efficiency since original eff too small, neighbour =0.616793
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.632275
+taking the neighbour bin efficiency since original eff too small, neighbour =0.601314
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.672783
+taking the neighbour bin efficiency since original eff too small, neighbour =0.6068
+taking the neighbour bin efficiency since original eff too small, neighbour =0.582732
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.466133
+taking the neighbour bin efficiency since original eff too small, neighbour =0.601314
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.586608
+taking the neighbour bin efficiency since original eff too small, neighbour =0.604401
+taking the neighbour bin efficiency since original eff too small, neighbour =0.541715
+taking the neighbour bin efficiency since original eff too small, neighbour =0.505079
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.558647
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.572152
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.595063
+taking the neighbour bin efficiency since original eff too small, neighbour =0.689626
+taking the neighbour bin efficiency since original eff too small, neighbour =0.578331
+taking the neighbour bin efficiency since original eff too small, neighbour =0.575344
+taking the neighbour bin efficiency since original eff too small, neighbour =0.643427
+ warning eff=0 for pt eta jet cent: 60.011 -0.66009 79.3017 19
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ coll = HI weight = 1 evt = 670001
+ warning eff=0 for pt eta jet cent: 84.6202 -1.88364 92.4065 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 84.6202 -1.88364 92.4065 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 84.6202 -1.88364 92.4065 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 30.9662 2.03707 66.5529 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+ warning eff=0 for pt eta jet cent: 30.9662 2.03707 66.5529 12
+taking the neighbour bin efficiency since original eff too small, neighbour =0
+Output file: DATAHI_AkPu3PFIncJetPt80_2013HistIterTrkCorrtest1EtaCut20Limit3_ERbkgJSNormJetCone3_CenBin5_Nrbin6_LJbin1trkbin4_promptskim-hihighpt-hltjet80-pt90-v20.root
+working done

@@ -1,0 +1,541 @@
+#ifndef SMEARINGFACTORS_H
+#define SMEARINGFACTORS_H
+
+#include <iostream>
+#include <utility>
+#include <TROOT.h>
+#include <TStyle.h>
+
+#include <TString.h>
+#include <TRandom3.h>
+#include <TF1.h>
+
+
+
+void  LoadParameters();
+int   GetCBin(int /*bin*/);
+
+float GetPtBin(float /*smpt*/);
+
+float GetSmFactor(int /*nj*/,int /*ic*/,float /*recopt*/);
+float GetMeanShift(int /*nj*/,int /*ic*/,float /*recopt*/);
+float AfterBurnMean(int /*nj*/,int /*ic*/,float /*smpt*/,float /*refpt*/);
+
+float GetSmearedPtMC(int /*nj*/,int /*ic*/,float /*recopt*/,float /*refpt*/);
+float GetSmearedPtMC_woAfBurn(int /*nj*/,int /*ic*/,float /*recopt*/,float /*refp*/);
+float GetSmearedPtMC_NoMeanShift(int /*nj*/,int /*ic*/,float /*recopt*/,float /*refpt*/); //! JFF & JS
+float GetSmearedPtMC_OnlyMeanShift(int /*nj*/,int /*ic*/,float /*recopt*/,float /*refpt*/);
+
+float GetSmearedPtData(int /*nj*/,int /*ic*/,float /*recopt*/,float /*fpercent*/,const char */*csys*/);
+float GetSmearedPtData_woAfBurn(int /*nj*/,int /*ic*/,float /*recopt*/,float /*fpercent*/,const char */*csys*/);
+float GetSmearedPtData_NoMeanShift(int /*nj*/,int /*ic*/,float /*recopt*/,float /*fpercent*/,const char */*csys*/); //! JFF & JS
+float GetSmearedPtData_OnlyMeanShift(int /*nj*/,int /*ic*/,float /*recopt*/,float /*fpercent*/,const char */*csys*/);
+
+//! For PbPb jet energy scale correction for Pu algorithms
+float GetPbPbCorrectedScaleMC  (int /*nj*/,int /*hiBin*/,float /*recopt*/,float /*refpt*/); //! JFF & JS
+float GetPbPbCorrectedScaleData(int /*nj*/,int /*hiBin*/,float /*recopt*/);  //! JFF & JS
+
+//! Re-weighting factor for data
+float GetReWeight(int /*nj*/,int /*ic*/, float /*smpt*/); //! JFF & JS
+float GetReWeight_NoMeanShift(int /*nj*/,int /*ic*/, float /*smpt*/); //! JFF & JS
+
+const int NCEN=5;
+const int KNJ =7;
+
+//! Smearing function
+TF1 *fresol[KNJ][NCEN], *fscale[KNJ][NCEN];
+TF1 *fasmf [KNJ][NCEN];
+TF1 *fReWe; //! only for 0-10% and 50-100% and ak3PF pp jets
+
+//!                             0-10%  10-30%  30-50%   50-100%  pp 
+double resol[KNJ][NCEN][3]={ {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! icpu5calo
+			     {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak2PF
+			     {
+			       {0.0262422 ,1.51548 ,5.88237}, //! 0-10%  
+			       {0.042533  ,1.38629 ,4.81684}, //! 10-30%  
+			       {0.0395597 ,1.33222 ,3.03127}, //! 30-50%  
+			       {0.0528186 ,1.16124 ,4.53786}, //! 50-100%	  
+			       {0.055736  ,1.18204 ,2.26452}},//! pp ak3PF
+
+			     {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak4PF
+			     {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu2PF
+			     {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu3PF
+			     {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}  //! akPu4PF
+};
+
+
+double scale[KNJ][NCEN][3]={ {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! icpu5calo
+                             {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak2PF
+                             {
+			       {1.00869 ,-5.10987 ,191.478}, //! 0-10% 
+			       {1.00378 ,-3.84755 ,102.459}, //! 10-30%  
+			       {1.00489 ,-3.87293 ,106.204}, //! 30-50%  
+			       {1.00301 ,-2.9472  ,70.9715}, //! 50-100%  
+			       {1.00000 , 0.00000 ,0.00000}}, //! pp ak3PF	  
+			     //{1.00175 ,-0.60521 ,26.2456}}, //! pp ak3PF	  
+			      
+                             {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak4PF
+                             {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu2PF
+                             {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu3PF
+                             {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}  //! akPu4PF
+};
+
+
+
+double afsmf[KNJ][NCEN][3] = {{{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! icpu5calo
+                              {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak2PF
+                              {
+			       {9.48808e+00,-1.03265e+03,6.01265e+03}, //! 0-10%
+			       {6.58010e+00,-6.82048e+02,-1.45276e+03},//! 10-30%
+			       {5.88927e+00,-6.70886e+02, 8.61490e+03},//! 30-50%
+			       {3.25257e+00,-4.52675e+02,-3.14922e+03},//! 50-100% 
+
+			       {0,0,0}},//! pp //! ak3PF                                                                                  
+                              {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! ak4PF               
+                              {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu2PF             
+                              {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu3PF             
+                              {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}}, //! akPu4PF             
+};
+
+//! after burner for mean diff                       
+double amdiff[KNJ][NCEN][33]={ {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}}, //! icpu5calo
+                               {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}}, //! ak2PF
+                               {
+				 {-0.105619,-0.0271277,0.00834072,0.0016973,0.00553769,0.00921977,-0.00517654,0.00198901,5.90682e-05,0.00173777,-0.00194567,0.0100281,0.00640297,-0.0109624,0.00279158,-0.000472128,0.00736839,0.007622,0.00217807,-0.00343424,-0.00337636,0.00104737,0.00298584,-0.0013808,0.00137895,0.00181955,0.00837344,0.00156075,-0.000525355,0.000210166,0.00995493,-0.00145185,0.00382233}, //! 0-10%
+				 {-0.0612186,-0.0111407,0.0018276,0.00668561,0.00844628,0.00607353,0.00015837,0.00173175,-0.0191703,-0.0110852,-0.00389683,-0.00200284,0.00470632,-0.00243348,0.00929326,0.00413793,0.00589651,0.00950515,0.00724757,-0.00937152,-0.000683725,0.00602335,0.0012359,-0.00174445,0.000686228,-0.00624436,0.00217223,0.00343549,0.000401378,-0.00195926,0.00126404,-0.00218087,0.00529027}, //! 10-30%
+				 {-0.0464112,-0.016579,0.00686634,0.00803441,0.00125444,0.00542349,-0.00181103,-0.000866354,-0.00745177,-0.00456351,-0.00150228,0.00153321,-0.00108534,-0.00277799,0.0109679,0.0018748,0.00765532,0.0064041,0.00223821,-0.00325227,-0.0050838,0.00025773,0.00440186,0.000342906,-0.00261116,0.00263554,0.0114818,0.00180966,-0.00305378,-0.0103016,0.00147146,0.00506431,0.00155097},//! 30-50%
+				 {-0.0490742,-0.00310218,0.0149305,0.00452918,0.0014677,0.000719309,-1.49012e-06,0.00155377,-0.00858253,-0.00499088,-0.00290483,0.00214636,0.00260556,-0.00153071,0.0153838,0.00105321,0.00975537,0.00623125,-0.00116074,-0.00236243,-0.00114524,0.00214189,0.00404912,0.00401694,0.000116467,-0.000587702,0.00667375,0.00535905,-0.00366378,-0.008564,0.00676608,0.000458419,0.00256842},//! 50-100%
+				 {0,0,0,0,0,0,0,0,0,0}}, //!pp //! ak3PF
+                               {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}}, //! ak4PF
+                               {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}}, //! akPu2PF
+                               {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}}, //! akPu3PF
+                               {{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0}} //! akPu4PF
+};
+
+
+//! Reweighting factor for 0-10% and 50-100% only for data
+double fwe010[2][3] = {{2.32745e+00, -9.63227e+01, 5.88044e+03}, //! 0-5%                                                                  
+		       {1.13736e+00,  2.20014e+02,-1.28424e+04}  //! 5-10%                                                                 
+};
+double fwe50100[2][3] = {{2.30339e+00,  -8.18276e+01,  5.35947e+03}, //! 50-70%                                                            
+			 {1.50452e+00,   1.20980e+02, -7.33869e+03}  //! 70-100%                                                           
+};
+//! Reweighting factor for 0-10% and 50-100% only for data - No Mean Shift for pp
+double fwe010_noms[2][3] = {{1.94440e+00,  9.70262e+00, -3.85305e+02}, //! 0-5%
+			    {1.72225e+00,  6.63995e+01, -3.86893e+03}  //! 5-10%
+};
+double fwe50100_noms[2][3] = {{2.05212e+00, -1.58706e+01,  9.43296e+02}, //! 50-70%
+			      {1.94988e+00,  1.51774e+01, -8.94539e+02}  //! 70-100%
+};
+
+
+
+double PT_BINS[34] = {30,40,50,60,70,80,90,100,
+		      110,120,130,140,150,160,170,180,190,200,
+		      210,220,230,240,250,260,270,280,290,300,
+		      310,320,330,340,350,400};
+const int NBINS=34;
+
+void LoadParameters()
+{
+  for(int nj=0;nj<KNJ;nj++){
+    for(int i=0;i<NCEN;i++){
+      fresol[nj][i]  = new TF1(Form("fresol%d_%d",nj,i),
+			      "sqrt(pow([0],2)+pow([1]/sqrt(x),2)+pow([2]/x,2))",30,400);
+      fscale[nj][i] = new TF1(Form("fscale%d_%d",nj,i),"[0] + [1]/x + [2]/x/x"  ,30,400);
+      fasmf [nj][i] = new TF1(Form("fasmfe%d_%d",nj,i),"[0] + [1]/x + [2]/x/x"  ,30,400);      
+      for(int im=0;im<3;im++){
+	fresol[nj][i]->SetParameter(im,resol[nj][i][im]);
+	fscale[nj][i]->SetParameter(im,scale[nj][i][im]);
+	fasmf[nj][i]->SetParameter (im,afsmf[nj][i][im]);
+      }
+    }
+  }
+
+  //! Reweight factor for 0-10% and 50-100%
+  fReWe = new TF1("fReWe","[0] + [1]/x + [2]/x/x",30,400);
+}
+
+
+
+//////////////////////////////////////////////////MC related functions///////////////////////////////////////////////////////////////
+float GetSmearedPtMC(int nj,int ic,float recopt,float refpt)
+{
+  int icen = ic;
+
+  //! Get the jet energy scale
+  float mpp   = fscale[nj][NCEN-1]->Eval(refpt);
+  float mpbpb = fscale[nj][icen]->Eval(refpt);
+
+  //! Calculate the shift in scale
+  float mdf = mpp - mpbpb;
+
+  //! Now shift scale first
+  float smpt = recopt - mdf*recopt;
+
+  //! afterburn to adjust the remaining residual
+  smpt = AfterBurnMean(nj,icen,smpt,refpt);
+  
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(refpt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(refpt);   //! PbPb
+  
+  //! Calculate the smearing factor
+  float smf = 0;
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    //smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*100;
+    //float af = fasmf[nj][icen]->Eval(refpt); 
+    //smf += af;
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*refpt;
+  }
+
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);
+  return smpt;
+}
+float GetSmearedPtMC_woAfBurn(int nj,int ic,float recopt,float refpt)
+{
+  int icen = ic;
+
+  //! Get the jet energy scale
+  float mpp   = fscale[nj][NCEN-1]->Eval(refpt);
+  float mpbpb = fscale[nj][icen]->Eval(refpt);
+
+  //! Calculate the shift in scale
+  float mdf = mpp - mpbpb;
+
+  //! Now shift scale first
+  float smpt = recopt - mdf*recopt;
+
+  //! afterburn to adjust the remaining residual
+  //smpt = AfterBurnMean(nj,icen,smpt,refpt);
+  
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(refpt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(refpt);     //! PbPb
+  
+  //! Calculate the smearing factor
+  float smf = 0;
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*refpt;
+    //float af = fasmf[nj][icen]->Eval(refpt); 
+    //smf += af;
+  }
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);
+  return smpt;
+}
+float GetPbPbCorrectedScaleMC(int nj,int hibin,float recopt,float refpt)
+{
+  if(nj!=2)return recopt; //! currently only for akPu3PF jets
+
+  int icen = GetCBin(hibin);
+  //! Get the jet energy scale
+  float mpbpb = fscale[nj][icen]->Eval(refpt);
+
+  //! Now correct scale first
+  float corr_recopt = recopt/mpbpb;
+
+  return corr_recopt;
+}
+float GetSmearedPtMC_NoMeanShift(int nj,int ic,float recopt,float refpt)
+{
+  int icen = ic;
+  float smpt = recopt;
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(refpt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(refpt);   //! PbPb
+  
+  //! Calculate the smearing factor
+  float smf = 0;
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*refpt;
+    //float af = fasmf[nj][icen]->Eval(refpt); 
+    //smf += af;
+  }
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);
+  return smpt;
+}
+float GetSmearedPtMC_OnlyMeanShift(int nj,int ic,float recopt,float refpt)
+{
+  int icen = ic;
+  //! Get the jet energy scale
+  float mpp   = fscale[nj][NCEN-1]->Eval(refpt);
+  float mpbpb = fscale[nj][icen]->Eval(refpt);
+
+  //! Calculate the shift in scale
+  float mdf = mpp - mpbpb;
+
+  //! Now shift scale first
+  float smpt = recopt - mdf*recopt;
+  return smpt;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////// Data related functions ////////////////////////////////////////////
+float GetSmearedPtData(int nj,int ic,float recopt,float fpercent,const char *csys)
+{
+  int icen = ic;
+
+  if(recopt<60)return recopt;
+
+
+  //! Mean shift
+  float mpp   = fscale[nj][NCEN-1]->Eval(recopt);
+  float mpbpb = fscale[nj][icen]->Eval(recopt);
+  float mdf   = mpp - mpbpb;
+
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(recopt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(recopt);   //! PbPb
+
+  float smf=0;
+  float smpt=0;
+
+  //! Calculate the smearing factor
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*recopt;
+    //float af = fasmf[nj][icen]->Eval(recopt); 
+    //smf += af;
+  }
+
+  if(strcmp(csys,"low")==0){
+
+    smpt = recopt - ((mdf - (2.*fpercent/100.)*mdf)*recopt);
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+    smf  = smf - (fpercent/100.)*smf;
+
+  }else if(strcmp(csys,"up")==0){
+
+    smpt = recopt - ((mdf + (2.*fpercent/100.)*mdf)*recopt);
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+    smf  = smf + (fpercent/100.)*smf;
+
+  }else{
+
+    //! Now shift scale first
+    smpt = recopt - mdf*recopt;
+    
+    //! afterburn to adjust the remaining residual in mean shift
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+  }
+
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);  
+  return smpt;
+}
+float GetSmearedPtData_woAfBurn(int nj,int ic,float recopt,float fpercent,const char *csys)
+{
+  int icen = ic;
+
+  if(recopt<60)return recopt;
+
+  //! Mean shift
+  float mpp   = fscale[nj][NCEN-1]->Eval(recopt);
+  float mpbpb = fscale[nj][icen]->Eval(recopt);
+  float mdf   = mpp - mpbpb;
+
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(recopt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(recopt);   //! PbPb
+
+  float smf=0;
+  float smpt=0;
+
+  //! Calculate the smearing factor
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*recopt;
+    //float af = fasmf[nj][icen]->Eval(recopt); 
+    //smf += af;
+  }
+
+  if(strcmp(csys,"low")==0){
+
+    smpt = recopt - ((mdf - (2.*fpercent/100.)*mdf)*recopt);
+    //smpt = AfterBurnMean(nj,icen,smpt,recopt);
+    smf  = smf - (fpercent/100.)*smf;
+
+  }else if(strcmp(csys,"up")==0){
+
+    smpt = recopt - ((mdf + (2.*fpercent/100.)*mdf)*recopt);
+    //smpt = AfterBurnMean(nj,icen,smpt,recopt);
+    smf  = smf + (fpercent/100.)*smf;
+
+  }else{
+
+    //! Now shift scale first
+    smpt = recopt - mdf*recopt;
+    
+    //! afterburn to adjust the remaining residual
+    //smpt = AfterBurnMean(nj,icen,smpt,recopt);
+  }
+
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);  
+  return smpt;
+}
+float GetSmearedPtData_NoMeanShift(int nj,int ic,float recopt,float fpercent,const char *csys)
+{
+  int icen = ic;
+
+  if(recopt<60)return recopt;
+
+  float smpt = recopt;
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(recopt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(recopt);     //! PbPb
+  
+  //! Calculate the smearing factor
+  float smf = 0;
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*recopt;
+    float af = fasmf[nj][icen]->Eval(recopt); 
+    smf += af;
+  }
+
+  if(strcmp(csys,"low")==0){
+    smf  = smf - (fpercent/100.)*smf;
+  }else if(strcmp(csys,"up")==0){
+    smf  = smf + (fpercent/100.)*smf;
+  }
+
+  //! Smearing the recopt
+  smpt = gRandom->Gaus(smpt,smf);
+  return smpt;
+}
+float GetSmearedPtData_OnlyMeanShift(int nj,int ic,float recopt,float fpercent,const char *csys)
+{
+  int icen = ic;
+  //! Get the jet energy scale
+  float mpp   = fscale[nj][NCEN-1]->Eval(recopt);
+  float mpbpb = fscale[nj][icen]->Eval(recopt);
+
+  //! Calculate the shift in scale
+  float mdf = mpp - mpbpb;
+  float smpt=recopt;
+
+  if(strcmp(csys,"low")==0){
+    smpt = recopt - ((mdf - (2.*fpercent/100.)*mdf)*recopt);
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+
+  }else if(strcmp(csys,"up")==0){
+    smpt = recopt - ((mdf + (2.*fpercent/100.)*mdf)*recopt);
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+
+  }else{
+    smpt = recopt - mdf*recopt;
+    smpt = AfterBurnMean(nj,icen,smpt,recopt);
+  }
+  return smpt;
+}
+float GetPbPbCorrectedScaleData(int nj,int hibin,float recopt)
+{
+  if(nj!=2)return recopt;
+
+  int icen = GetCBin(hibin);
+  //! Get the jet energy scale
+  float mpbpb = fscale[nj][icen]->Eval(recopt);
+  
+  //! Now correct scale first
+  float corr_recopt = recopt/mpbpb;
+  //cout<<"\t \t GetPbPbCScale : "<<recopt<<"\t corr_recopt : "<<corr_recopt<<"\t mpbpb : "<<mpbpb<<endl;
+  return corr_recopt;
+}
+float GetReWeight(int nj,int ic,float smpt)
+{
+  //! Only to be used for pp data 
+  float rewe=1;
+  return rewe;
+}
+float GetReWeight_NoMeanShift(int nj,int ic,float smpt)
+{
+  float rewe=1;
+  return rewe;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+////////////////////////////////////////////////Common functions////////////////////////////////////////////////////////////
+float GetSmFactor(int nj,int ic,float recopt)
+{
+  int icen = ic;
+  //! Get resolutions
+  float rpp   = fresol[nj][NCEN-1]->Eval(recopt); //! pp
+  float rpbpb = fresol[nj][icen]->Eval(recopt);     //! PbPb
+
+  float smf=0;
+  //! Calculate the smearing factor
+  if(rpp>rpbpb){
+    smf=0;
+  }else{
+    smf = sqrt(pow(rpbpb,2) - pow(rpp,2))*recopt;
+    //float af = fasmf[nj][ic]->Eval(recopt); 
+    //smf += af;
+  }
+  return smf;
+}
+float GetMeanShift(int nj,int ic,float recopt)
+{
+  int icen = ic;
+  //! Mean shift
+  float mpp   = fscale[nj][NCEN-1]->Eval(recopt);
+  float mpbpb = fscale[nj][icen]->Eval(recopt);
+  float mdf   = mpp - mpbpb;
+
+  return mdf;
+}
+int GetCBin(int bin)
+{
+  int ibin=-1;
+  //! centrality is defined as 2.5% bins of cross section
+  //! in 0-39 bins
+  if(bin<4)ibin=0;                  //! 0-10%
+  else if(bin>=4 && bin<12)ibin=1;  //! 10-30%
+  else if(bin>=12&& bin<20)ibin=2;  //! 30-50%
+  else if(bin>=20&& bin<40)ibin=3;  //! 50-100%
+  return ibin;
+}
+float AfterBurnMean(int nj,int ic,float smpt,float refpt)
+{
+  int icen = ic;
+  int ib = GetPtBin(refpt);
+  if(smpt<50){
+    return smpt;
+  }else{
+    smpt += smpt*amdiff[nj][icen][ib];
+  }
+  return smpt;
+}
+float GetPtBin(float pt)
+{
+  for(int i=0;i<NBINS-1;i++){
+    if(pt>=PT_BINS[i] && pt<PT_BINS[i+1])return i;
+  }
+  return -1;
+}
+#endif

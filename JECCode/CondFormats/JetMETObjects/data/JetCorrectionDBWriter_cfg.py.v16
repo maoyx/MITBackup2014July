@@ -1,0 +1,158 @@
+version="538HIp2_v16"
+tracks="ppTracking"
+sample="Pbp_PythiaZ2_5020GeV"
+
+import FWCore.ParameterSet.Config as cms
+process = cms.Process('jecdb')
+process.load('CondCore.DBCommon.CondDBCommon_cfi')
+process.CondDBCommon.connect = 'sqlite_file:YueShiJEC_Pbp_PythiaZ2_5020GeV_538HIp2_v16.db'
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(1))
+process.source = cms.Source('EmptySource')
+process.PoolDBOutputService = cms.Service(
+    'PoolDBOutputService',
+    process.CondDBCommon,
+    toPut = cms.VPSet(
+
+        cms.PSet(
+            record = cms.string('AKPu3Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu3Calo_offline'),
+            label  = cms.string('AKPu3Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AKPu3PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu3PF_offline'),
+            label  = cms.string('AKPu3PF_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK3Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK3Calo_offline'),
+            label  = cms.string('AK3Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK3PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK3PF_offline'),
+            label  = cms.string('AK3PF_offline')
+            ),
+
+        cms.PSet(
+            record = cms.string('AKPu4Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu4Calo_offline'),
+            label  = cms.string('AKPu4Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AKPu4PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu4PF_offline'),
+            label  = cms.string('AKPu4PF_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK4Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK4Calo_offline'),
+            label  = cms.string('AK4Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK4PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK4PF_offline'),
+            label  = cms.string('AK4PF_offline')
+            ),
+
+        cms.PSet(
+            record = cms.string('AKPu5Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu5Calo_offline'),
+            label  = cms.string('AKPu5Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AKPu5PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AKPu5PF_offline'),
+            label  = cms.string('AKPu5PF_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK5Calo'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK5Calo_offline'),
+            label  = cms.string('AK5Calo_offline')
+            ),
+        cms.PSet(
+            record = cms.string('AK5PF'),
+            tag    = cms.string('JetCorrectorParametersCollection_'+tracks+'_'+sample+'_'+version+'_AK5PF_offline'),
+            label  = cms.string('AK5PF_offline')
+            )
+        )
+
+    )
+
+process.dbWriterAKPu3Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu3Calo')
+    )
+process.dbWriterAKPu3PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu3PF')
+    )
+process.dbWriterAK3Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK3Calo')
+    )
+process.dbWriterAK3PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK3PF')
+    )
+
+process.dbWriterAKPu4Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu4Calo')
+    )
+process.dbWriterAKPu4PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu4PF')
+    )
+process.dbWriterAK4Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK4Calo')
+    )
+process.dbWriterAK4PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK4PF')
+    )
+
+process.dbWriterAKPu5Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu5Calo')
+    )
+process.dbWriterAKPu5PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AKPu5PF')
+    )
+process.dbWriterAK5Calo = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK5Calo')
+    )
+process.dbWriterAK5PF = cms.EDAnalyzer(
+    'JetCorrectorDBWriter',
+    era  = cms.untracked.string('Pbp_PythiaZ2_5020GeV_538HIp2_v16'),
+    algo = cms.untracked.string('AK5PF')
+    )
+
+process.p = cms.Path(
+process.dbWriterAKPu3Calo *
+process.dbWriterAKPu3PF *
+process.dbWriterAK3Calo *
+process.dbWriterAK3PF *
+process.dbWriterAKPu4Calo *
+process.dbWriterAKPu4PF *
+process.dbWriterAK4Calo *
+process.dbWriterAK4PF *
+process.dbWriterAKPu5Calo *
+process.dbWriterAKPu5PF *
+process.dbWriterAK5Calo *
+process.dbWriterAK5PF
+)
